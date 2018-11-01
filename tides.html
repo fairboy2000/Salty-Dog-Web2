@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salty Dog Cafe Dinner Menu</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/social-logos/favicon.ico">
+
+</head>
+
+<body>
+    <main>
+
+
+        <style type="text/css">
+            body {
+                color: white;
+                background: rgb(4, 4, 51);
+                padding: 10px 0;
+            }
+
+            .carousel-item>img {
+                width: auto;
+                height: 100% !important;
+            }
+
+            .carousel .carousel-item>img {
+                width: auto !important;
+            }
+
+
+            nav.nav-center ul {
+                text-align: center;
+            }
+
+            nav.nav-center ul li {
+                display: inline;
+                float: none;
+            }
+
+            nav.nav-center ul li a {
+                display: inline-block;
+            }
+
+            .nav-item {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            nav {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            .nav-link {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+
+
+            .col {
+                padding: 5px;
+
+            }
+
+            .container {
+                text-align: center;
+                /* margin-top: 5px; */
+                max-width: 1200px;
+            }
+
+            .row .col {
+                float: none !important;
+
+            }
+
+            .col .btn {
+                float: none !important;
+                text-align: center;
+                align-content: center;
+            }
+
+            .btn {
+
+                text-align: center;
+                align-content: center;
+            }
+            .btn-warning {
+    background: hsl(56, 94%, 66%);
+    border-color: hsl(56, 94%, 66%);
+    color: black;
+}
+
+        p {
+            text-align: center;
+            color: black !important;
+        }
+
+            a {
+                color: white !important;
+            }
+        </style>
+
+        <nav class="nav-center">
+
+            <div class="container">
+                <div class="row">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stores.html" target="blank">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dine.html">Dine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cruise.html" target="blank">Cruise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.sbinn.com/" target="blank">Stay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://tv.saltydog.com/" target="blank">Live</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="radio.html">Radio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        </div>
+        <div class="container">
+            <nav class="nav-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="findus.html">Find Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="win.html">Lucky Receipts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photos.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webcams.html">Webcams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="weather.html">Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="legend.html">The Legend</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+       
+        <div class="container">
+            <nav>
+                <div id="socialtop" style="padding-top: 9px">
+                    <a href="tides.html" target="_blank">
+
+                        <img src="images/social-logos/TIDESBUTTON.png">
+                    </a>
+                    <a href="social.html" target="_blank">
+                        <img src="images/social-logos/Facebook_Rounded.png">
+                    </a>
+
+
+                    <a href="social.html" target="_blank">
+                        <img src="images/social-logos/Instagram_RoundedEdges.png">
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn yellow"style="line-height:3px">
+                        <a href="SBTides_SummerFall2018_WEB.pdf" download="SBTides_SummerFall2018_WEB"><p>Download Tides Magazine</p></a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                $('.carousel').carousel({ fullWidth: true, }).css('height', $(window).height());
+
+
+
+                $('.next').click(function () {
+
+                    $('.carousel').carousel('next');
+                })
+                $('.prev').click(function () {
+
+                    $('.carousel').carousel('prev');
+                })
+            });
+
+
+
+        </script>
+
+
+        <div class="container">
+
+
+
+            <div class="carousel carousel-slider" data-indicators="true">
+                <a href="#0ne!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page1.jpg">
+                </a>
+
+                <a href="#Two!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page2.jpg">
+                </a>
+
+                <a href="#Three!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page3.jpg">
+                </a>
+
+                <a href="#Four!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page4.jpg">
+                </a>
+
+                <a href="#Five!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page5.jpg">
+                </a>
+                <a href="#Six!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page6.jpg">
+                </a>
+                <a href="#Seven!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page7.jpg">
+                </a>
+                <a href="#Eight!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page8.jpg">
+                </a>
+                <a href="#Nine!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page9.jpg">
+                </a>
+                <a href="#Ten!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page10.jpg">
+                </a>
+
+                <a href="#Ten!" class="carousel-item">
+                    <img src="tides/images/Web Magazine SummerFall 2018/page11.jpg">
+                    <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page12.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page13.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page14.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page15.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page16.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page17.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page18.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page19.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page20.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page21.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page22.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page23.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page24.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page25.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page26.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page27.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page28.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page29.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page30.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page31.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page32.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page33.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page34.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page35.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page36.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page37.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page38.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page39.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page40.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page41.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page42.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page43.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page44.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page45.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page46.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page47.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page48.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page49.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page50.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page51.jpg">
+                    </a> <a href="#Ten!" class="carousel-item">
+                        <img src="tides/images/Web Magazine SummerFall 2018/page52.jpg">
+
+            </div>
+
+            <br>
+            <div class="btn yellow waves-effect prev" style="color:black">Prev</div>
+                    <div class="btn yellow waves-effect next" style="color:black">Next</div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
