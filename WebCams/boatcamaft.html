@@ -4,21 +4,28 @@
 <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<title>Boat Cam Aft</title>
-	<!-- Modernizr -->
-	<script src="../js/libs/modernizr-2.6.2.min.js"></script>
-	<!-- jQuery-->
-	<script type="text/javascript" src="../js/libs/jquery-1.10.2.min.js"></script>
-	<!-- framework css -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	 crossorigin="anonymous">
-	<!--<![endif]-->
-	<link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Contact Us</title>
+    <!-- Modernizr -->
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- framework css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--<![endif]-->
+    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="cssWebcams/styleBoot.css">
 
 </head>
 
@@ -26,117 +33,209 @@
 
 <body>
 
-	<style type="text/css">
-		body {
-			color:white;
-			background:rgb(4, 4, 51); 
-			padding: 10px 0;
-		}
 
 
 
-		.col {
-			padding: 5px;
-
-		}
-
-		.container {
-			text-align: center;
-			/* margin-top: 5px; */
-			max-width: 1200px;
-		}
 
 
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-bars"></i> Menu
+                </a>
+                <ul>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/stores.html" target="blank">Shop</a>
+                        </li>
 
-		p {
-			text-align: left;
-		}
+                        <li class="dropdown-submenu">
+                            <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Dine
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a tabindex="-1" href="../Dine/dine.html">Salty Dog Dining</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/cafe.html">Salty Dog Cafe</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/landsend.html">Land's End</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/wreck.html">Wreck</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/pizza.html">Pizza</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/icecream.html">IceCream</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/cater.html">Catering</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../Dine/dailyspec.html">Daily Specials</a>
+                                </li>
 
-		a {
-			color: white !important;
-		}
-	</style>
-		 <div class="container">
-            <ul class="nav justify-content-center">
+                        </li>
+
+                        </ul>
+                        <li>
+                            <a class="dropdown-item" href="../cruise/cruise.html" target="blank">Cruise</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/events.html">Events</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/radio.html">Radio</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/kids.html">Kids</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/feedback.html">Feedback Us</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/findus.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
+                        </li>
+
+                        <li class="dropdown-submenu">
+                            <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a tabindex="-1" href="../photos/photos.html">Pet Photos</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../photos/petphotossearch.html">Search Pet Photos</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../photos/photosevents.html">Special Events photos</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../photos/photossanta.html">Photos with Santa</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="../photos/photosjake.html">Photos with Jake</a>
+                                </li>
+
+
+                        </li>
+
+                        </ul>
+
+                        <li class="dropdown-submenu">
+                            <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Webcams
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a tabindex="-1" href="webcams.html">See all our Webcams</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="bluewatercam.html">Bluewater Cam</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="boatcam.html">BoatCam</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="boatcamaft.html">BoatCam Aft</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="boatcambow.html">BoatCam Bow</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="courtyardcam.html">Courtyard Cam</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="overheadcam.html">Overhead Cam</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="South Beach Cam.html">South Beach Cam</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="tangercam.html">Tanger Outlet Cam</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="tshirtcam.html">T-Shirt Cam</a>
+                                </li>
+
+                        </li>
+
+                        </ul>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/weather.php">Weather</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <!-- <ul class="navbar-nav ml-auto">
+            <a href="index.html" target="_blank">
+
+                    <img src="../images/social-logos/SDCLOGOBUTTON.jpg" class="rounded" style="width:30%; height:auto">
+                </a>
+            </ul> -->
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="../index.html">Home</a>
+                    <a href="../tides/tides.html" target="_blank">
+
+                        <img src="../images/social-logos/TIDESBUTTON.png">
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../stores.html" target="blank">Shop</a>
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Facebook_Rounded.png">
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../dine.html">Dine</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../cruise.html" target="blank">Cruise</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://www.sbinn.com/" target="blank">Stay</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://tv.saltydog.com/" target="blank">Live</a>
-                </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="../radio.html">Radio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../kids.html">Kids</a>
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                    </a>
                 </li>
             </ul>
-        </div>
-        <div class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="../findus.html">Find Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../feedback.html">Feedback Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../win.html">Lucky Receipts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../photos.html">Photos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../webcams.html">Webcams</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../weather.php">Weather</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../legend.html">The Legend</a>
-                </li>
-             </ul>
-                <br>
-                <nav>
-                    <div id="socialtop" style="padding-top: 9px">
-                        <a href="../tides.html" target="_blank">
-                       
-                            <img src="../images/social-logos/TIDESBUTTON.png" style="width:3%;padding-right: 5px">
-                            </a>
-                        <a href="../social.html" target="_blank">
-                            <img src="../images/social-logos/Facebook_Rounded.png" style="width:3%;padding-right: 5px">
-                        </a>
-               
-        
-                        <a href="../social.html" target="_blank">
-                            <img src="../images/social-logos/Instagram_RoundedEdges.png" style="width:2.8%;">
-                        </a>
-                    </div>
-                </nav>
-    
-            <br>
-    
-    
-        </div>
+    </div>
+  
+
+    <div class="container">
+        <img src="../images/HeaderBanners/WEBCAMS.png" style="width:100%; height:auto">
+
+    </div>
 
 
 
@@ -174,16 +273,6 @@
     </div>
 
 
-
-    
-    
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
         <!-- google analytics  -->
     
         <script type="text/javascript">
