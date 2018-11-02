@@ -66,17 +66,27 @@ p{
 .col{
     color: black;
     text-align: center;
-    float: none !important;
+  
 }
 nav ul a {
-    background: rgb(4, 4, 51)!important;;
-    border-color: hsl(56, 94%, 66%)!important;;
-    color: hsl(56, 94%, 66%)!important;;
+    background: rgb(4, 4, 51)!important;
+    border-color: hsl(56, 94%, 66%)!important;
+    color: hsl(56, 94%, 66%)!important;
 padding: 0 5px!important;
 }
 .menu-container{
-    background: rgb(4, 4, 51)!important;;
-    border-color: hsl(56, 94%, 66%)!important;;
-    color: hsl(56, 94%, 66%)!important;;
+    background: rgb(4, 4, 51)!important;
+    border-color: hsl(56, 94%, 66%)!important;
+    color: hsl(56, 94%, 66%)!important;
 padding: 0 5px!important;
+}
+h5{
+    color: black !important;
+}
+h6{
+
+    color: white;
+}
+p{
+    color: white;
 }
