@@ -5,217 +5,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Salty Dog Cafe Lunch Menu</title>
+    <title>Salty Dog Cafe Bluffton Lunch Menu</title>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
 
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/social-logos/favicon.ico">
-
+    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="cssDine/styleMat.css">
 </head>
 
 <body>
     <main>
 
-
         <style type="text/css">
-            body {
-                color: white;
-                background: rgb(4, 4, 51);
-                padding: 10px 0;
+            .dropdown-content {
+                overflow-y: visible;
             }
 
-            .carousel-item>img {
-                width: auto;
-                height: 100% !important;
+            .dropdown-content .dropdown-content {
+                margin-left: 100%;
             }
-
-            .carousel .carousel-item>img {
-                width: auto !important;
-            }
-
-
-            nav.nav-center ul {
-                text-align: center;
-            }
-
-            nav.nav-center ul li {
-                display: inline;
-                float: none;
-            }
-
-            nav.nav-center ul li a {
-                display: inline-block;
-            }
-
-            .nav-item {
-                color: white;
-                background: rgb(4, 4, 51);
-
-                text-align: center;
-                align-content: center;
-                max-width: 1100;
-            }
-
-            nav {
-                color: white;
-                background: rgb(4, 4, 51);
-
-                text-align: center;
-                align-content: center;
-                max-width: 1100;
-            }
-
-            .nav-link {
-                color: white;
-                background: rgb(4, 4, 51);
-
-                text-align: center;
-                align-content: center;
-                max-width: 1100;
-            }
-
-
-
-            .col {
-                padding: 5px;
-
-            }
-
-            .container {
-                text-align: center;
-                /* margin-top: 5px; */
-                max-width: 1200px;
-            }
-
-            .row .col {
-                float: none !important;
-
-            }
-
-            .col .btn {
-                float: none !important;
-                text-align: center;
-                align-content: center;
-            }
-
-            .btn {
-
-                text-align: center;
-                align-content: center;
-               
-            }
-            .btn-warning {
-    background: hsl(56, 94%, 66%);
-    border-color: hsl(56, 94%, 66%);
-    color: black;
-    line-height: 3px !important;
-}
-
-        p {
-            text-align: center;
-            color: black !important;
-        }
-
-            a {
-                color: white !important;
-            }
-
-            
         </style>
 
-        <nav class="nav-center">
 
-            <div class="container">
-                <div class="row">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="stores.html" target="blank">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dine.html">Dine</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cruise.html" target="blank">Cruise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://www.sbinn.com/" target="blank">Stay</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://tv.saltydog.com/" target="blank">Live</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="radio.html">Radio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kids.html">Kids</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav>
+
+            <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">
+                <i class="fas fa-bars"></i> Menu &#9660;</a>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../Pages/stores.html" target="blank">Shop</a>
+                </li>
+
+                <li>
+                    <a class='dropdown-button d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">Salty Dog dining</a>
+                </li>
+                <li>
+                    <a href="../cruise/cruise.html" target="blank">Cruise</a>
+                </li>
+
+                <li>
+                    <a href="http://www.sbinn.com/" target="blank">Stay</a>
+                </li>
+                <li>
+                    <a href="../Pages/events.html">Events</a>
+                </li>
+                <li>
+                    <a href="http://tv.saltydog.com/" target="blank">Live</a>
+                </li>
+                <li>
+                    <a href="../Pages/radio.html">Radio</a>
+                </li>
+                <li>
+                    <a href="../Pages/kids.html">Kids</a>
+                </li>
+                <li>
+                    <a href="../Pages/feedback.html">Feedback Us</a>
+                </li>
+                <li>
+                    <a href="../Pages/findus.html">Find Us</a>
+                </li>
+                <li>
+                    <a href="../Pages/contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="../lucky/win.html">Lucky Receipts</a>
+                </li>
+                <li>
+                    <a class='dropdown-button d' href='#' data-activates='dropdown3' data-hover="hover" data-alignment="left">Photos</a>
+                </li>
+                <li>
+                    <a class='dropdown-button d' href='#' data-activates='dropdown4' data-hover="hover" data-alignment="left">Webcams</a>
+                </li>
+                <li>
+                    <a href="../Pages/weather.php">Weather</a>
+                </li>
+                <li>
+                    <a href="../Legend/legend.html">The Legend</a>
+                </li>
+            </ul>
+            <ul id='dropdown2' class='dropdown-content'>
+
+                <li>
+                    <a href="cafe.html">Salty Dog Cafe</a>
+                </li>
+
+                <li>
+                    <a href="bluffdog.html">Salty Dog Cafe Bluffton</a>
+                </li>
+
+                <li>
+                    <a href="landsend.html">Land's End</a>
+                </li>
+                <li>
+                    <a href="wreck.html">Wreck</a>
+                </li>
+                <li>
+                    <a href="pizza.html">Pizza</a>
+                </li>
+                <li>
+                    <a href="icecream.html">IceCream</a>
+                </li>
+                <li>
+                    <a href="cater.html">Catering</a>
+                </li>
+                <li>
+                    <a href="dailyspec.html">Daily Specials</a>
+                </li>
+            </ul>
+            <ul id='dropdown3' class='dropdown-content'>
+
+                <li>
+                    <a href="../photos/photos.html">Pet Photos</a>
+                </li>
+                <li>
+                    <a href="../photos/petphotossearch.html">Search Pet Photos</a>
+                </li>
+                <li>
+                    <a href="../photos/photosevents.html">Special Events photos</a>
+                </li>
+                <li>
+                    <a href="../photos/photossanta.html">Photos with Santa</a>
+                </li>
+                <li>
+                    <a href="../photos/photosjake.html">Photos with Jake</a>
+
+                </li>
+
+            </ul>
+            <ul id='dropdown4' class='dropdown-content'>
+                <li>
+                    <a href="../WebCams/webcams.html">See all our Webcams</a>
+                </li>
+                <li>
+                    <a href="../WebCams/bluewatercam.html">Bluewater Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/boatcam.html">BoatCam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/boatcamaft.html">BoatCam Aft</a>
+                </li>
+                <li>
+                    <a href="../WebCams/boatcambow.html">BoatCam Bow</a>
+                </li>
+                <li>
+                    <a href="../WebCams/courtyardcam.html">Courtyard Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/overheadcam.html">Overhead Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/South Beach Cam.html">South Beach Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/tangercam.html">Tanger Outlet Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/tshirtcam.html">T-Shirt Cam</a>
+                </li>
+            </ul>
+
+
+
+
+            <ul id="nav-mobile" class="right">
+
+                <li>
+                    <a href="../tides/tides.html" target="_blank">
+
+                        <img src="../images/social-logos/TIDESBUTTON.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Facebook_Rounded.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                    </a>
+                </li>
+            </ul>
         </nav>
-        </div>
-        <div class="container">
-            <nav class="nav-center">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="findus.html">Find Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="feedback.html">Feedback Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="win.html">Lucky Receipts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="photos.html">Photos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="webcams.html">Webcams</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="weather.php">Weather</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="legend.html">The Legend</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+     
+
 
         <div class="container">
-            <nav>
-                <div id="socialtop" style="padding-top: 9px">
-                    <a href="tides.html" target="_blank">
-
-                        <img src="images/social-logos/TIDESBUTTON.png">
-                    </a>
-                    <a href="social.html" target="_blank">
-                        <img src="images/social-logos/Facebook_Rounded.png">
-                    </a>
-
-
-                    <a href="social.html" target="_blank">
-                        <img src="images/social-logos/Instagram_RoundedEdges.png">
-                    </a>
-                </div>
-            </nav>
+            <img src="../images/HeaderBanners/DINE.png" style="width:100%; height:auto">
 
         </div>
 
@@ -223,7 +217,7 @@
             <div class="row">
                 <div class="col">
                     <button type="button" class="btn yellow" style=" line-height: 3px !important;">
-                        <a href="images/restaurant/SaltyDogCafe_MENU_LUNCH_2018_WEB.pdf" download="SaltyDogCafe_MENU_LUNCH_2018_WEB.pdf"><p>Download Lunch Menu</p></a>
+                        <a href="../images/restaurant/SaltyDogCafe_MENU_LUNCH_2018_WEB.pdf" download="SaltyDogCafe_MENU_LUNCH_2018_WEB.pdf"><p>Download Lunch Menu</p></a>
                     </button>
                 </div>
 
