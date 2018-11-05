@@ -6,469 +6,474 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Salty Dog Cafe Lunch Menu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/social-logos/favicon.ico">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <!-- Compiled and minified CSS -->
- 
 
-   
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
 
 
-    
-    <!-- <script type="text/javascript" src="petphotosearch.js"></script> -->
+    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="cssPhotos/styleMat.css">
 </head>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto');
+    .image-container {
+        background: #EEE;
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+        -ms-flex-direction: column;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        display: -webkit-box;
+        display: flex;
+        align-items: center;
+    }
 
-* {
-  padding: 0;
-  margin: 0;
-}
+    .image {
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        width: 300px;
+        margin: .1vw;
+    }
 
-body {
-  background: #eceff1;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-}
+    .image img {
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, .5);
+    }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-  padding-bottom: 10px;
-}
+    .material-placeholder {
+        flex: 1;
+    }
 
+    #moreImagesBtn {
+        display: none;
+        margin: 20px;
+        padding: 20px;
+    }
 
+    #moreImagesBtn>i {
+        font-size: 18px;
+    }
 
-
-
-.image-container {
-  background: #EEE;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
-  display: flex;
-  align-items: center;
-}
-
-.image {
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  width: 300px;
-  margin: .1vw;
-}
-
-.image img {
-  width: 100%;
-  height: auto;
-  border: 1px solid rgba(0, 0, 0, .5);
-}
-
-.material-placeholder {
-  flex: 1;
-}
-
-#moreImagesBtn {
-  display: none;
-  margin: 20px;
-  padding: 20px;
-}
-
-#moreImagesBtn > i {
-  font-size: 18px;
-}
-
-/*
+    /*
 	------------------------------
 	Changes to the Materialize CSS
 	------------------------------
 */
 
-.btn {
-  background: #0091ea;
-}
 
-.btn:hover {
-  background: #03a9f4;
-}
 
-.btn > i {
-  margin-right: 10px;
-  font-size: 18px;
-}
 
-input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid #0091ea;
-  box-shadow: 0 2px 0 0 #0091ea;
-}
+    input[type=text]:not(.browser-default):focus:not([readonly]) {
+        border-bottom: 1px solid #0091ea;
+        box-shadow: 0 2px 0 0 #0091ea;
+    }
 
-input:not([type]):focus:not([readonly]) + label,
-input[type=text]:not(.browser-default):focus:not([readonly]) + label,
-input[type=password]:not(.browser-default):focus:not([readonly]) + label,
-input[type=email]:not(.browser-default):focus:not([readonly]) + label,
-input[type=url]:not(.browser-default):focus:not([readonly]) + label,
-input[type=time]:not(.browser-default):focus:not([readonly]) + label,
-input[type=date]:not(.browser-default):focus:not([readonly]) + label,
-input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
-input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
-input[type=number]:not(.browser-default):focus:not([readonly]) + label,
-input[type=search]:not(.browser-default):focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #0091ea;
-}
+    input:not([type]):focus:not([readonly])+label,
+    input[type=text]:not(.browser-default):focus:not([readonly])+label,
+    input[type=password]:not(.browser-default):focus:not([readonly])+label,
+    input[type=email]:not(.browser-default):focus:not([readonly])+label,
+    input[type=url]:not(.browser-default):focus:not([readonly])+label,
+    input[type=time]:not(.browser-default):focus:not([readonly])+label,
+    input[type=date]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+    input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+    input[type=number]:not(.browser-default):focus:not([readonly])+label,
+    input[type=search]:not(.browser-default):focus:not([readonly])+label,
+    textarea.materialize-textarea:focus:not([readonly])+label {
+        color: #0091ea;
+    }
 
-/*
+    /*
 	MEDIA QUERIES
 */
 
-@media screen and (max-width: 400px) {
-  image-container div {
-    margin: 0;
-  }
-  image-container {
-    padding: 0;
-  }
-}
-
+    @media screen and (max-width: 400px) {
+        image-container div {
+            margin: 0;
+        }
+        image-container {
+            padding: 0;
+        }
+    }
 </style>
+
 <body>
     <main>
-
-
-
         <style type="text/css">
-          body {
-              color: white;
-              background: rgb(4, 4, 51);
-              padding: 10px 0;
-          }
+            .dropdown-content {
+                overflow-y: visible;
+            }
 
-         
-          nav.nav-center ul {
-              text-align: center;
-          }
-
-          nav.nav-center ul li {
-              display: inline;
-              float: none;
-          }
-
-          nav.nav-center ul li a {
-              display: inline-block;
-          }
-
-          .nav-item {
-              color: white;
-              background: rgb(4, 4, 51);
-
-              text-align: center;
-              align-content: center;
-              max-width: 1100;
-          }
-
-          nav {
-              color: white;
-              background: rgb(4, 4, 51);
-
-              text-align: center;
-              align-content: center;
-              max-width: 1100;
-          }
-
-          .nav-link {
-              color: white;
-              background: rgb(4, 4, 51);
-
-              text-align: center;
-              align-content: center;
-              max-width: 1100;
-          }
-
-          .col img {
-              width: 98%;
-
-          }
-
-          .container {
-              text-align: center;
-              /* margin-top: 5px; */
-              max-width: 1200px;
-          }
-
-        .btn-warning {
-    background: hsl(56, 94%, 66%);
-    border-color: hsl(56, 94%, 66%);
-    color: black;
-}
-
-        p {
-            text-align: center;
-            color: black !important;
-        }
-
-          .col .btn {
-              float: none !important;
-              text-align: center;
-              align-content: center;
-          }
-
-          .btn {
-
-              text-align: center;
-              align-content: center;
-          }
+            .dropdown-content .dropdown-content {
+                margin-left: 100%;
+            }
+        </style>
 
 
-          a {
-              color: white !important;
-          }
-         
-      </style>
 
-      <nav class="nav-center">
-
-          <div class="container">
-              <div class="row">
-                  <ul class="nav justify-content-center">
-                      <li class="nav-item">
-                          <a class="nav-link active" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="stores.html" target="blank">Shop</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="dine.html">Dine</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="cruise.html" target="blank">Cruise</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="http://www.sbinn.com/" target="blank">Stay</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="events.html">Events</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="http://tv.saltydog.com/" target="blank">Live</a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link" href="radio.html">Radio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="kids.html">Kids</a>
-                      </li>
-                  </ul>
-              </div>
-      </nav>
-      </div>
-      <div class="container">
-          <nav class="nav-center">
-              <ul class="nav justify-content-center">
-                  <li class="nav-item">
-                      <a class="nav-link" href="findus.html">Find Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="feedback.html">Feedback Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="win.html">Lucky Receipts</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="photos.html">Photos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="webcams.html">Webcams</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="weather.php">Weather</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="legend.html">The Legend</a>
-                  </li>
-              </ul>
-          </nav>
-      </div>
-
-      <div class="container">
         <nav>
-            <div id="socialtop" style="padding-top: 9px">
-                <a href="tides.html" target="_blank">
 
-                    <img src="images/social-logos/TIDESBUTTON.png">
-                </a>
-                <a href="social.html" target="_blank">
-                    <img src="images/social-logos/Facebook_Rounded.png">
-                </a>
+            <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">
+                <i class="fas fa-bars"></i> Menu &#9660;</a>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../Pages/stores.html" target="blank">Shop</a>
+                </li>
+
+                <li>
+                    <a class='dropdown-button d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">Dine
+                        &#9660;</a>
+                </li>
+                <li>
+                    <a href="../cruise/cruise.html" target="blank">Cruise</a>
+                </li>
+
+                <li>
+                    <a href="http://www.sbinn.com/" target="blank">Stay</a>
+                </li>
+                <li>
+                    <a href="../Pages/events.html">Events</a>
+                </li>
+                <li>
+                    <a href="http://tv.saltydog.com/" target="blank">Live</a>
+                </li>
+                <li>
+                    <a href="../Pages/radio.html">Radio</a>
+                </li>
+                <li>
+                    <a href="../Pages/kids.html">Kids</a>
+                </li>
+                <li>
+                    <a href="../Pages/feedback.html">Feedback Us</a>
+                </li>
+                <li>
+                    <a href="../Pages/findus.html">Find Us</a>
+                </li>
+                <li>
+                    <a href="../Pages/contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="../lucky/win.html">Lucky Receipts</a>
+                </li>
+                <li>
+                    <a class='dropdown-button d' href='#' data-activates='dropdown3' data-hover="hover" data-alignment="left">Photos
+                        &#9660;</a>
+                </li>
+                <li>
+                    <a class='dropdown-button d' href='#' data-activates='dropdown4' data-hover="hover" data-alignment="left">Webcams
+                        &#9660;</a>
+                </li>
+                <li>
+                    <a href="../Pages/weather.php">Weather</a>
+                </li>
+                <li>
+                    <a href="../legend/legend.html">The Legend</a>
+                </li>
+            </ul>
+            <ul id='dropdown2' class='dropdown-content'>
+
+                <li>
+                    <a href="../Dine/cafe.html">Salty Dog Cafe</a>
+                </li>
+
+                <li>
+                    <a href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
+                </li>
+
+                <li>
+                    <a href="../Dine/landsend.html">Land's End</a>
+                </li>
+                <li>
+                    <a href="../Dine/wreck.html">Wreck</a>
+                </li>
+                <li>
+                        <a  href="../Dine/kiwi.html">Kiwi's Island Grill</a>
+                    </li>
+                <li>
+                    <a href="../Dine/pizza.html">Pizza</a>
+                </li>
+                <li>
+                    <a href="../Dine/icecream.html">IceCream</a>
+                </li>
+                <li>
+                    <a href="cater.html">Catering</a>
+                </li>
+                <li>
+                    <a href="../Dine/dailyspec.html">Daily Specials</a>
+                </li>
+            </ul>
+            <ul id='dropdown3' class='dropdown-content'>
+
+                <li>
+                    <a href="photos.html">Pet Photos</a>
+                </li>
+                <li>
+                    <a href="petphotossearch.html">Search Pet Photos</a>
+                </li>
+                <li>
+                    <a href="photosevents.html">Special Events photos</a>
+                </li>
+                <li>
+                    <a href="photossanta.html">Photos with Santa</a>
+                </li>
+                <li>
+                    <a href="photosjake.html">Photos with Jake</a>
+
+                </li>
+
+            </ul>
+            <ul id='dropdown4' class='dropdown-content'>
+                <li>
+                    <a href="../WebCams/webcams.html">See all our Webcams</a>
+                </li>
+                <li>
+                    <a href="../WebCams/bluewatercam.html">Bluewater Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/boatcam.html">BoatCam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/boatcamaft.html">BoatCam Aft</a>
+                </li>
+                <li>
+                    <a href="../WebCams/boatcambow.html">BoatCam Bow</a>
+                </li>
+                <li>
+                    <a href="../WebCams/courtyardcam.html">Courtyard Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/overheadcam.html">Overhead Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/South Beach Cam.html">South Beach Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/tangercam.html">Tanger Outlet Cam</a>
+                </li>
+                <li>
+                    <a href="../WebCams/tshirtcam.html">T-Shirt Cam</a>
+                </li>
+            </ul>
 
 
-                <a href="social.html" target="_blank">
-                    <img src="images/social-logos/Instagram_RoundedEdges.png">
-                </a>
-            </div>
+
+
+            <ul id="nav-mobile" class="right">
+
+                <li>
+                    <a href="../tides/tides.html" target="_blank">
+
+                        <img src="../images/social-logos/TIDESBUTTON.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Facebook_Rounded.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                    </a>
+                </li>
+            </ul>
         </nav>
 
-    </div>
 
-      </div>
-            <div class="container">
-              <div class="row">
-                    <h2>
-                          
-                             Search Pets by Name!
-                          </h2>
-                        </div>
-                    <div class="row">
-                      <div class="input-field col s5">
-                        <!-- // Search Box -->
-                        <input id="userInput" type="text" class="validate">
-                        <label for="userInput">Enter Pets Name</label>
-                      </div>
-                      <div class="input-field col s2">
-                        <!-- // Search Button -->
-                        <button type="button" class="btn btn-warning">
-                        <a class="btn-warning" id="searchBtn">
-                          <p>Search</p>
-                        </a>
-                        </button>
-                      </div>
-                    </div>
-                  
-                    <div class="image-container">
-                      <!-- // Search results will be appended here -->
-                    </div>
-                    <!-- // More image btn -->
-                    <a class="waves-effect waves-light btn" id="moreImagesBtn">
-                              LOAD MORE PHOTOS
-                              <i class="fa fa-chevron-down" aria-hidden="true"></i> 
-                          </a>
-                  </div>
-                  </main>
-                  <script type="text/javascript">
-                    console.log("I'm here");
-            $(
-            (function() {
-            "use strict";
-            // API Key
-            const flickrKey = "204df225455ff4bafd6d7bf01c742e3d";
-            // Search Text
-            let userInput = $("#userInput");
-            // Search Btn
-            let searchBtn = $("#searchBtn");
-            // More Images btn
-            let moreImagesBtn = $("#moreImagesBtn");
-            // Result Image area
-            let imageContainer = $(".image-container");
-            // Count of returned results
-            let perPageCount = 20;
-            // variable for current page requested so that when the user scrolls, it is increamented and json is requested
-            let currentPage = 1;
-            
-            // SEARCH BTN EVENT LISTENER
-            searchBtn.on("click", function() {
-            // Clear exisitng images
-            imageContainer.html("");
-            validateInput();
-            }); // end of SEARCH BTN EVENT LISTENER
-            
-            //USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
-            userInput.on("keyup", function(e) {
-            if (e.keyCode == 13) {
-            // Clear exisitng images
-            imageContainer.html("");
-            validateInput();
-            }
-            }); // end of USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
-            
-            // MORE IMAGES BTN
-            moreImagesBtn.on("click", function() {
-            currentPage++;
-            console.log(currentPage);
-            validateInput();
-            
-            }); // END OF MORE IMAGES BTN
-            
-            // VALIDATE USER INPUT
-            function validateInput() {
-                console.log(userInput);
-            //check if query len is valid
-            if (userInput.val().length != 0) {
-            // Call the AJAX req passing in the user search
-            getImageData(userInput.val());
-            } else {
-            userInput.focus();
-            } // end of validation
-            } //end of VALIDATE USER INPUT
-            
-            // GET JSON FROM FLICKR API
-            function getImageData(query) {
-            $.ajax({
-            type: "GET",
-            url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&tags="salty+dog+cafe+dogs"&text=${query}&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
-            success: function(data) {
-            // Call the handle Data function and pass the response
-            handleData(data);
-            console.log(data);
-            console.log(url)
-            console.log("here 2")
-            },
-            error: function(e) {
-            alert("Failed to load data from API");
-            moreImagesBtn.html("Something Went Wrong");
-            console.log(e);
-            }
-            });
-            } // END OF getImageData
-            
-            // Build urls for the images
-            function handleData(data) {
-            //console.log(data);
-            data.photos.photo.forEach(function(currentPhoto, index, array) {
-            // Image URL > Will be built and made an link
-            let photoURL = `https://farm${currentPhoto.farm}.static.flickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
-            // alt text
-            let title = currentPhoto.title;
-            // plug the data to page
-            pushImages(photoURL, title);
-            });
-            //show the more btn
-            moreImagesBtn.slideDown();
-            } // END OF handleData
-            
-            // Built HTML tempate and push the images to the webpage
-            function pushImages(url, title) {
-            // Build the HTML element
-            let htmlText =
-            '<div class="image">' +
-            '<img class="materialboxed" data-caption="' +
-            title +
-            '" src="' +
-            url +
-            '">' +
-            "</div>";
-            imageContainer.append(htmlText);
-            // Add the Materialize functionality to the images
-            $(".materialboxed").materialbox();
-            } // END OF pushImages
+
+        <div class="container">
+            <img src="../images/HeaderBanners/PICS SEARCH.png" style="width:100%; height:auto">
+
+        </div>
+        </div>
+        <div class="container">
+            <div id="petMenu">
+                <div class="row">
+                    <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">
+                        <i class="fas fa-bars"></i> Photos &#9660;</a>
+                    <ul id='dropdown1' class='dropdown-content'>
+
+                        <li>
+                            <a href="photos.html">Pet Photos</a>
+                        </li>
+                        <li>
+                            <a href="petphotossearch.html">Search Pet Photos</a>
+                        </li>
+                        <li>
+                            <a href="photosevents.html">Special Events photos</a>
+                        </li>
+                        <li>
+                            <a href="photossanta.html">Photos with Santa</a>
+                        </li>
+                        <li>
+                            <a href="photosjake.html">Photos with Jake</a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+        <h2>
+
+            Search Pets by Name!
+        </h2>
+        </div>
+        <div class="row">
+            <div class="input-field col s5">
+                <!-- // Search Box -->
+                <input id="userInput" type="text" class="validate">
+                <label for="userInput">Enter Pets Name</label>
+            </div>
+            <div class="input-field col s2">
+                <!-- // Search Button -->
+                <button type="button" class="btn btn-warning">
+                    <a class="btn-warning" id="searchBtn">
+                        <p>Search</p>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <!-- // Search results will be appended here -->
+        </div>
+        <!-- // More image btn -->
+        <a class="waves-effect waves-light btn" id="moreImagesBtn">
+            LOAD MORE PHOTOS
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        </div>
+    </main>
+    <script type="text/javascript">
+        console.log("I'm here");
+        $(
+            (function () {
+                "use strict";
+                // API Key
+                const flickrKey = "204df225455ff4bafd6d7bf01c742e3d";
+                // Search Text
+                let userInput = $("#userInput");
+                // Search Btn
+                let searchBtn = $("#searchBtn");
+                // More Images btn
+                let moreImagesBtn = $("#moreImagesBtn");
+                // Result Image area
+                let imageContainer = $(".image-container");
+                // Count of returned results
+                let perPageCount = 20;
+                // variable for current page requested so that when the user scrolls, it is increamented and json is requested
+                let currentPage = 1;
+
+                // SEARCH BTN EVENT LISTENER
+                searchBtn.on("click", function () {
+                    // Clear exisitng images
+                    imageContainer.html("");
+                    validateInput();
+                }); // end of SEARCH BTN EVENT LISTENER
+
+                //USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
+                userInput.on("keyup", function (e) {
+                    if (e.keyCode == 13) {
+                        // Clear exisitng images
+                        imageContainer.html("");
+                        validateInput();
+                    }
+                }); // end of USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
+
+                // MORE IMAGES BTN
+                moreImagesBtn.on("click", function () {
+                    currentPage++;
+                    console.log(currentPage);
+                    validateInput();
+
+                }); // END OF MORE IMAGES BTN
+
+                // VALIDATE USER INPUT
+                function validateInput() {
+                    console.log(userInput);
+                    //check if query len is valid
+                    if (userInput.val().length != 0) {
+                        // Call the AJAX req passing in the user search
+                        getImageData(userInput.val());
+                    } else {
+                        userInput.focus();
+                    } // end of validation
+                } //end of VALIDATE USER INPUT
+
+                // GET JSON FROM FLICKR API
+                function getImageData(query) {
+                    $.ajax({
+                        type: "GET",
+                        url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&tags="salty+dog+cafe+dogs"&text=${query}&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
+                        success: function (data) {
+                            // Call the handle Data function and pass the response
+                            handleData(data);
+                            console.log(data);
+                            console.log(url)
+                            console.log("here 2")
+                        },
+                        error: function (e) {
+                            alert("Failed to load data from API");
+                            moreImagesBtn.html("Something Went Wrong");
+                            console.log(e);
+                        }
+                    });
+                } // END OF getImageData
+
+                // Build urls for the images
+                function handleData(data) {
+                    //console.log(data);
+                    data.photos.photo.forEach(function (currentPhoto, index, array) {
+                        // Image URL > Will be built and made an link
+                        let photoURL = `https://farm${currentPhoto.farm}.static.flickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
+                        // alt text
+                        let title = currentPhoto.title;
+                        // plug the data to page
+                        pushImages(photoURL, title);
+                    });
+                    //show the more btn
+                    moreImagesBtn.slideDown();
+                } // END OF handleData
+
+                // Built HTML tempate and push the images to the webpage
+                function pushImages(url, title) {
+                    // Build the HTML element
+                    let htmlText =
+                        '<div class="image">' +
+                        '<img class="materialboxed" data-caption="' +
+                        title +
+                        '" src="' +
+                        url +
+                        '">' +
+                        "</div>";
+                    imageContainer.append(htmlText);
+                    // Add the Materialize functionality to the images
+                    $(".materialboxed").materialbox();
+                } // END OF pushImages
             })() // end of self self executing anonymous function
-            );
-            
-            
-            
-                    
-                    </script>
-                  </body>
+        );
 
-                
+
+
+
+    </script>
+</body>
