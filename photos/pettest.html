@@ -23,7 +23,92 @@
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
     <link type="text/css" rel="stylesheet" href="cssPhotos/styleBoot.css">
 
-
+    <style>
+            .image-container {
+                background: #EEE;
+                display: -ms-flexbox;
+                -ms-flex-wrap: wrap;
+                -ms-flex-direction: column;
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                display: -webkit-box;
+                display: flex;
+                align-items: center;
+            }
+        
+            .image {
+                -webkit-box-flex: auto;
+                -ms-flex: auto;
+                flex: auto;
+                width: 300px;
+                margin: .1vw;
+            }
+        
+            .image img {
+                width: 100%;
+                height: auto;
+                border: 1px solid rgba(0, 0, 0, .5);
+            }
+        
+            .material-placeholder {
+                flex: 1;
+            }
+        
+            #moreImagesBtn {
+                display: none;
+                margin: 20px;
+                padding: 20px;
+            }
+        
+            #moreImagesBtn>i {
+                font-size: 18px;
+            }
+        
+            /*
+            ------------------------------
+            Changes to the Materialize CSS
+            ------------------------------
+        */
+        
+        
+        
+        
+            input[type=text]:not(.browser-default):focus:not([readonly]) {
+                border-bottom: 1px solid #0091ea;
+                box-shadow: 0 2px 0 0 #0091ea;
+            }
+        
+            input:not([type]):focus:not([readonly])+label,
+            input[type=text]:not(.browser-default):focus:not([readonly])+label,
+            input[type=password]:not(.browser-default):focus:not([readonly])+label,
+            input[type=email]:not(.browser-default):focus:not([readonly])+label,
+            input[type=url]:not(.browser-default):focus:not([readonly])+label,
+            input[type=time]:not(.browser-default):focus:not([readonly])+label,
+            input[type=date]:not(.browser-default):focus:not([readonly])+label,
+            input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+            input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+            input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+            input[type=number]:not(.browser-default):focus:not([readonly])+label,
+            input[type=search]:not(.browser-default):focus:not([readonly])+label,
+            textarea.materialize-textarea:focus:not([readonly])+label {
+                color: #0091ea;
+            }
+        
+            /*
+            MEDIA QUERIES
+        */
+        
+            @media screen and (max-width: 400px) {
+                image-container div {
+                    margin: 0;
+                }
+                image-container {
+                    padding: 0;
+                }
+            }
+        </style>
+        
+        <body>
 
     
    
