@@ -30,7 +30,9 @@
 
         }
 
-     
+        .carousel-inner img {
+            margin: auto;
+          }
 
         button {
             background: hsl(56, 94%, 66%);
