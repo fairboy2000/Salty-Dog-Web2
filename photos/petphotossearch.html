@@ -6,25 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Salty Dog Cafe Lunch Menu</title>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/social-logos/favicon.ico">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <!-- Compiled and minified CSS -->
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-        crossorigin="anonymous">
 
 
-    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="cssPhotos/styleMat.css">
+
+
+
+    <!-- <script type="text/javascript" src="petphotosearch.js"></script> -->
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto');
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #eceff1;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+
+
+
+
     .image-container {
         background: #EEE;
         display: -ms-flexbox;
@@ -71,8 +92,18 @@
 	------------------------------
 */
 
+    .btn {
+        background: #0091ea;
+    }
 
+    .btn:hover {
+        background: #03a9f4;
+    }
 
+    .btn>i {
+        margin-right: 10px;
+        font-size: 18px;
+    }
 
     input[type=text]:not(.browser-default):focus:not([readonly]) {
         border-bottom: 1px solid #0091ea;
@@ -111,256 +142,151 @@
 
 <body>
     <main>
+
+
+
         <style type="text/css">
-            .dropdown-content {
-                overflow-y: visible;
+            body {
+                color: white;
+                background: rgb(4, 4, 51);
+                padding: 10px 0;
             }
 
-            .dropdown-content .dropdown-content {
-                margin-left: 100%;
+
+            nav.nav-center ul {
+                text-align: center;
+            }
+
+            nav.nav-center ul li {
+                display: inline;
+                float: none;
+            }
+
+            nav.nav-center ul li a {
+                display: inline-block;
+            }
+
+            .nav-item {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            nav {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            .nav-link {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            .col img {
+                width: 98%;
+
+            }
+
+            .container {
+                text-align: center;
+                /* margin-top: 5px; */
+                max-width: 1200px;
+            }
+
+            .btn-warning {
+                background: hsl(56, 94%, 66%);
+                border-color: hsl(56, 94%, 66%);
+                color: black;
+            }
+
+            p {
+                text-align: center;
+                color: black !important;
+            }
+
+            .col .btn {
+                float: none !important;
+                text-align: center;
+                align-content: center;
+            }
+
+            .btn {
+                background-color: yellow;
+                text-align: center;
+                align-content: center;
+                color: black;
+            }
+
+            .btn .btn-secondary {
+                color: black !important;
+                float: left !important;
+
+            }
+            #back-button{
+                color: black !important;
+                float: left !important;
+            }
+
+            a {
+                color: black !important;
             }
         </style>
-
-
-
-        <nav>
-
-            <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">
-                <i class="fas fa-bars"></i> Menu &#9660;</a>
-            <ul id='dropdown1' class='dropdown-content'>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="../Pages/stores.html" target="blank">Shop</a>
-                </li>
-
-                <li>
-                    <a class='dropdown-button d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">Dine
-                        &#9660;</a>
-                </li>
-                <li>
-                    <a href="../cruise/cruise.html" target="blank">Cruise</a>
-                </li>
-
-                <li>
-                    <a href="http://www.sbinn.com/" target="blank">Stay</a>
-                </li>
-                <li>
-                    <a href="../Pages/events.html">Events</a>
-                </li>
-                <li>
-                    <a href="http://tv.saltydog.com/" target="blank">Live</a>
-                </li>
-                <li>
-                    <a href="../Pages/radio.html">Radio</a>
-                </li>
-                <li>
-                    <a href="../Pages/kids.html">Kids</a>
-                </li>
-                <li>
-                    <a href="../Pages/feedback.html">Feedback Us</a>
-                </li>
-                <li>
-                    <a href="../Pages/findus.html">Find Us</a>
-                </li>
-                <li>
-                    <a href="../Pages/contact.html">Contact Us</a>
-                </li>
-                <li>
-                    <a href="../lucky/win.html">Lucky Receipts</a>
-                </li>
-                <li>
-                    <a class='dropdown-button d' href='#' data-activates='dropdown3' data-hover="hover" data-alignment="left">Photos
-                        &#9660;</a>
-                </li>
-                <li>
-                    <a class='dropdown-button d' href='#' data-activates='dropdown4' data-hover="hover" data-alignment="left">Webcams
-                        &#9660;</a>
-                </li>
-                <li>
-                    <a href="../Pages/weather.php">Weather</a>
-                </li>
-                <li>
-                    <a href="../legend/legend.html">The Legend</a>
-                </li>
-            </ul>
-            <ul id='dropdown2' class='dropdown-content'>
-
-                <li>
-                    <a href="../Dine/cafe.html">Salty Dog Cafe</a>
-                </li>
-
-                <li>
-                    <a href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
-                </li>
-
-                <li>
-                    <a href="../Dine/landsend.html">Land's End</a>
-                </li>
-                <li>
-                    <a href="../Dine/wreck.html">Wreck</a>
-                </li>
-                <li>
-                        <a  href="../Dine/kiwi.html">Kiwi's Island Grill</a>
-                    </li>
-                <li>
-                    <a href="../Dine/pizza.html">Pizza</a>
-                </li>
-                <li>
-                    <a href="../Dine/icecream.html">IceCream</a>
-                </li>
-                <li>
-                    <a href="cater.html">Catering</a>
-                </li>
-                <li>
-                    <a href="../Dine/dailyspec.html">Daily Specials</a>
-                </li>
-            </ul>
-            <ul id='dropdown3' class='dropdown-content'>
-
-                <li>
-                    <a href="photos.html">Pet Photos</a>
-                </li>
-                <li>
-                    <a href="petphotossearch.html">Search Pet Photos</a>
-                </li>
-                <li>
-                    <a href="photosevents.html">Special Events photos</a>
-                </li>
-                <li>
-                    <a href="photossanta.html">Photos with Santa</a>
-                </li>
-                <li>
-                    <a href="photosjake.html">Photos with Jake</a>
-
-                </li>
-
-            </ul>
-            <ul id='dropdown4' class='dropdown-content'>
-                <li>
-                    <a href="../WebCams/webcams.html">See all our Webcams</a>
-                </li>
-                <li>
-                    <a href="../WebCams/bluewatercam.html">Bluewater Cam</a>
-                </li>
-                <li>
-                    <a href="../WebCams/boatcam.html">BoatCam</a>
-                </li>
-                <li>
-                    <a href="../WebCams/boatcamaft.html">BoatCam Aft</a>
-                </li>
-                <li>
-                    <a href="../WebCams/boatcambow.html">BoatCam Bow</a>
-                </li>
-                <li>
-                    <a href="../WebCams/courtyardcam.html">Courtyard Cam</a>
-                </li>
-                <li>
-                    <a href="../WebCams/overheadcam.html">Overhead Cam</a>
-                </li>
-                <li>
-                    <a href="../WebCams/South Beach Cam.html">South Beach Cam</a>
-                </li>
-                <li>
-                    <a href="../WebCams/tangercam.html">Tanger Outlet Cam</a>
-                </li>
-                <li>
-                    <a href="../WebCams/tshirtcam.html">T-Shirt Cam</a>
-                </li>
-            </ul>
-
-
-
-
-            <ul id="nav-mobile" class="right">
-
-                <li>
-                    <a href="../tides/tides.html" target="_blank">
-
-                        <img src="../images/social-logos/TIDESBUTTON.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Facebook_Rounded.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-
-
         <div class="container">
-            <img src="../images/HeaderBanners/PICS SEARCH.png" style="width:100%; height:auto">
-
-        </div>
+           
+<div id="back-button">
+                <a class="btn btn-secondary " href="photos.html" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="../images/dog-paw.png"> Back to Pet Photos
+                </a>
+            </div>
         </div>
         <div class="container">
-            <div id="petMenu">
-                <div class="row">
-                    <a class='dropdown-button btn' href='#' data-activates='dropdown1' data-beloworigin="true">
-                        <i class="fas fa-bars"></i> Photos &#9660;</a>
-                    <ul id='dropdown1' class='dropdown-content'>
+            <img src="../images/HeaderBanners/PICS PETS.png" style="width:100%; height:auto">
 
-                        <li>
-                            <a href="photos.html">Pet Photos</a>
-                        </li>
-                        <li>
-                            <a href="petphotossearch.html">Search Pet Photos</a>
-                        </li>
-                        <li>
-                            <a href="photosevents.html">Special Events photos</a>
-                        </li>
-                        <li>
-                            <a href="photossanta.html">Photos with Santa</a>
-                        </li>
-                        <li>
-                            <a href="photosjake.html">Photos with Jake</a>
+        </div>
 
-                        </li>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h2>
 
-                    </ul>
+                    Search Pets by Name!
+                </h2>
+            </div>
+            <div class="row">
+                <div class="input-field col s5">
+                    <!-- // Search Box -->
+                    <input id="userInput" type="text" class="validate">
+                    <label for="userInput">Enter Pets Name</label>
+                </div>
+                <div class="input-field col s2">
+                    <!-- // Search Button -->
+                    <button type="button" class="btn btn-warning">
+                        <a class="btn-warning" id="searchBtn">
+                            <p>Search</p>
+                        </a>
+                    </button>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-        <h2>
-
-            Search Pets by Name!
-        </h2>
-        </div>
-        <div class="row">
-            <div class="input-field col s5">
-                <!-- // Search Box -->
-                <input id="userInput" type="text" class="validate">
-                <label for="userInput">Enter Pets Name</label>
+            <div class="image-container">
+                <!-- // Search results will be appended here -->
             </div>
-            <div class="input-field col s2">
-                <!-- // Search Button -->
-                <button type="button" class="btn btn-warning">
-                    <a class="btn-warning" id="searchBtn">
-                        <p>Search</p>
-                    </a>
-                </button>
-            </div>
-        </div>
-
-        <div class="image-container">
-            <!-- // Search results will be appended here -->
-        </div>
-        <!-- // More image btn -->
-        <a class="waves-effect waves-light btn" id="moreImagesBtn">
-            LOAD MORE PHOTOS
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
+            <!-- // More image btn -->
+            <a class="waves-effect waves-light btn" id="moreImagesBtn">
+                LOAD MORE PHOTOS
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
         </div>
     </main>
     <script type="text/javascript">
