@@ -346,7 +346,7 @@
 
 
     <div class="container">
-        <img src="../images/HeaderBanners/PICS JAKE.png" style="width:100%; height:auto">
+        <img src="../images/HeaderBanners/PICS SANTA.png" style="width:100%; height:auto">
 
     </div>
 
@@ -399,6 +399,7 @@
                 </nav>
 
             </div>
+            <div class="col"><h3>Photos with Santa 2016</h3></div>
         </div>
     </div>
 
@@ -571,7 +572,7 @@
             */
             var pageCtr = 1;
             function loadFlickr() {
-                var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+photos+with+jake&format=json&page=' + pageCtr + '&extras=url_n';
+                var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+photos+with+santa+2016&format=json&page=' + pageCtr + '&extras=url_n';
                 $.ajax({
                     url: dataUrl
                     , dataType: 'jsonp'
@@ -636,12 +637,31 @@
                         var data = $.data(t).model.model.data;
                         console.log("t" + data)
                     }
-                    if (data) alert(JSON.stringify(data));
+                    if (data) alert("Santa Photos 2016");
                     console.log("p" + data)
                 })
             }
 
 
+ function closeAlertBox() {
+            alertBox = document.getElementById("alertBox");
+            alertClose = document.getElementById("alertClose");
+
+            alertBox.parentNode.removeChild(alertBox);
+            alertClose.parentNode.removeChild(alertClose);
+        }
+
+        window.alert = function (msg) {
+            var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
+            alertBox = document.createElement("div");
+            document.body.appendChild(alertBox);
+            alertBox.id = id;
+            alertBox.innerHTML = msg;
+            alertClose = document.createElement("div");
+            alertClose.id = closeId;
+            document.body.appendChild(alertClose);
+            alertClose.onclick = closeAlertBox;
+        };
 
 
 
