@@ -6,25 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Salty Dog Cafe Lunch Menu</title>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/social-logos/favicon.ico">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <!-- Compiled and minified CSS -->
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-        crossorigin="anonymous">
 
 
-    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="cssPhotos/styleMat.css">
+
+
+
+    <!-- <script type="text/javascript" src="petphotosearch.js"></script> -->
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto');
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #eceff1;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+
+
+
+
     .image-container {
         background: #EEE;
         display: -ms-flexbox;
@@ -71,8 +92,18 @@
 	------------------------------
 */
 
+    .btn {
+        background: #0091ea;
+    }
 
+    .btn:hover {
+        background: #03a9f4;
+    }
 
+    .btn>i {
+        margin-right: 10px;
+        font-size: 18px;
+    }
 
     input[type=text]:not(.browser-default):focus:not([readonly]) {
         border-bottom: 1px solid #0091ea;
@@ -111,57 +142,151 @@
 
 <body>
     <main>
+
+
+
         <style type="text/css">
-            .dropdown-content {
-                overflow-y: visible;
+            body {
+                color: white;
+                background: rgb(4, 4, 51);
+                padding: 10px 0;
             }
 
-            .dropdown-content .dropdown-content {
-                margin-left: 100%;
+
+            nav.nav-center ul {
+                text-align: center;
+            }
+
+            nav.nav-center ul li {
+                display: inline;
+                float: none;
+            }
+
+            nav.nav-center ul li a {
+                display: inline-block;
+            }
+
+            .nav-item {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            nav {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            .nav-link {
+                color: white;
+                background: rgb(4, 4, 51);
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            .col img {
+                width: 98%;
+
+            }
+
+            .container {
+                text-align: center;
+                /* margin-top: 5px; */
+                max-width: 1200px;
+            }
+
+            .btn-warning {
+                background: hsl(56, 94%, 66%);
+                border-color: hsl(56, 94%, 66%);
+                color: black;
+            }
+
+            p {
+                text-align: center;
+                color: black !important;
+            }
+
+            .col .btn {
+                float: none !important;
+                text-align: center;
+                align-content: center;
+            }
+
+            .btn {
+                background-color: yellow;
+                text-align: center;
+                align-content: center;
+                color: black;
+            }
+
+            .btn .btn-secondary {
+                color: black !important;
+                float: left !important;
+
+            }
+            #back-button{
+                color: black !important;
+                float: left !important;
+            }
+
+            a {
+                color: black !important;
             }
         </style>
-
-
-
-
-
-
         <div class="container">
-            <img src="../images/HeaderBanners/PICS SEARCH.png" style="width:100%; height:auto">
-
-        </div>
-   
-
-        <div class="container">
-        <h2>
-
-            Search Pets by Name!
-        </h2>
-        </div>
-        <div class="row">
-            <div class="input-field col s5">
-                <!-- // Search Box -->
-                <input id="userInput" type="text" class="validate">
-                <label for="userInput">Enter Pets Name</label>
-            </div>
-            <div class="input-field col s2">
-                <!-- // Search Button -->
-                <button type="button" class="btn btn-warning">
-                    <a class="btn-warning" id="searchBtn">
-                        <p>Search</p>
-                    </a>
-                </button>
+           
+<div id="back-button">
+                <a class="btn btn-secondary " href="photos.html" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="../images/dog-paw.png"> Back to Pet Photos
+                </a>
             </div>
         </div>
+        <div class="container">
+            <img src="../images/HeaderBanners/PICS PETS.png" style="width:100%; height:auto">
 
-        <div class="image-container">
-            <!-- // Search results will be appended here -->
         </div>
-        <!-- // More image btn -->
-        <a class="waves-effect waves-light btn" id="moreImagesBtn">
-            LOAD MORE PHOTOS
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <h2>
+
+                    Search Pets by Name!
+                </h2>
+            </div>
+            <div class="row">
+                <div class="input-field col s5">
+                    <!-- // Search Box -->
+                    <input id="userInput" type="text" class="validate">
+                    <label for="userInput">Enter Pets Name</label>
+                </div>
+                <div class="input-field col s2">
+                    <!-- // Search Button -->
+                    <button type="button" class="btn btn-warning">
+                        <a class="btn-warning" id="searchBtn">
+                            <p>Search</p>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <!-- // Search results will be appended here -->
+            </div>
+            <!-- // More image btn -->
+            <a class="waves-effect waves-light btn" id="moreImagesBtn">
+                LOAD MORE PHOTOS
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
         </div>
     </main>
     <script type="text/javascript">
