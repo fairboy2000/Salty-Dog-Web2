@@ -90,12 +90,20 @@
 
         .moneyShot {
             width: 100%;
+            pointer-events: auto !important;
+            position: relative !important;
+        }
+
+        .gridBox > .moneyShot:hover {
+            height: 600px;
+            width:600px;
+            pointer-events: auto !important;
         }
 
         /* .tremulaContainer must have actual dimentionality (set H&W) */
 
         .tremulaContainer {
-            height: 60%;
+            height: 100%;
 
             width: 100%;
 
@@ -362,55 +370,70 @@
                         </a>
                         <ul class="dropdown-menu">
                                 <li>
-                                        <a tabindex="-1" href="photos.html">Pet Photos</a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="photosevents.html">Special Events photos</a>
-                                    </li>
-                                    <li>
-                                            <a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
-                                        </li>
-                                    <li>
-                                        <a tabindex="-1" href="photossanta.html">Photos with Santa 2018</a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="photossanta2017.html">Photos with Santa 2017</a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="photossanta2016.html">Photos with Santa 2016</a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="photossanta2015.html">Photos with Santa 2015</a>
-                                    </li>
-                                    <li>
-                                        <a tabindex="-1" href="photossanta2014.html">Photos with Santa 2014</a>
-                                    </li>
-                                    <li>
-                                            <a tabindex="-1" href="photossanta2013.html">Photos with Santa 2013</a>
+                                    <a tabindex="-1" href="photos.html">Pet Photos</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="photosevents.html">Special Events photos</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Santa
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+    
+                                        <li>
+                                            <a tabindex="-1" href="photossanta.html">Photos with Santa 2018</a>
                                         </li>
                                         <li>
-                                                <a tabindex="-1" href="photosjake.html">Photos with Jake 2018</a>
-                                            </li>
-                                            <li>
-                                                <a tabindex="-1" href="photosjake2017.html">Photos with Jake 2017</a>
-                                            </li>
-                                            <li>
-                                                <a tabindex="-1" href="photosjake2016.html">Photos with Jake 2016</a>
-                                            </li>
-                                            <li>
-                                                <a tabindex="-1" href="photosjake2015.html">Photos with Jake 2015</a>
-                                            </li>
-                                            <li>
-                                                <a tabindex="-1" href="photosjake2014.html">Photos with Jake 2014</a>
-                                            </li>
-                                            <li>
-                                                <a tabindex="-1" href="photosjake2013.html">Photos with Jake 2013</a>
-                                            </li>
-                
-                                        </ul>
+                                            <a tabindex="-1" href="photossanta2017.html">Photos with Santa 2017</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photossanta2016.html">Photos with Santa 2016</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photossanta2015.html">Photos with Santa 2015</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photossanta2014.html">Photos with Santa 2014</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photossanta2013.html">Photos with Santa 2013</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Jake
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+    
+                                        <li>
+                                            <a tabindex="-1" href="photosjake.html">Photos with Jake 2018</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photosjake2017.html">Photos with Jake 2017</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photosjake2016.html">Photos with Jake 2016</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photosjake2015.html">Photos with Jake 2015</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photosjake2014.html">Photos with Jake 2014</a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="-1" href="photosjake2013.html">Photos with Jake 2013</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                     </div>
                 </nav>
 
@@ -438,7 +461,7 @@
             $(document).ready(function () {
                 setTimeout(function () {
                     window.tremula = createTremula();
-                    applyBoxClick();
+                  
                     loadFlickr()
                 }, 0);
             });
@@ -491,7 +514,7 @@
                     surfaceMap: tremula.projections.streamHorizontal,
 
                     //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
-                    staticAxisCount: 1,//zero based 
+                    staticAxisCount: 3,//zero based 
 
                     //the grid that will be used to project content
                     //NOTE: Generally, this will stay the same and various surface map projections
@@ -630,7 +653,7 @@
                 this.h = this.height = data.height_n;
                 this.imgUrl = data.url_n;
                 this.auxClassList = "flickrRS";//stamp each mapped item with map ID 
-                this.template = this.data.template || ('<img draggable="false" class="moneyShot" onload="imageLoaded(this)" src=""/>');
+                this.template = this.data.template || ('<img draggable="false" class="moneyShot" id="my-image" onload="imageLoaded(this)" src=""/>');
             }
 
             // updateConfig() enables updating of configuration parameters after an instance is running.
@@ -644,42 +667,49 @@
             // ----------------------------
             // EXAMPLE: tremula.Grid.toggleScrollAxis('y'); 
             // ----------------------------
+            $(function ()
+{
+    $('.moneyShot').on('click', function ()
+    {
+        $(this).width(200);
+    });
+});
+        //     function applyBoxClick() {
+        //         $('.tremulaContainer').on('tremulaItemSelect', function (gestureEvt, domEvt) {
+     
+        //             console.log(gestureEvt,domEvt)
+        //             var
+        //                 $e = $(domEvt.target);
+        //             t = $e.closest('.gridBox')[0];
+        //             if (t) {
+        //                 var data = $.data(t).model.model.data;
+        //                 console.log("t" + data)
+        //             }
+        //             if (data) alert(JSON.stringify(data.title));
+        //             console.log("p" + data)
+        //         })
+        //     }
 
-            function applyBoxClick() {
-                $('.tremulaContainer').on('tremulaItemSelect', function (gestureEvt, domEvt) {
-                    console.log(gestureEvt,domEvt)
-                    var
-                        $e = $(domEvt.target);
-                    t = $e.closest('.gridBox')[0];
-                    if (t) {
-                        var data = $.data(t).model.model.data;
-                        console.log("t" + data)
-                    }
-                    if (data) alert(JSON.stringify(data.title));
-                    console.log("p" + data)
-                })
-            }
 
+        // function closeAlertBox() {
+        //     alertBox = document.getElementById("alertBox");
+        //     alertClose = document.getElementById("alertClose");
 
-        function closeAlertBox() {
-            alertBox = document.getElementById("alertBox");
-            alertClose = document.getElementById("alertClose");
+        //     alertBox.parentNode.removeChild(alertBox);
+        //     alertClose.parentNode.removeChild(alertClose);
+        // }
 
-            alertBox.parentNode.removeChild(alertBox);
-            alertClose.parentNode.removeChild(alertClose);
-        }
-
-        window.alert = function (msg) {
-            var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
-            alertBox = document.createElement("div");
-            document.body.appendChild(alertBox);
-            alertBox.id = id;
-            alertBox.innerHTML = msg;
-            alertClose = document.createElement("div");
-            alertClose.id = closeId;
-            document.body.appendChild(alertClose);
-            alertClose.onclick = closeAlertBox;
-        };
+        // window.alert = function (msg) {
+        //     var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
+        //     alertBox = document.createElement("div");
+        //     document.body.appendChild(alertBox);
+        //     alertBox.id = id;
+        //     alertBox.innerHTML = msg;
+        //     alertClose = document.createElement("div");
+        //     alertClose.id = closeId;
+        //     document.body.appendChild(alertClose);
+        //     alertClose.onclick = closeAlertBox;
+        // };
 
 
 
