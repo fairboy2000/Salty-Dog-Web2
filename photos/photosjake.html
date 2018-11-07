@@ -371,6 +371,9 @@
                                         <a tabindex="-1" href="photosevents.html">Special Events photos</a>
                                     </li>
                                     <li>
+                                            <a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
+                                        </li>
+                                    <li>
                                         <a tabindex="-1" href="photossanta.html">Photos with Santa 2018</a>
                                     </li>
                                     <li>
@@ -391,14 +394,15 @@
                                     <li>
                                         <a tabindex="-1" href="photosjake.html">Photos with Jake</a>
                                     </li>
-                                    <li>
-                                            <a tabindex="-1" href="photospeople.html">Salty Dog Around the World</a>
-                                        </li>
+                                 
         </ul>
                     </div>
                 </nav>
 
             </div>
+            <div class="col">
+                    <h3>Photos with Jake 2018</h3>
+                </div>
         </div>
     </div>
 
@@ -571,7 +575,7 @@
             */
             var pageCtr = 1;
             function loadFlickr() {
-                var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+photos+with+jake&format=json&page=' + pageCtr + '&extras=url_n';
+                var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+photos+with+jake+2018&format=json&page=' + pageCtr + '&extras=url_n';
                 $.ajax({
                     url: dataUrl
                     , dataType: 'jsonp'
@@ -636,12 +640,31 @@
                         var data = $.data(t).model.model.data;
                         console.log("t" + data)
                     }
-                    if (data) alert(JSON.stringify(data));
+                    if (data) alert(JSON.stringify(data.title));
                     console.log("p" + data)
                 })
             }
 
 
+        function closeAlertBox() {
+            alertBox = document.getElementById("alertBox");
+            alertClose = document.getElementById("alertClose");
+
+            alertBox.parentNode.removeChild(alertBox);
+            alertClose.parentNode.removeChild(alertClose);
+        }
+
+        window.alert = function (msg) {
+            var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
+            alertBox = document.createElement("div");
+            document.body.appendChild(alertBox);
+            alertBox.id = id;
+            alertBox.innerHTML = msg;
+            alertClose = document.createElement("div");
+            alertClose.id = closeId;
+            document.body.appendChild(alertClose);
+            alertClose.onclick = closeAlertBox;
+        };
 
 
 

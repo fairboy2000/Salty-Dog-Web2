@@ -1,0 +1,680 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Pet Photos</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- framework css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--<![endif]-->
+    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="cssPhotos/styleBoot.css">
+
+
+
+    <link rel="stylesheet" href="https://garris.github.io/TremulaJS/dist/Tremula.css">
+
+
+
+    <script src="https://garris.github.io/TremulaJS/libs/jquery-min.js"></script>
+    <script src="https://garris.github.io/TremulaJS/libs/hammer.js"></script>
+    <script src="https://garris.github.io/TremulaJS/libs/jsBezier-0.6.js"></script>
+
+    <script src="https://garris.github.io/TremulaJS/dist/Tremula.js"></script>
+    <style>
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: rgba(0, 0, 0, 0.19);
+            z-index: 0;
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            font-size: 40px;
+            line-height: 50px;
+            padding: 0;
+            margin: 0;
+            text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+            display: inline-block;
+        }
+
+        .plug {
+            padding: 15px 20px;
+            position: absolute;
+        }
+
+        .cta {
+            font-size: 25px;
+            color: #666;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            left: 20px;
+            bottom: 0;
+            line-height: 40px;
+        }
+
+        /* === Tremula Styles === */
+
+        /* Note: any gridBox border added must be compensated for by adding negative margin */
+
+        .gridBox {
+            border: #fff 10px solid;
+            margin: -10px 0 0 -10px;
+        }
+
+        .moneyShot {
+            width: 100%;
+        }
+
+        /* .tremulaContainer must have actual dimentionality (set H&W) */
+
+        .tremulaContainer {
+            height: 60%;
+
+            width: 100%;
+
+
+            left: 0;
+            z-index: 1;
+
+
+        }
+
+        .pageLayoutContainer {
+            height: 100%;
+            width: 100%;
+
+            top: 0;
+            left: 0;
+            margin: 0;
+
+        }
+
+        #alertBox {
+            position: absolute;
+            top: 30%;
+            bottom: 60%;
+            left: 40%;
+            width: 20%;
+            height: 20%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 2;
+            font-size: 40px;
+            text-align: center;
+            color: black;
+        }
+
+        #alertClose {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, .5);
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+
+
+
+<body>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-bars"></i> Menu
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Pages/stores.html" target="blank">Shop</a>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                        <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Dine
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a tabindex="-1" href="../Dine/dine.html">Salty Dog Dining</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/cafe.html">Salty Dog Cafe</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/landsend.html">Land's End</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/wreck.html">Wreck</a>
+                            </li>
+                            <li>
+                                    <a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/pizza.html">Pizza</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/icecream.html">IceCream</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/cater.html">Catering</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../Dine/dailyspec.html">Daily Specials</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a class="dropdown-item" href="../cruise/cruise.html" target="blank">Cruise</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Pages/events.html">Events</a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Pages/radio.html">Radio</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Pages/kids.html">Kids</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Pages/feedback.html">Feedback Us</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Pages/findus.html">Find Us</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Pages/contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                        <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a tabindex="-1" href="photos.html">Pet Photos</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="photosevents.html">Special Events photos</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="photossanta.html">Photos with Santa</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="photosjake.html">Photos with Jake</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+
+
+                    <li class="dropdown-submenu">
+                        <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Webcams
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a tabindex="-1" href="../WebCams/webcams.html">See all our Webcams</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/bluewatercam.html">Bluewater Cam</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/boatcam.html">BoatCam</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/boatcamaft.html">BoatCam Aft</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/boatcambow.html">BoatCam Bow</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/courtyardcam.html">Courtyard Cam</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/overheadcam.html">Overhead Cam</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/South Beach Cam.html">South Beach Cam</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/tangercam.html">Tanger Outlet Cam</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="../WebCams/tshirtcam.html">T-Shirt Cam</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a class="dropdown-item" href="../Pages/weather.php">Weather</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
+                    </li>
+                </div>
+
+            </div>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../tides/tides.html" target="_blank">
+
+                        <img src="../images/social-logos/TIDESBUTTON.png">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Facebook_Rounded.png">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Pages/social.html" target="_blank">
+                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <img src="../images/HeaderBanners/PICS JAKE.png" style="width:100%; height:auto">
+
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-top: 5px">
+
+            <div class="col">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fas fa-bars"></i> Photos
+                        </a>
+                        <ul class="dropdown-menu">
+                                <li>
+                                        <a tabindex="-1" href="photos.html">Pet Photos</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="photosevents.html">Special Events photos</a>
+                                    </li>
+                                    <li>
+                                            <a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
+                                        </li>
+                                    <li>
+                                        <a tabindex="-1" href="photossanta.html">Photos with Santa 2018</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="photossanta2017.html">Photos with Santa 2017</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="photossanta2016.html">Photos with Santa 2016</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="photossanta2015.html">Photos with Santa 2015</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="photossanta2014.html">Photos with Santa 2014</a>
+                                    </li>
+                                    <li>
+                                            <a tabindex="-1" href="photossanta2013.html">Photos with Santa 2013</a>
+                                        </li>
+                                    <li>
+                                        <a tabindex="-1" href="photosjake.html">Photos with Jake 2018</a>
+                                    </li>
+                                    <li>
+                                            <a tabindex="-1" href="photosjake2017.html">Photos with Jake 2017</a>
+                                        </li>
+                                        <li>
+                                                <a tabindex="-1" href="photosjake2016.html">Photos with Jake 2016</a>
+                                            </li>
+                                 
+        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="col">
+                    <h3>Photos with Jake 2016</h3>
+                </div>
+        </div>
+    </div>
+
+
+
+        </div>
+        <div class="container">
+            <div class="pageLayoutContainer">
+
+                <div class="tremulaContainer"></div>
+
+
+
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    window.tremula = createTremula();
+                    applyBoxClick();
+                    loadFlickr()
+                }, 0);
+            });
+
+
+
+            function createTremula() {
+
+                // .tremulaContainer must exist and have actual dimentionality 
+                // requires display:block with an explicitly defined H & W
+                $tremulaContainer = $('.tremulaContainer');
+
+                //this creates a hook to a new Tremula instance
+                var tremula = new Tremula();
+
+                //Create a config object -- this is how most default behaivior is set.
+                //see updateConfig(prop_val_object,refreshStreamFlag) method to change properties of a running instance
+                var config = {
+
+                    //Size of the static axis in pixels
+                    //If your scroll axis is set to 'x' then this will be the normalized height of your content blocks.
+                    //If your scroll axis is set to 'y' then this will be the normalized width of your content blocks.
+                    itemConstraint: 150,//px
+
+                    //Margin in px added to each side of each content item
+                    itemMargins: [10, 10],//x (left & right), y (top & bottom) in px
+
+                    //Display offset of static axis (static axis is the non-scrolling dimention)
+                    staticAxisOffset: 0,//px
+
+                    //Display offset of scroll axis (this is the amount of scrollable area added before the first content block)
+                    scrollAxisOffset: 20,//px
+
+                    //Sets the scroll axis 'x'|'y'.
+                    //NOTE: projections generally only work with one scroll axis
+                    //when changeing this value, make sure to use a compatible projection
+                    scrollAxis: 'x',//'x'|'y'
+
+                    //surfaceMap is the projection/3d-effect which will be used to display grid content
+                    //following is a list of built-in projections with their corresponding scroll direction
+                    //NOTE: Using a projection with an incompatible Grid or Grid-Direction will result in-not-so awesome results
+                    //----------------------
+                    // (x or y) xyPlain
+                    // (x) streamHorizontal
+                    // (y) pinterest
+                    // (x) mountain
+                    // (x) turntable
+                    // (x) enterTheDragon
+                    //----------------------
+                    surfaceMap: tremula.projections.streamHorizontal,
+
+                    //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
+                    staticAxisCount: 1,//zero based 
+
+                    //the grid that will be used to project content
+                    //NOTE: Generally, this will stay the same and various surface map projections
+                    //will be used to create various 3d positioning effects
+                    defaultLayout: tremula.layouts.xyPlain,
+
+                    //it does not look like this actually got implemented so, don't worry about it ;)
+                    itemPreloading: true,
+
+                    //enables the item-level momentum envelope
+                    itemEasing: false,
+
+                    //enables looping with the current seet of results
+                    isLooping: false,
+
+                    //if item-level easing is enabled, it will use the following parameters
+                    //NOTE: this is experimental. This effect can make people queasy.
+                    itemEasingParams: {
+                        touchCurve: tremula.easings.easeOutCubic,
+                        swipeCurve: tremula.easings.easeOutCubic,
+                        transitionCurve: tremula.easings.easeOutElastic,
+                        easeTime: 500,
+                        springLimit: 40 //in px
+                    },
+
+                    //method called after each frame is painted. Passes internal parameter object.
+                    //see fn definition below
+                    onChangePub: doScrollEvents,
+
+                    //content/stream data can optionally be passed in on init()
+                    data: null,
+
+                    // lastContentBlock enables a persistant content block to exist at the end of the stream at all times.
+                    // Common use case is to target $('.lastContentItem') with a conditional loading spinner when API is churning.
+                    lastContentBlock: {
+                        template: '<div class="lastContentItem"></div>',
+                        layoutType: 'tremulaBlockItem',
+                        noScaling: true,
+                        w: 300,
+                        h: 300,
+                        isLastContentBlock: true,
+                        adapter: tremula.dataAdapters.TremulaItem
+                    },
+
+                    //dafault data adapter method which is called on each data item -- this is used if none is supplied during an import operation
+                    //enables easy adaptation of arbitrary API data formats -- see flickr example
+                    adapter: null
+
+                };
+
+                //initalize the tremula instance with 3 parameters: 
+                //a DOM container, a config object, and a parent context
+                tremula.init($tremulaContainer, config, this);
+
+                //return the tremula hook 
+                return tremula;
+            }
+
+            //This method is called on each paint frame thus enabling low level behaivior control
+            //it receives a single parameter object of internal instance states
+            //NOTE: below is a simple example of infinate scrolling where new item
+            //requests are made when the user scrolls past the existing 70% mark.
+            //
+            //Another option here is multiple tremula instancechaining i.e. follow the scroll events of another tremula instance.
+            //use case of this may be one tremula displaying close up data view while another may be an overview.
+            function doScrollEvents(o) {
+                if (o.scrollProgress > .7) {
+                    if (!tremula.cache.endOfScrollFlag) {
+                        tremula.cache.endOfScrollFlag = true;
+                        pageCtr++;
+                        loadFlickr();
+                        console.log('END OF SCROLL!')
+                    }
+                }
+            };
+
+
+            //Basic example of API integration
+            //=================================
+            //DATA FUNCTIONS OF NOTE: 
+            //tremula.refreshData(returned_set_array,dataAdapter)//replaces current data set with returned_set_array
+            //tremula.appendData(returned_set_array,dataAdapter)//appends current data set with returned_set_array
+            //tremula.insertData(returned_set_array,dataAdapter)//prepends current data set with returned_set_array
+            //=================================
+            /* SIZE SUFFIX FOR FLICKR IMAGE URLS ===> must be set in method below also
+            s	small square 75x75
+            q	large square 150x150
+            t	thumbnail, 100 on longest side
+            m	small, 240 on longest side
+            n	small, 320 on longest side
+            -	medium, 500 on longest side
+            z	medium 640, 640 on longest side
+            c	medium 800, 800 on longest side†
+            b	large, 1024 on longest side*
+            o	original image, either a jpg, gif or png, depending on source format
+            */
+            var pageCtr = 1;
+            function loadFlickr() {
+                var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+photos+with+jake+2016&format=json&page=' + pageCtr + '&extras=url_n';
+                $.ajax({
+                    url: dataUrl
+                    , dataType: 'jsonp'
+                    , jsonp: 'jsoncallback'
+                })
+                    .done(function (res) {
+                        console.log('API success', res);
+                        if (res.stat == 'fail') alert('Dang. Looks like Flickr has lost its pancakes... ' + res.message);
+                        var rs = res.photos.photo.filter(function (o, i) { return o.height_n > o.width_n * .5 });//filter out any with a really wide aspect ratio.
+                        tremula.appendData(rs, flickrDataAdapter);//flicker
+                        tremula.cache.endOfScrollFlag = false;
+                    })
+                    .fail(function (d, config, err) { console.log('API FAIL. ' + err) })
+            }
+
+            // DATA ADAPTER EXAMPLE
+            //=====================
+            // flickrDataAdapter() is for use with the flickr API
+            // https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=sky%2C+night%2C+day&format=json&page=1
+
+            /* SIZE SUFFIX FOR FLICKR IMAGE URLS ===> must be set in above method also
+            s	small square 75x75
+            q	large square 150x150
+            t	thumbnail, 100 on longest side
+            m	small, 240 on longest side
+            n	small, 320 on longest side
+            -	medium, 500 on longest side
+            z	medium 640, 640 on longest side
+            c	medium 800, 800 on longest side†
+            b	large, 1024 on longest side*
+            o	original image, either a jpg, gif or png, depending on source format
+            */
+
+            function flickrDataAdapter(data, env) {
+                this.data = data;
+                this.w = this.width = data.width_n;
+                this.h = this.height = data.height_n;
+                this.imgUrl = data.url_n;
+                this.auxClassList = "flickrRS";//stamp each mapped item with map ID 
+                this.template = this.data.template || ('<img draggable="false" class="moneyShot" onload="imageLoaded(this)" src=""/>');
+            }
+
+            // updateConfig() enables updating of configuration parameters after an instance is running.
+            // adding an optional true parameter will force a tremula grid redraw with the new parameter in effect
+            // ----------------------------
+            // EXAMPLE: tremula.Grid.updateConfig({itemConstraint:100},true);
+            // ----------------------------
+
+            // Use toggleScrollAxis() to set the scrollAxis, 
+            // see: surfaceMap projection compatibility list above to ensure the projection is compatible with the scrollAxis value
+            // ----------------------------
+            // EXAMPLE: tremula.Grid.toggleScrollAxis('y'); 
+            // ----------------------------
+
+            function applyBoxClick() {
+                $('.tremulaContainer').on('tremulaItemSelect', function (gestureEvt, domEvt) {
+                    console.log(gestureEvt,domEvt)
+                    var
+                        $e = $(domEvt.target);
+                    t = $e.closest('.gridBox')[0];
+                    if (t) {
+                        var data = $.data(t).model.model.data;
+                        console.log("t" + data)
+                    }
+                    if (data) alert(JSON.stringify(data.title));
+                    console.log("p" + data)
+                })
+            }
+
+
+        function closeAlertBox() {
+            alertBox = document.getElementById("alertBox");
+            alertClose = document.getElementById("alertClose");
+
+            alertBox.parentNode.removeChild(alertBox);
+            alertClose.parentNode.removeChild(alertClose);
+        }
+
+        window.alert = function (msg) {
+            var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
+            alertBox = document.createElement("div");
+            document.body.appendChild(alertBox);
+            alertBox.id = id;
+            alertBox.innerHTML = msg;
+            alertClose = document.createElement("div");
+            alertClose.id = closeId;
+            document.body.appendChild(alertClose);
+            alertClose.onclick = closeAlertBox;
+        };
+
+
+
+        </script>
+    </body>
+
+</html>
