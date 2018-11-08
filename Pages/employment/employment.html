@@ -25,7 +25,7 @@
         crossorigin="anonymous">
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="cssPages/styleContact.css"> 
+    <link type="text/css" rel="stylesheet" href="../cssPages/styleContact.css">
 
 </head>
 
@@ -109,26 +109,26 @@
                             <a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="events.html">Events</a>
+                            <a class="dropdown-item" href="../events.html">Events</a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="radio.html">Radio</a>
+                            <a class="dropdown-item" href="../radio.html">Radio</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="kids.html">Kids</a>
+                            <a class="dropdown-item" href="../kids.html">Kids</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="feedback.html">Feedback Us</a>
+                            <a class="dropdown-item" href="../feedback.html">Feedback Us</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="findus.html">Find Us</a>
+                            <a class="dropdown-item" href="../findus.html">Find Us</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="contact.html">Contact Us</a>
+                            <a class="dropdown-item" href="../contact.html">Contact Us</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
@@ -200,7 +200,7 @@
 
                         </ul>
                         <li>
-                            <a class="dropdown-item" href="weather.php">Weather</a>
+                            <a class="dropdown-item" href="../weather.php">Weather</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
@@ -213,17 +213,17 @@
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
 
-                        <img src="../images/social-logos/TIDESBUTTON.png">
+                        <img src="images/TIDESBUTTON.png">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Facebook_Rounded.png">
+                        <img src="images/Facebook_Rounded.png">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                        <img src="images/Instagram_RoundedEdges.png">
                     </a>
                 </li>
             </ul>
@@ -231,7 +231,7 @@
   
 
     <div class="container">
-        <img src="../images/HeaderBanners/FEED US BACK.png" style="width:100%; height:auto">
+        <img src="images/FEED US BACK.png" style="width:100%; height:auto">
 
     </div>
 
@@ -240,9 +240,11 @@
         <div class="container">
 
             <div class="row">
+                <br>
                 <div class="col">
                   
-                    <h3>Would you like to be a part of the salty Dog Family? Use the form below to fill out an employment application.</h3>
+                    <h3>Would you like to be a part of the salty Dog Family?
+                        <br> Fill out the form below and we will contact you shortly.</h3>
                 </div>
 
 
@@ -251,41 +253,73 @@
             </div>
 
 
-            <div class="row">
+            <div class="row" style="border:   3px solid yellow; padding-bottom: 5px; text-align: left; font-size: 30px">
                 <div class="col">
-                        <form method="post" name="myemailform" action="form-to-email.php">
+                   <!-- Start code for the form-->
+                   <form method="post" name="myemailform" action="form-to-email.php">
 
-                                <div class="form-group">
-                                    <label for='name'>Enter Name: </label>
-                                    <input type="text" name="name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                        placeholder="Enter name">
+                        <div class="form-group">
+                            <label for='name'>Enter Your Name: </label>
+                            <input type="text" name="name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Name">
+
+                        </div>
+                        <div class="form-group">
+                                <label for='name'>Enter Your Phone Number: </label>
+                                <input type="text" name="phone" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Phone">
     
-                                </div>
+                            </div>
+                    
+                        <div class="form-group">
+                            <label for='email'>Enter Your Email Address:</label>
+                            <input type="text" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                             
-                                <div class="form-group">
-                                    <label for='email'>Enter Email Address:</label>
-                                    <input type="text" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                        else.</small>
+                             
+                        </div>
+                        <div class="form-group">
+                                <label for='name'>Date Avaialable to start work: </label>
+                                <input type="text" name="date" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Start Date">
+    
+                            </div>
+                        <div class="form-group">
+                            <label for='message'>What Is The Highest Grade Or Level Of School You Have Completed Or The Highest Degree You Have Received?</label>
+                            <textarea name="degree" placeholder="Highest Level" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                                <label for='message'>What areas of employment interest you the most?</label>
+                                <textarea name="job" placeholder="Job Interest" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                    <label for='message'>What areas of employment do you have experience in?</label>
+                                    <textarea name="experience" placeholder="Experience" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label for='message'>Enter Message:</label>
-                                    <textarea name="message" placeholder="Enter message" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <button type="submit" name='submit' value="submit" class="btn btn-primary">Submit</button>
-                            </form>
-    
-                            <script language="JavaScript">
-                                // Code for validating the form
-                                // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-                                // for details
-                                var frmvalidator = new Validator("myemailform");
-                                frmvalidator.addValidation("name", "req", "Please provide your name");
-                                frmvalidator.addValidation("email", "req", "Please provide your email");
-                                frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
-                            </script>
-    
-                   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeBCqy7itwHr1VfAZJ4Roz_Slq3CS24MeoCqqZDy3vgpu148g/viewform?embedded=true" width="640" height="1777" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                                        <label for='message'>Tell us about any skills or hobbies you have that you feel make you a good employee:</label>
+                                        <textarea name="skills" placeholder="Skills and hobbies" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                            <label for='message'>What was your favorite job, volunteer work, class, or extracurricular activity and why?</label>
+                                            <textarea name="favorite" placeholder="Favorite Job" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>  
+                                        <div class="form-group">
+                                                <label for='message'>What is the best book you have read in the past 12 months. If you haven't read a book in the past 12 months just write N/A:</label>
+                                                <textarea name="book" placeholder="Best Book" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                        <button type="submit" name='submit' value="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                    <script language="JavaScript">
+                        // Code for validating the form
+                        // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+                        // for details
+                        var frmvalidator = new Validator("myemailform");
+                        frmvalidator.addValidation("name", "req", "Please provide your name");
+                        frmvalidator.addValidation("email", "req", "Please provide your email");
+                        frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+                    </script>
+
                       
                 </div>
 
