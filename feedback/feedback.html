@@ -25,18 +25,11 @@
         crossorigin="anonymous">
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="cssPages/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="stylefeed.css">
 
 </head>
 
-
-
 <body>
-
-
-
-
-
 
     <script>
         $(document).ready(function () {
@@ -60,7 +53,7 @@
                             <a class="dropdown-item" href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="stores.html" target="blank">Shop</a>
+                            <a class="dropdown-item" href="../Pages/stores.html" target="blank">Shop</a>
                         </li>
 
                         <li class="dropdown-submenu">
@@ -84,7 +77,7 @@
                                     <a tabindex="-1" href="../Dine/wreck.html">Wreck</a>
                                 </li>
                                 <li>
-                                        <a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
+                                    <a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../Dine/pizza.html">Pizza</a>
@@ -109,26 +102,26 @@
                             <a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="events.html">Events</a>
+                            <a class="dropdown-item" href="../events.html">Events</a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="radio.html">Radio</a>
+                            <a class="dropdown-item" href="../radio.html">Radio</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="kids.html">Kids</a>
+                            <a class="dropdown-item" href="../kids.html">Kids</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="feedback.html">Feedback Us</a>
+                            <a class="dropdown-item" href="../feedback.html">Feedback Us</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="findus.html">Find Us</a>
+                            <a class="dropdown-item" href="../findus.html">Find Us</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="contact.html">Contact Us</a>
+                            <a class="dropdown-item" href="../contact.html">Contact Us</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
@@ -200,7 +193,7 @@
 
                         </ul>
                         <li>
-                            <a class="dropdown-item" href="weather.php">Weather</a>
+                            <a class="dropdown-item" href="../weather.php">Weather</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
@@ -208,61 +201,168 @@
                     </div>
                 </ul>
             </div>
-      
+
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
 
-                        <img src="../images/social-logos/TIDESBUTTON.png">
+                        <img src="images/TIDESBUTTON.png">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Facebook_Rounded.png">
+                        <img src="images/Facebook_Rounded.png">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                        <img src="images/Instagram_RoundedEdges.png">
                     </a>
                 </li>
             </ul>
     </div>
-  
+
 
     <div class="container">
-        <img src="../images/HeaderBanners/FEED US BACK.png" style="width:100%; height:auto">
+        <img src="images/FEED US BACK.png" style="width:100%; height:auto">
 
     </div>
 
-    
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col">
-                  
-                    <h3>We love to hear from you and welcome your feedback. Use the form below to let us know how we did.</h3>
-                </div>
 
 
+    <div class="container">
 
+        <div class="row">
+
+            <br>
+            <div class="col">
+                <h1>Salty Dog Quality Survey</h1>
 
             </div>
 
-
-            <div class="row">
-                <div class="col">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfhXsfukNnlPW7TOCZrB89zEro_6_cZLEfB52Lz5qF77kjI9A/viewform?embedded=true"
-                        width="640" height="3009" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </div>
-
-
-            </div>
         </div>
 
+
+        <div class="row" style="border:   3px solid yellow; padding-bottom: 5px; text-align: left; font-size: 30px">
+            <div class="col">
+                <h4>Thank you for your recent visit to South Beach Village. During your stay you may have dined at one of
+                    our restaurants. We are conducting this short survey and hope that you will share your dining experience
+                    with us.
+                    <br> Note: The questions on this survey are optional.
+                    <br>Be sure to provide contact information in any event that requires a personal response from our management
+                    team. </h4>
+                <!-- Start code for the form-->
+
+                <br>
+                <form method="post" name="myemailform" action="form-to-email.php">
+
+                    <div class="form-group">
+                        <label for='name'>Enter Your Name: </label>
+                        <input type="text" name="name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for='name'>Enter Your Phone Number: </label>
+                        <input type="text" name="phone" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Phone">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for='email'>Enter Your Email Address:</label>
+                        <input type="text" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Email">
+
+
+                    </div>
+                    <div class="form-group">
+                        <label for='name'>Name of Restaurant: </label>
+                        <input type="text" name="restaurant" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Restaurant Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for='name'>Date and Time of visit: </label>
+                        <input type="text" name="date" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Date">
+
+                    </div>
+                    <div class="form-group">
+                        <label for='message'>What was your Server's Name</label>
+                        <textarea name="server" placeholder="Server" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for='message'>How many minutes did you wait before being served?</label>
+                        <textarea name="wait" placeholder="Wait time" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                            <label for='message'>Were you visted by a manager during your visit?</label>
+                            <textarea name="manager" placeholder="Manager" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                    <h5>For the remainder of the questions please feel free to elaborate or give us any specifcs you feel we should know about. </h5>
+                    <div class="col-sm-12">
+                            <div style='border-bottom:3px solid yellow;'></div>
+                        </div>
+                    <br>
+                    <div class="form-group">
+                        <label for='message'>Was the Hostess helpful and polite? </label>
+                        <textarea name="hostess" placeholder="Hostess" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+          
+                    <div class="form-group">
+                        <label for='message'>Would you recommend our restaurant? </label>
+                        <textarea name="recommend" placeholder="Recommend" class="form-control form-control-lg" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for='message'>Was your food served promptly?</label>
+                        <textarea name="prompt" placeholder="Promptly" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+               
+                    <div class="form-group">
+                        <label for='message'>Was your food served hot and fresh?</label>
+                        <textarea name="hot" placeholder="Hot and Fresh" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for='message'>Overall would you say your experience was enjoyable?</label>
+                        <textarea name="enjoy" placeholder="Enjoyable Experience" class="form-control form-control-lg" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for='message'>Start to finish, would you say the service was excellent?</label>
+                        <textarea name="start" placeholder="Excellent Service" class="form-control form-control-lg" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for='message'>Any other comments or suggestions?</label>
+                        <textarea name="comments" placeholder="Comments or Suggestions" class="form-control form-control-lg" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" name='submit' value="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <script language="JavaScript">
+                    // Code for validating the form
+                    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+                    // for details
+                    var frmvalidator = new Validator("myemailform");
+                    frmvalidator.addValidation("name", "req", "Please provide your name");
+                    frmvalidator.addValidation("email", "req", "Please provide your email");
+                    frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+                </script>
+
+
+            </div>
+
+
+        </div>
     </div>
-   
+
+    </div>
+
 
     <!-- google analytics  -->
 

@@ -5,9 +5,7 @@ if(!isset($_POST['submit']))
 	echo "error; you need to submit the form!";
 }
 $name = $_POST['name'];
-$phone = $_POST['phone'];
 $visitor_email = $_POST['email'];
-$organization = $_POST['organization'];
 $message = $_POST['message'];
 
 //Validate first
@@ -24,11 +22,9 @@ if(IsInjected($visitor_email))
 }
 
 $email_from = "info@saltydog.com";//<== update the email address
-$email_subject = "New  Donation Form submission";
-$email_body = "You have received a new message from: $name.\n
- Their phone number is:  $phone.\n
-            The organization they are with is: $organization.\n".
-    "Here is a brief description of their event: \n $message. \n".
+$email_subject = "New  Contact Form submission";
+$email_body = "You have received a new message from : $name.\n".
+    "Here is the message:  \n $message. \n".
     
     
 $to = "kat@saltydog.com";//<== update the email address

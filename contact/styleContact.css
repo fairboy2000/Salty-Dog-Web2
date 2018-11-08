@@ -3,19 +3,22 @@
             background: rgb(4, 4, 51);
             padding: 10px 0;
         }
-
-        .btn-outline-info {
-            background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
-        }
-
+     
+       
+       
+    
+      
         .btn-secondary {
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-
         }
+       
+            .btn-outline-info {
+                background: hsl(56, 94%, 66%);
+                border-color: hsl(56, 94%, 66%);
+                color: black;
+            }
         label{
 
             font-size: 30px !important;
@@ -50,7 +53,7 @@
         }
 
         .col {
-          
+            text-align: center;
           
             padding-top: 5px;
 
@@ -85,6 +88,7 @@
 
         h3 {
             color: white !important;
+            text-align: left;
         }
 
         h4 {
@@ -96,7 +100,7 @@
         }
 
      h2 {
-         text-align: left;
+         text-align: center;
      }
 
         h6 {
