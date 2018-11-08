@@ -24,11 +24,11 @@ if(IsInjected($visitor_email))
 }
 
 $email_from = "info@saltydog.com";//<== update the email address
-$email_subject = "New Form submission";
-$email_body = "You have received a new message from the user: $name.\n
- their numbe is  $phone.\n
-            they are with $organization.\n".
-    "Here is the message: <br> \n $message. \n".
+$email_subject = "New  Donation Form submission";
+$email_body = "You have received a new message from: $name.\n
+ Their phone number is:  $phone.\n
+            The organization they are with is: $organization.\n".
+    "Here is a brief description of their event: \n $message. \n".
     
     
 $to = "kat@saltydog.com";//<== update the email address
