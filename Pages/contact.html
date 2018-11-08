@@ -25,7 +25,7 @@
         crossorigin="anonymous">
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="cssPages/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="cssPages/styleContact.css">
 
 </head>
 
@@ -84,7 +84,7 @@
                                     <a tabindex="-1" href="../Dine/wreck.html">Wreck</a>
                                 </li>
                                 <li>
-                                        <a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
+                                    <a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../Dine/pizza.html">Pizza</a>
@@ -208,7 +208,7 @@
                     </div>
                 </ul>
             </div>
-    
+
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
@@ -253,8 +253,16 @@
         p {
             color: yellow;
         }
+
+        label,
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
     </style>
 
+    <!-- a helper script for vaidating the form-->
+    <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
 
 
 
@@ -266,15 +274,52 @@
                 <h1>Email Us</h1>
                 <h4>We love to hear from you and welcome your comments and questions. Use the form below to send us an email:
                 </h4>
+                <br>
 
-                <div class="row">
+                <div class="row" style="border:   3px solid yellow; padding-bottom: 5px; text-align: left; font-size: 30px">
+                    <br>
+                    <div class="col">
+                        <br>
+                        <!-- Start code for the form-->
+                        <form method="post" name="myemailform" action="form-to-email.php">
 
+                            <div class="form-group">
+                                <label for='name'>Enter Your Name: </label>
+                                <input type="text" name="name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter name">
 
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHu3WzV9R_4AtPuCZx_8g6H_-hV1rdAI8bu5Sa95H96LJsnA/viewform?embedded=true"
-                        width="600" height="790" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for='email'>Enter Your Email Address:</label>
+                                <input type="text" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                    else.</small>
+                                    
+                            </div>
+                            <div class="form-group">
+                                <label for='message'>Enter Your Message:</label>
+                                
+                                <textarea name="message" placeholder="Enter message" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" name='submit' value="submit" class="btn btn-primary">Submit</button>
+<br>
+                        <script language="JavaScript">
+                            // Code for validating the form
+                            // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+                            // for details
+                            var frmvalidator = new Validator("myemailform");
+                            frmvalidator.addValidation("name", "req", "Please provide your name");
+                            frmvalidator.addValidation("email", "req", "Please provide your email");
+                            frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+                        </script>
 
+                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHu3WzV9R_4AtPuCZx_8g6H_-hV1rdAI8bu5Sa95H96LJsnA/viewform?embedded=true"
+                        width="600" height="790" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+<br>
+                    </div>
                 </div>
-
+                <br>
                 <div class="row" style="margin-top: 9px; text-align: center">
 
 
@@ -284,7 +329,7 @@
                             <h5 class="card-title">Would you like to be a part of the salty Dog Family?</h5>
                             <p class="card-text"></p>
                             <button type="button" class="btn btn-outline-info btn-block">
-                                <a href="index.html" target="blank">
+                                <a href="employment.html" target="blank">
 
                                     <h5>
                                         Employment Application</h5>
@@ -297,7 +342,7 @@
                             <h5 class="card-title">Would you like to partner with us for your next charity event?</h5>
                             <p class="card-text"></p>
                             <button type="button" class="btn btn-outline-info btn-block">
-                                <a href="index.html" target="blank">
+                                <a href="donation/donation.html" target="blank">
 
                                     <h5>
 
@@ -530,7 +575,7 @@
                 <h3>Meet the Salty Dog Crew </h3>
 
 
-                <h4> <img src="../images/dog-paw.png">- Starting Year with the Company</h4>
+                <h4> <img src="../images/Salty Crew/dog-paw.png">- Starting Year with the Company</h4>
 
 
             </div>
@@ -550,7 +595,7 @@
                 <img src="../images/Salty Crew/contact_0011_Jake.jpg">
                 <h6>Ceo
                     <br>
-                    <img src="../images/dog-paw.png"> 1987
+                    <img src="../images/Salty Crew/dog-paw.png"> 1987
                     <br> jake@saltydog.com
                 </h6>
 
@@ -562,7 +607,7 @@
                 <img src="../images/Salty Crew/contact_0010_Bob2.jpg">
                 <h6>President
                     <br>
-                    <img src="../images/dog-paw.png"> 1987
+                    <img src="../images/Salty Crew/dog-paw.png"> 1987
                     <br> bob@saltydog.com
                 </h6>
 
@@ -574,7 +619,7 @@
                 <img src="../images/Salty Crew/timsterns.jpg">
                 <h6>COO
                     <br>
-                    <img src="../images/dog-paw.png"> 2007
+                    <img src="../images/Salty Crew/dog-paw.png"> 2007
                     <br> tim@saltydog.com
                 </h6>
 
@@ -586,7 +631,7 @@
                 <img src="../images/Salty Crew/chriscrowe.jpg">
                 <h6>CFO
                     <br>
-                    <img src="../images/dog-paw.png"> 2013
+                    <img src="../images/Salty Crew/dog-paw.png"> 2013
                     <br> chris@saltydog.com
                 </h6>
 
@@ -603,7 +648,7 @@
                 <img src="../images/Salty Crew/herbbritton.jpg">
                 <h6>C0-Director of Food and Beverage
                     <br>
-                    <img src="../images/dog-paw.png"> 2002
+                    <img src="../images/Salty Crew/dog-paw.png"> 2002
                     <br> herb@saltydog.com
                 </h6>
 
@@ -615,7 +660,7 @@
                 <img src="../images/Salty Crew/Zach.jpeg">
                 <h6>C0-Director of Food and Beverage
                     <br>
-                    <img src="../images/dog-paw.png"> 2014
+                    <img src="../images/Salty Crew/dog-paw.png"> 2014
                     <br> zach@saltydog.com
                 </h6>
 
@@ -627,7 +672,7 @@
                 <img src="../images/Salty Crew/mb.jpg">
                 <h6>Property Manager South Beach Inn and Vacation Rentals
                     <br>
-                    <img src="../images/dog-paw.png"> 2018
+                    <img src="../images/Salty Crew/dog-paw.png"> 2018
                     <br> michael@sbinn.com
                 </h6>
 
@@ -639,7 +684,7 @@
                 <img src="../images/Salty Crew/mikeedwards.jpg">
                 <h6>Sallty Dog Bluffton General Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2007
+                    <img src="../images/Salty Crew/dog-paw.png"> 2007
                     <br> mikeedwards@saltydog.com
                 </h6>
 
@@ -654,7 +699,7 @@
                 <img src="../images/Salty Crew/chrismarshall.jpg">
                 <h6>Assistant General Manager of the Salty Dog Cafe
                     <br>
-                    <img src="../images/dog-paw.png"> 2009
+                    <img src="../images/Salty Crew/dog-paw.png"> 2009
                     <br> chrismarshall@saltydog.com
                 </h6>
 
@@ -666,7 +711,7 @@
                 <img src="../images/Salty Crew/lindseystearns.jpg">
                 <h6>Cruise Coordinator
                     <br>
-                    <img src="../images/dog-paw.png"> 2009
+                    <img src="../images/Salty Crew/dog-paw.png"> 2009
                     <br>boatride@saltydog.com
                 </h6>
 
@@ -678,7 +723,7 @@
                 <img src="../images/Salty Crew/kat.jpg">
                 <h6>Web Developer
                     <br>
-                    <img src="../images/dog-paw.png"> 2018
+                    <img src="../images/Salty Crew/dog-paw.png"> 2018
                     <br> kat@saltydog.com
                 </h6>
 
@@ -690,7 +735,7 @@
                 <img src="../images/Salty Crew/andyjeffrey.jpg">
                 <h6>Blue Water Tackle General Manager / Dockmaster
                     <br>
-                    <img src="../images/dog-paw.png"> 1991
+                    <img src="../images/Salty Crew/dog-paw.png"> 1991
                     <br> fish@saltydog.com
                 </h6>
 
@@ -703,7 +748,7 @@
                 <img src="../images/Salty Crew/stevehughes.jpg">
                 <h6>Director of Screen Print Operations
                     <br>
-                    <img src="../images/dog-paw.png"> 1993
+                    <img src="../images/Salty Crew/dog-paw.png"> 1993
                     <br> orders@saltydog.com
                 </h6>
 
@@ -715,7 +760,7 @@
                 <img src="../images/Salty Crew/hollybingham.jpg">
                 <h6>Private Events Coordinator
                     <br>
-                    <img src="../images/dog-paw.png"> 2016
+                    <img src="../images/Salty Crew/dog-paw.png"> 2016
                     <br>holly@saltydog.com
                 </h6>
 
@@ -727,7 +772,7 @@
                 <img src="../images/Salty Crew/brianstroh.jpg">
                 <h6>Warehouse & Inventory Operations Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2006
+                    <img src="../images/Salty Crew/dog-paw.png"> 2006
                     <br> brian@saltydog.com
                 </h6>
 
@@ -739,7 +784,7 @@
                 <img src="../images/Salty Crew/hr.jpg">
                 <h6>Human Resources
                     <br>
-                    <img src="../images/dog-paw.png"> 1991
+                    <img src="../images/Salty Crew/dog-paw.png"> 1991
                     <br> tim@saltydog.com
                 </h6>
 
@@ -752,7 +797,7 @@
                 <img src="../images/Salty Crew/reneetroia.jpg">
                 <h6>Staff Accountant
                     <br>
-                    <img src="../images/dog-paw.png"> 2013
+                    <img src="../images/Salty Crew/dog-paw.png"> 2013
                     <br>renee@saltydog.com
                 </h6>
 
@@ -764,7 +809,7 @@
                 <img src="../images/Salty Crew/jackiestillman.jpg">
                 <h6>Ice Cream Manager and Flavor Designer
                     <br>
-                    <img src="../images/dog-paw.png"> 2005
+                    <img src="../images/Salty Crew/dog-paw.png"> 2005
                     <br>icecream@saltydog.com
                 </h6>
 
@@ -776,7 +821,7 @@
                 <img src="../images/Salty Crew/captain_phil.jpg">
                 <h6>Salty Dog Cruise Boat Captain
                     <br>
-                    <img src="../images/dog-paw.png"> 2016
+                    <img src="../images/Salty Crew/dog-paw.png"> 2016
                     <br>boatride@saltydog.com
                 </h6>
 
@@ -788,7 +833,7 @@
                 <img src="../images/Salty Crew/brit.jpg">
                 <h6>Marketing Director
                     <br>
-                    <img src="../images/dog-paw.png"> 2017
+                    <img src="../images/Salty Crew/dog-paw.png"> 2017
                     <br> brittany@saltydog.com
                 </h6>
 
@@ -801,7 +846,7 @@
                 <img src="../images/Salty Crew/mak.jpg">
                 <h6>Online Store Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2012
+                    <img src="../images/Salty Crew/dog-paw.png"> 2012
                     <br> mackenzie@saltydog.com
                 </h6>
 
@@ -813,7 +858,7 @@
                 <img src="../images/Salty Crew/hr.jpg">
                 <h6>Cargo Store
                     <br>
-                    <img src="../images/dog-paw.png"> 2009
+                    <img src="../images/Salty Crew/dog-paw.png"> 2009
                     <br> cargo@saltydog.com
                 </h6>
 
@@ -825,7 +870,7 @@
                 <img src="../images/Salty Crew/stevetaylor.jpeg">
                 <h6>South Beach T-shirt Shop Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2009
+                    <img src="../images/Salty Crew/dog-paw.png"> 2009
                     <br> steve@saltydog.com
                 </h6>
 
@@ -837,7 +882,7 @@
                 <img src="../images/Salty Crew/trey2.jpg">
                 <h6>SDRTA Transportation Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2017
+                    <img src="../images/Salty Crew/dog-paw.png"> 2017
                     <br> treysingletary@saltydog.com
                 </h6>
 
@@ -850,7 +895,7 @@
                 <img src="../images/Salty Crew/Inertia.jpeg">
                 <h6>Tanger 2 T-shirt Shop Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2015
+                    <img src="../images/Salty Crew/dog-paw.png"> 2015
                     <br> tanger@saltydog.com
                 </h6>
 
@@ -862,7 +907,7 @@
                 <img src="../images/Salty Crew/terrell.jpg">
                 <h6>Kitchen Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2001
+                    <img src="../images/Salty Crew/dog-paw.png"> 2001
                     <br>km@saltydog.com
                 </h6>
 
@@ -874,7 +919,7 @@
                 <img src="../images/Salty Crew/Jason.jpg">
                 <h6>Bar Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2014
+                    <img src="../images/Salty Crew/dog-paw.png"> 2014
                     <br> Jason@saltydog.com
                 </h6>
 
@@ -886,7 +931,7 @@
                 <img src="../images/Salty Crew/temawilson.jpg">
                 <h6>Kitchen Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2011
+                    <img src="../images/Salty Crew/dog-paw.png"> 2011
                     <br> km@saltydog.com
                 </h6>
 
@@ -899,7 +944,7 @@
                 <img src="../images/Salty Crew/jordan_bryan.jpeg">
                 <h6>Kitchen Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2011
+                    <img src="../images/Salty Crew/dog-paw.png"> 2011
                     <br> km@saltydog.com
                 </h6>
 
@@ -911,7 +956,7 @@
                 <img src="../images/Salty Crew/josh_gaskey.jpeg">
                 <h6>Kitchen Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2016
+                    <img src="../images/Salty Crew/dog-paw.png"> 2016
                     <br> km@saltydog.com
                 </h6>
 
@@ -923,7 +968,7 @@
                 <img src="../images/Salty Crew/julio_barragan.JPG">
                 <h6>Kitchen Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2009
+                    <img src="../images/Salty Crew/dog-paw.png"> 2009
                     <br> km@saltydog.com
                 </h6>
 
@@ -935,7 +980,7 @@
                 <img src="../images/Salty Crew/toro_cortez.jpg">
                 <h6>Kitchen Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 2009
+                    <img src="../images/Salty Crew/dog-paw.png"> 2009
                     <br> km@saltydog.com
                 </h6>
 
@@ -948,7 +993,7 @@
                 <img src="../images/Salty Crew/michelle_wynter.jpg">
                 <h6>General Manager of Land's End Tavern
                     <br>
-                    <img src="../images/dog-paw.png"> 2017
+                    <img src="../images/Salty Crew/dog-paw.png"> 2017
                     <br> michelle@saltydog.com
                 </h6>
 
@@ -960,7 +1005,7 @@
                 <img src="../images/Salty Crew/nathan_guzik.jpg">
                 <h6>General Manager of The Salty Dog Cafe
                     <br>
-                    <img src="../images/dog-paw.png"> 2018
+                    <img src="../images/Salty Crew/dog-paw.png"> 2018
                     <br> nathan@saltydog.com
                 </h6>
 
@@ -972,7 +1017,7 @@
                 <img src="../images/Salty Crew/cihan_.jpg">
                 <h6>General Manager of The Wreck Of The Salty Dog
                     <br>
-                    <img src="../images/dog-paw.png"> 2017
+                    <img src="../images/Salty Crew/dog-paw.png"> 2017
                     <br>chian@saltydog.com
                 </h6>
 
@@ -984,7 +1029,7 @@
                 <img src="../images/Salty Crew/lupejimenez.jpg">
                 <h6>Kitchen Manager
                     <br>
-                    <img src="../images/dog-paw.png"> 1999
+                    <img src="../images/Salty Crew/dog-paw.png"> 1999
                     <br>km@saltydog.com
                 </h6>
 
