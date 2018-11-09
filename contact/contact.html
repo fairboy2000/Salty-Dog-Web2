@@ -57,7 +57,7 @@
                 <ul>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="index.html">Home</a>
+                            <a class="dropdown-item" href="../index.html">Home</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="/Pages/stores.html" target="blank">Shop</a>
@@ -98,10 +98,10 @@
                                 <li>
                                     <a tabindex="-1" href="/Dine/dailyspec.html">Daily Specials</a>
                                 </li>
-
+                            </ul>
                         </li>
 
-                        </ul>
+
                         <li>
                             <a class="dropdown-item" href="/cruise/cruise.html" target="blank">Cruise</a>
                         </li>
@@ -154,11 +154,11 @@
                                 <li>
                                     <a tabindex="-1" href="/photos/photosjake.html">Photos with Jake</a>
                                 </li>
-
+                            </ul>
 
                         </li>
 
-                        </ul>
+
 
                         <li class="dropdown-submenu">
                             <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Webcams
@@ -195,10 +195,10 @@
                                 <li>
                                     <a tabindex="-1" href="/WebCams/tshirtcam.html">T-Shirt Cam</a>
                                 </li>
-
+                            </ul>
                         </li>
 
-                        </ul>
+
                         <li>
                             <a class="dropdown-item" href="/Pages/weather.php">Weather</a>
                         </li>
@@ -254,11 +254,11 @@
             color: yellow;
         }
 
-        label,
+        /* label,
         a {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
-        }
+        } */
     </style>
 
     <!-- a helper script for vaidating the form-->
@@ -278,7 +278,7 @@
 
                 <div class="row" style="border:   3px solid yellow; padding-bottom: 5px; text-align: left; font-size: 30px">
                     <br>
-                    <div class="col">
+                    <div class="col"style="border:    padding-bottom: 5px; text-align: left; font-size: 30px">
                         <br>
                         <!-- Start code for the form-->
                         <form method="post" name="myemailform" action="form-to-email.php">
@@ -289,34 +289,37 @@
                                     placeholder="Enter name">
 
                             </div>
-                        
+
                             <div class="form-group">
                                 <label for='email'>Enter Your Email Address:</label>
-                                <input type="text" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="text" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                    else.</small>
-                                    
+                                    else.
+                                </small>
+
                             </div>
                             <div class="form-group">
                                 <label for='message'>Enter Your Message:</label>
-                                
-                                <textarea name="message" placeholder="Enter message" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                                <textarea name="message" placeholder="Enter message" class="form-control form-control-lg" id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
                             </div>
                             <button type="submit" name='submit' value="submit" class="btn btn-primary">Submit</button>
-<br>
-                        <script language="JavaScript">
-                            // Code for validating the form
-                            // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-                            // for details
-                            var frmvalidator = new Validator("myemailform");
-                            frmvalidator.addValidation("name", "req", "Please provide your name");
-                            frmvalidator.addValidation("email", "req", "Please provide your email");
-                            frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
-                        </script>
+                            <br>
+                            <script language="JavaScript">
+                                // Code for validating the form
+                                // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+                                // for details
+                                var frmvalidator = new Validator("myemailform");
+                                frmvalidator.addValidation("name", "req", "Please provide your name");
+                                frmvalidator.addValidation("email", "req", "Please provide your email");
+                                frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+                            </script>
 
-                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHu3WzV9R_4AtPuCZx_8g6H_-hV1rdAI8bu5Sa95H96LJsnA/viewform?embedded=true"
+                            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHu3WzV9R_4AtPuCZx_8g6H_-hV1rdAI8bu5Sa95H96LJsnA/viewform?embedded=true"
                         width="600" height="790" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
-<br>
+                            <br>
                     </div>
                 </div>
                 <br>
