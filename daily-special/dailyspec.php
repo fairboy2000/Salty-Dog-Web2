@@ -96,7 +96,7 @@
                                     <a tabindex="-1" href="../Dine/cater.html">Catering</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/daily special/dailyspec.php">Daily Specials</a>
+                                    <a tabindex="-1" href="/daily-special/dailyspec.php">Daily Specials</a>
                                 </li>
                             </ul>
                         </li>
@@ -153,6 +153,8 @@
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../photos/photosjake.html">Photos with Jake</a>
+                                </li>  <li>
+                                    <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks</a>
                                 </li>
                             </ul>
 
@@ -179,6 +181,8 @@
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../WebCams/boatcambow.html">BoatCam Bow</a>
+                                </li>   <li>
+                                    <a tabindex="-1" href="../WebCams/calibogue.php">Calibogue Cam</a>
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../WebCams/courtyardcam.html">Courtyard Cam</a>

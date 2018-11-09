@@ -25,21 +25,14 @@
         crossorigin="anonymous">
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="cssDine/styleBoot.css">
-    
+    <link type="text/css" rel="stylesheet" href="cssPages/styleBoot.css">
 
 </head>
 
 
 
 <body>
-
-    
-
-
-
-
-    <script>
+<script>
         $(document).ready(function () {
             $('.dropdown-submenu a.test').on("click", function (e) {
                 $(this).next('ul').toggle();
@@ -61,7 +54,7 @@
                             <a class="dropdown-item" href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="../Pages/stores.html" target="blank">Shop</a>
+                            <a class="dropdown-item" href="stores.html" target="blank">Shop</a>
                         </li>
 
                         <li class="dropdown-submenu">
@@ -70,34 +63,34 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a tabindex="-1" href="dine.html">Salty Dog Dining</a>
+                                    <a tabindex="-1" href="../Dine/dine.html">Salty Dog Dining</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="cafe.html">Salty Dog Cafe</a>
+                                    <a tabindex="-1" href="../Dine/sdc.html">Salty Dog Cafe</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="bluffdog.html">Salty Dog Cafe Bluffton</a>
+                                    <a tabindex="-1" href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="landsend.html">Land's End</a>
+                                    <a tabindex="-1" href="../Dine/landsend.html">Land's End</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="wreck.html">Wreck</a>
+                                    <a tabindex="-1" href="../Dine/wreck.html">Wreck</a>
                                 </li>
                                 <li>
-                                        <a tabindex="-1" href="kiwi.html">Kiwi's Island Cookout</a>
+                                        <a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="pizza.html">Pizza</a>
+                                    <a tabindex="-1" href="../Dine/pizza.html">Pizza</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="icecream.html">IceCream</a>
+                                    <a tabindex="-1" href="../Dine/icecream.html">IceCream</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="cater.html">Catering</a>
+                                    <a tabindex="-1" href="../Dine/cater.html">Catering</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../daily-special/dailyspec.php">Daily Specials</a>
+                                    <a tabindex="-1" href="../daily special/dailyspec.php">Daily Specials</a>
                                 </li>
 
                         </li>
@@ -110,27 +103,27 @@
                             <a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="../Pages/events.html">Events</a>
+                            <a class="dropdown-item" href="events.html">Events</a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="../Pages/radio.html">Radio</a>
+                            <a class="dropdown-item" href="radio.html">Radio</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="../Pages/kids.html">Kids</a>
+                            <a class="dropdown-item" href="kids.html">Kids</a>
                         </li>
                         <li>
-                                <a class="dropdown-item" href="../feedback/feedback.html">Feedback Us</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../Pages/findus.html">Find Us</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
-                            </li>
+                        <a class="dropdown-item" href="../feedback/feedback.html">Feedback Us</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="findus.html">Find Us</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
+                    </li>
                         <li>
                             <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
                         </li>
@@ -155,10 +148,10 @@
                                 <li>
                                     <a tabindex="-1" href="../photos/photosjake.html">Photos with Jake</a>
                                 </li>
-
                                 <li>
-                                        <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks</a>
-                                    </li>
+                                    <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks</a>
+                                </li>
+
                         </li>
 
                         </ul>
@@ -182,8 +175,8 @@
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../WebCams/boatcambow.html">BoatCam Bow</a>
-                                </li>   <li>
-                                        <a tabindex="-1" href="../WebCams/calibogue.php">Calibogue Cam</a>
+                                </li>  <li>
+                                        <a tabindex="-1" href="calibogue.php">Calibogue Cam</a>
                                     </li>
                                 <li>
                                     <a tabindex="-1" href="../WebCams/courtyardcam.html">Courtyard Cam</a>
@@ -205,7 +198,7 @@
 
                         </ul>
                         <li>
-                            <a class="dropdown-item" href="../Pages/weather.php">Weather</a>
+                            <a class="dropdown-item" href="weather.php">Weather</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
@@ -213,12 +206,7 @@
                     </div>
                 </ul>
             </div>
-            <!-- <ul class="navbar-nav ml-auto">
-            <a href="index.html" target="_blank">
-
-                    <img src="images/social-logos/SDCLOGOBUTTON.jpg" class="rounded" style="width:30%; height:auto">
-                </a>
-            </ul> -->
+    
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
@@ -238,85 +226,158 @@
                 </li>
             </ul>
     </div>
+  
+    <style>
+      
+
+      .grid-item {
+
+          padding: 5px;
+          color: white;
+          text-align: center;
+      }
+
+ 
+
+      .gif-container img {
+          background-color: rgb(200, 233, 238);
+
+
+      }
+
+      .my-container {
+          padding-top: 20px;
+          text-align: center;
+          background-color: rgb(200, 233, 238);
+          max-width: 1190px;
+      }
+  </style>
 
 
     <div class="container">
-        <img src="../images/HeaderBanners/SDC.png" style="width:100%; height:auto">
+        <img src="../images/HeaderBanners/WEATHER.png" style="width:100%; height:auto">
 
     </div>
+
     <div class="container">
-        <div class="row">
-            <div class="col">
+
+<div class="my-container">
+    <div class="row">
+        <div class="col">
+            <div class="grid-item">
+                <a href="https://www.weatherforyou.com/reports/index.php?forecast=zandh&amp;place=hilton%20head%20island&amp;state=sc&amp;zipcode=29928">
+                <button type="button" class="btn btn-dark">FORECAST</button></a>
 
 
-
-                <h4> <strong>Mon-Sun 11am-10pm, Bar Open Later</strong></h4>
+                
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <h4>843-671-CAFE (Reservations not accepted)</h4>
+        <div class="col">
+            <div class="grid-item">
+                <a href="https://radar.weather.gov/Conus/southeast_loop.php"> <button type="button" class="btn btn-dark">RADAR</button></a>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col">
-                <a href="SDCLunchMenu.html" target="blank">
-                    <button type="button" class="btn btn-warning">
-                        Lunch Menu
-                    </button>
-                </a>
-            </div>
-            <div class="col">
-                <h5><a href="http://maps.apple.com/?q=232+S.+Sea+Pines+Dr,Hilton+Head,SC,29928" target="1" style="color:#030e18;">
-
-
-                        <button type="button" class="btn btn-warning"> 232 S. Sea Pines Dr. Hilton Head Island, SC</button></a>
-                </h5>
-            </div>
-            <div class="col">
-                <a href="SDCDineMenu.html" target="blank">
-                    <button type="button" class="btn btn-warning">
-                        Dinner Menu
-                    </button>
-                </a>
+        <div class="col">
+            <div class="grid-item">
+                <a href="https://www.wunderground.com/MAR/AM/352.html"><button type="button" class="btn btn-dark">MARINE</button></a>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col"><img src="../images/ROUNDED PICS/Cafe1.png" alt="">
-
-                <img src="../images/ROUNDED PICS/Cafe2.png" alt="">
-
-                <img src="../images/ROUNDED PICS/Cafe3.png" alt="">
+        <div class="col">
+            <div class="grid-item">
+                <a href="http://saltydog.com/weather/sbeach/downld02.txt"><button type="button" class="btn btn-dark">TWO DAY DATA</button></a>
             </div>
-            <div class="row">
-                <div class="col">
+        </div>
+    </div>
 
-                    <h5>
-                        Enjoy waterfront dining inside the restaurant at Captain John’s Galley where you can order from a full menu of seafood, salads
-                        and sandwiches, or enjoy a drink and lighter fare outside on the deck or at the outdoor bar. In season,
-                        the night echoes with the tropical sounds of live entertainment from either Dave Kimmerly or Bruce
-                        Chricton. Children's Entertainment &amp; Kid's Activities keep the kids happy with activities, face
-                        painting, magicians and more! Don't miss FREE pictures with Jake the Salty Dog and his regular visits
-                        for family photos.
+</div>
 
-                    </h5>
-                </div>
 
-            </div>
-            </div>
+ <div class="my-container">
 
-            <!-- google analytics  -->
+<a href="http://64.203.225.208:8122/axis-cgi/mjpg/video.cgi">
+<script language="javascript">
+var refreshrate=.5;             
+var image="http://64.203.225.208:8122/axis-cgi/jpg/image.cgi?";     
+// var imgheight=450;                   
+// var imgwidth=800;                
+function refresh(){
+document.images["pic"].src=image+"?"+new Date();
+setTimeout('refresh()', refreshrate*1000);}
+document.write('<IMG SRC="'+image+'" ALT="Please Stand By For Webcam Photo Upload" NAME="pic" ID="pic" WIDTH="90%" HEIGHT="auto" STYLE="border: 3px solid Black;">');
+if(document.images)window.onload=refresh;
+</script>  
+</a>
 
-            <script type="text/javascript">
-                var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']); _gaq.push(['_trackPageview']); (function () {
-                    var ga
-                        = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol
-                            ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
+
+
+<br><br>
+
+<?php $date = date("Y-m-d-H-i-s"); ?>
+
+<img id="image1" src="http://saltydog.com/weather/sbeach/WindSpeed.gif?date=<?php echo $date; ?>" alt="" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img id="image2" src="http://saltydog.com/weather/sbeach/WindDirection.gif?date=<?php echo $date; ?>" alt=""  />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img id="image3" src="http://saltydog.com/weather/sbeach/10MinAvgWindSpeed.gif?date=<?php echo $date; ?>" alt=""  /> 
+<br><br>
+<img id="image4" src="http://saltydog.com/weather/sbeach/HighWindDirHistory.gif?date=<?php echo $date; ?>" alt=""  />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img id="image5" src="http://saltydog.com/weather/sbeach/HiWindSpeedHistory.gif?date=<?php echo $date; ?>" alt=""  />
+<br><br>
+<img id="image6" src="http://saltydog.com/weather/sbeach/OutsideHumidity.gif?date=<?php echo $date; ?>" alt=""  />
+&nbsp;&nbsp;
+<img id="image7" src="http://saltydog.com/weather/sbeach/OutsideTemp.gif?date=<?php echo $date; ?>" alt=""  />
+
+&nbsp;&nbsp;
+<img id="image11" src="http://saltydog.com/weather/sbeach/Barometer.gif?date=<?php echo $date; ?>" alt=""  />
+&nbsp;&nbsp;
+<img id="image8" src="http://saltydog.com/weather/sbeach/HeatIndex.gif?date=<?php echo $date; ?>" alt=""  />
+<br><br>
+<img id="image8" src="http://saltydog.com/weather/sbeach/Rain.gif?date=<?php echo $date; ?>" alt="" />
+&nbsp;&nbsp;
+<img id="image10" src="http://saltydog.com/weather/sbeach/MonthlyRain.gif?date=<?php echo $date; ?>" alt=""  />
+&nbsp;&nbsp;
+<img id="image11" src="http://saltydog.com/weather/sbeach/YearlyRain.gif?date=<?php echo $date; ?>" alt=""  />
+<br><br>
+&nbsp;&nbsp;
+<img id="image12" src="http://saltydog.com/weather/sbeach/Temperature2.gif?date=<?php echo $date; ?>" alt="" />
+<br>
+<p style="color:black !important; text-align: center">suface water temp</p>
+
+<br><br>
+
+
+<img src="http://64.203.225.15:8018/images/tides.jpg?date=<?php echo $date; ?>" alt="tides" style="border: 2px" width="70%"
+                height="auto" />
+<br><br>
+<p style="color:green !important">Green Clock = Tide Falling with Low Tide at Bottom of Clock</p>
+<br>
+<p style="color:blue!important">Blue Clock = Tide Rising with High Tide at Top of Clock</p>
+<br>
+<p style="color:red !important">Red Clock = Negative Low</p>
+<br>
+<p style="color:black !important" >Current Eastern Standard Time in Center of Clock  
+<br>Current Tide Height on Face of Clock</p>
+
+
+         <br>
+            <br>
+
+
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']); _gaq.push(['_trackPageview']); (function () {
+            var ga
+                = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol
+                    ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
-
 </html>
+
+

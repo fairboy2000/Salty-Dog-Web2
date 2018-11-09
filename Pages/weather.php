@@ -155,7 +155,9 @@
                                     <a tabindex="-1" href="../photos/photosjake.html">Photos with Jake</a>
                                 </li>
 
-
+  <li>
+                                    <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks</a>
+                                </li>
                         </li>
 
                         </ul>
@@ -179,7 +181,9 @@
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../WebCams/boatcambow.html">BoatCam Bow</a>
-                                </li>
+                                </li>  <li>
+                                        <a tabindex="-1" href="calibogue.php">Calibogue Cam</a>
+                                    </li>
                                 <li>
                                     <a tabindex="-1" href="../WebCams/courtyardcam.html">Courtyard Cam</a>
                                 </li>
@@ -361,7 +365,7 @@ if(document.images)window.onload=refresh;
 &nbsp;&nbsp;
 <img id="image12" src="http://saltydog.com/weather/sbeach/Temperature2.gif?date=<?php echo $date; ?>" alt="" />
 <br>
-<p style="color:black !important">suface water temp</p>
+<p style="color:black !important; text-align: center">suface water temp</p>
 
 <br><br>
 
