@@ -47,7 +47,7 @@
             });
         });
     </script>
-   <div class="container">
+  <div class="container">
         <nav class="navbar navbar-expand-lg ">
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -60,7 +60,7 @@
                             <a class="dropdown-item" href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/Pages/stores.html" target="blank">Shop</a>
+                            <a class="dropdown-item" href="../Pages/stores.html" target="blank">Shop</a>
                         </li>
 
                         <li class="dropdown-submenu">
@@ -69,31 +69,31 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a tabindex="-1" href="/Dine/dine.html">Salty Dog Dining</a>
+                                    <a tabindex="-1" href="../Dine/dine.html">Salty Dog Dining</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/cafe.html">Salty Dog Cafe</a>
+                                    <a tabindex="-1" href="../Dine/cafe.html">Salty Dog Cafe</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
+                                    <a tabindex="-1" href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/landsend.html">Land's End</a>
+                                    <a tabindex="-1" href="../Dine/landsend.html">Land's End</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/wreck.html">Wreck</a>
+                                    <a tabindex="-1" href="../Dine/wreck.html">Wreck</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/kiwi.html">Kiwi's Island Cookout</a>
+                                    <a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/pizza.html">Pizza</a>
+                                    <a tabindex="-1" href="../Dine/pizza.html">Pizza</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/icecream.html">IceCream</a>
+                                    <a tabindex="-1" href="../Dine/icecream.html">IceCream</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/Dine/cater.html">Catering</a>
+                                    <a tabindex="-1" href="../Dine/cater.html">Catering</a>
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="/daily special/dailyspec.php">Daily Specials</a>
@@ -103,35 +103,35 @@
 
 
                         <li>
-                            <a class="dropdown-item" href="/cruise/cruise.html" target="blank">Cruise</a>
+                            <a class="dropdown-item" href="../cruise/cruise.html" target="blank">Cruise</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/Pages/events.html">Events</a>
+                            <a class="dropdown-item" href="../Pages/events.html">Events</a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/Pages/radio.html">Radio</a>
+                            <a class="dropdown-item" href="../Pages/radio.html">Radio</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/Pages/kids.html">Kids</a>
+                            <a class="dropdown-item" href="../Pages/kids.html">Kids</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/Pages/feedback/feedback.html">Feedback Us</a>
+                            <a class="dropdown-item" href="../feedback/feedback.html">Feedback Us</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/Pages/findus.html">Find Us</a>
+                            <a class="dropdown-item" href="../Pages/findus.html">Find Us</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/Pages/contact/contact.html">Contact Us</a>
+                            <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/lucky/win.html">Lucky Receipts</a>
+                            <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
                         </li>
 
                         <li class="dropdown-submenu">
@@ -140,19 +140,19 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a tabindex="-1" href="/photos/photos.html">Pet Photos</a>
+                                    <a tabindex="-1" href="../photos/photos.html">Pet Photos</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/photos/petphotossearch.html">Search Pet Photos</a>
+                                    <a tabindex="-1" href="../photos/petphotossearch.html">Search Pet Photos</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/photos/photosevents.html">Special Events photos</a>
+                                    <a tabindex="-1" href="../photos/photosevents.html">Special Events photos</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/photos/photossanta.html">Photos with Santa</a>
+                                    <a tabindex="-1" href="../photos/photossanta.html">Photos with Santa</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/photos/photosjake.html">Photos with Jake</a>
+                                    <a tabindex="-1" href="../photos/photosjake.html">Photos with Jake</a>
                                 </li>
                             </ul>
 
@@ -166,41 +166,41 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/webcams.html">See all our Webcams</a>
+                                    <a tabindex="-1" href="../WebCams/webcams.html">See all our Webcams</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/bluewatercam.html">Bluewater Cam</a>
+                                    <a tabindex="-1" href="../WebCams/bluewatercam.html">Bluewater Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/boatcam.html">BoatCam</a>
+                                    <a tabindex="-1" href="../WebCams/boatcam.html">BoatCam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/boatcamaft.html">BoatCam Aft</a>
+                                    <a tabindex="-1" href="../WebCams/boatcamaft.html">BoatCam Aft</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/boatcambow.html">BoatCam Bow</a>
+                                    <a tabindex="-1" href="../WebCams/boatcambow.html">BoatCam Bow</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/courtyardcam.html">Courtyard Cam</a>
+                                    <a tabindex="-1" href="../WebCams/courtyardcam.html">Courtyard Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/overheadcam.html">Overhead Cam</a>
+                                    <a tabindex="-1" href="../WebCams/overheadcam.html">Overhead Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/South Beach Cam.html">South Beach Cam</a>
+                                    <a tabindex="-1" href="../WebCams/South Beach Cam.html">South Beach Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/tangercam.html">Tanger Outlet Cam</a>
+                                    <a tabindex="-1" href="../WebCams/tangercam.html">Tanger Outlet Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/WebCams/tshirtcam.html">T-Shirt Cam</a>
+                                    <a tabindex="-1" href="../WebCams/tshirtcam.html">T-Shirt Cam</a>
                                 </li>
                             </ul>
                         </li>
 
 
                         <li>
-                            <a class="dropdown-item" href="/Pages/weather.php">Weather</a>
+                            <a class="dropdown-item" href="../Pages/weather.php">Weather</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
@@ -235,6 +235,8 @@
 
     </div>
 
+    
+    
 
  <div class="container">
 
