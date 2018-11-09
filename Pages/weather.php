@@ -122,14 +122,14 @@
                             <a class="dropdown-item" href="kids.html">Kids</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="feedback.html">Feedback Us</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="findus.html">Find Us</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="contact.html">Contact Us</a>
-                        </li>
+                        <a class="dropdown-item" href="../feedback/feedback.html">Feedback Us</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="findus.html">Find Us</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
+                    </li>
                         <li>
                             <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
                         </li>
