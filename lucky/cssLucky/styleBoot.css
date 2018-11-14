@@ -23,6 +23,12 @@
             color: black;
 
         }
+        .btn-primary {
+            background: hsl(56, 94%, 66%);
+            border-color: hsl(56, 94%, 66%);
+            color: black;
+
+        }
         .btn-menu {
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);

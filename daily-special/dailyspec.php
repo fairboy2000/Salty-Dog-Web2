@@ -96,7 +96,7 @@
                                     <a tabindex="-1" href="../Dine/cater.html">Catering</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="/daily-special/dailyspec.php">Daily Specials</a>
+                                    <a tabindex="-1" href="dailyspec.php">Daily Specials</a>
                                 </li>
                             </ul>
                         </li>
@@ -245,19 +245,18 @@
  <div class="container">
 
 <div class="row" style="display:inline-block !important">
-    <img src="../images/social-logos/spec.jpg" style="text-align:center !important" alt="spec" width="512" height="264">
+    <img src="images/spec.jpg" style="text-align:center !important" alt="spec" width="512" height="264">
 
 </div>
 
 </div>
 
            <br>
-           Chef <?php echo $_POST["name"]; ?>!<br>
- Today's Special is <?php echo $_POST["special"]; ?>.
+
 <div class="container">
         <div class="row">
             <div class="col">
-                <img src="../images/social-logos/SDCLOGOBUTTON.jpg" alt="spec" width="30%" height="auto">
+            <img src="images/CAFE.png" alt="spec" width="30%" height="auto">
             </div>
             <div class="col">
                 <br>
@@ -285,7 +284,7 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="../images/social-logos/LETLOGOBUTTON.jpg" alt="spec" width="30%" height="auto">
+                <img src="images/LET.png" alt="spec" width="30%" height="auto">
             </div>
             <div class="col">
                 <ul>
@@ -314,7 +313,7 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="../images/social-logos/Bluffton-SD-29910-logo.jpg" alt="spec" width="30%" height="auto">
+                <img src="images/BLUFFDOG.png" alt="spec" width="30%" height="auto">
             </div>
             <div class="col">
                 <ul>
@@ -340,7 +339,7 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="../images/social-logos/WRECKLOGOBUTTON.jpg" alt="spec" width="30%" height="auto">
+                <img src="images/WRECK.png" alt="spec" width="30%" height="auto">
             </div>
             <div class="col">
                 <ul>
