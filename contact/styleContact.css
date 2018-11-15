@@ -5,7 +5,45 @@
             font-family: 'Rubik', sans-serif;
         }
      
-       
+        h1 {
+           
+            font-size: 4.vw;
+        }
+        
+        h2 {
+          
+            font-size: 3.0vw;
+        }
+        h3 {
+           
+            font-size: 2.5vw;
+        }
+        
+        h4 {
+           
+            font-size: 1.9vw;
+        }
+        
+        h5 {
+         
+            font-size: 1.3vw;
+           
+        }
+        
+        
+        
+        h6 {
+           
+         
+            font-size: 1.1vw;
+        
+        }
+        
+        
+        p {
+         
+            font-size: .9vw;
+        }
        
     
       

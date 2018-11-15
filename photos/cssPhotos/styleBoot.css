@@ -17,6 +17,58 @@
             color: black;
 
         }
+        label{
+            font-size: 2.3vw;
+        
+        }
+        
+        .form-control-lg {
+        
+            font-size: 2.3vw;
+        
+        }
+
+        h1 {
+           
+            font-size: 3.1vw;
+        }
+      
+        h2 {
+          
+            font-size: 2.8vw;
+        }
+        h3 {
+           
+            font-size: 2.3vw;
+        }
+
+      
+                h4 {
+                   
+                    font-size: 1.9vw;
+                }
+        
+                h5 {
+                 
+                    font-size: 1.0vw;
+                   
+                }
+        
+             
+        
+                h6 {
+                   
+                 
+                    font-size: 0.7vw;
+        
+                }
+           
+        
+                p {
+                 
+                    font-size: .5vw;
+                }
+       
 
         .btn-warning {
             background: hsl(56, 94%, 66%);
@@ -85,12 +137,10 @@
             color: black !important;
         }
 
-        .oneandhalf {
-            line-height: 2em;
-        }
+     
 
         h6 {
-            line-height: 2em;
+           
             color: white !important;
 
         }

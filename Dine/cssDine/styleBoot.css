@@ -42,9 +42,10 @@
             color: black;
 
         }
-li{
-        list-style-type: none;
-    }
+        li{
+
+            list-style-type: none;
+        }
         .col {
           
           
@@ -67,38 +68,84 @@ li{
         li {
             padding: 5px;
         }
+    
+        h1 {
+           
+            font-size: 3.1vw;
+        }
+      
+        h2 {
+          
+            font-size: 2.8vw;
+        }
+        h3 {
+           
+            font-size: 2.3vw;
+        }
+
+        h4 {
+           
+            font-size: 1.9vw;
+        }
+
+        h5 {
+         
+            font-size: 1.0vw;
+           
+        }
+
+     
+
+        h6 {
+           
+         
+            font-size: 0.7vw;
+
+        }
+   
 
         p {
-            text-align: left;
-            color: black !important;
+         
+            font-size: .5vw;
         }
-
-        a {
-            background: rgb(4, 4, 51);
-            border-color: hsl(56, 94%, 66%);
-            color: yellow;
+     
+        h1 {
+            color: white !important;
+           
         }
-
+      
+        h2 {
+            color: white !important;
+           
+        }
         h3 {
             color: white !important;
+           
         }
 
         h4 {
             color: white !important;
+           
         }
 
         h5 {
             color: white !important;
+       
+           
         }
 
-        .oneandhalf {
-            line-height: 2em;
-        }
+     
 
         h6 {
-            line-height: 2em;
+           
             color: white !important;
+          
 
+        }
+        p {
+            text-align: left;
+            color: black !important;
+           
         }
 
         .dropdown-submenu {
