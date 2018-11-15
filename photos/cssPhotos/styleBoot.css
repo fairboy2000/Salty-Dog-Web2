@@ -2,6 +2,7 @@
             color: white;
             background: rgb(4, 4, 51);
             padding: 10px 0;
+            font-family: 'Rubik', sans-serif;
         }
 
         .btn-outline-info {
@@ -114,6 +115,7 @@
             border-color: hsl(56, 94%, 66%);
             color: yellow;
             width: 100%;
+            
 
         }
 

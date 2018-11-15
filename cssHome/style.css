@@ -6,6 +6,7 @@
       background:#333 url('./images/black_linen_v2.png') center repeat;
       overflow:hidden;
       color:#fff;
+      font-family: 'Rubik', sans-serif;
     }
     #resizerFrame {
       width:100%;

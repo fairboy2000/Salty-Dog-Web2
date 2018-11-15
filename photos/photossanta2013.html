@@ -21,6 +21,7 @@
         crossorigin="anonymous">
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="cssPhotos/styleBoot.css">
 
 
@@ -206,7 +207,7 @@
                                 <a tabindex="-1" href="../Dine/icecream.html">IceCream</a>
                             </li>
                             <li>
-                                <a tabindex="-1" href="../Dine/cater.html">Catering</a>
+                                <a tabindex="-1" href="../Dine/cater.html">Private Events</a>
                             </li>
                             <li>
                                     <a tabindex="-1" href="../daily-special/dailyspec.php">Daily Specials</a>
@@ -615,7 +616,7 @@
         */
         var pageCtr = 1;
         function loadFlickr() {
-            var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+photos+with+santa+2013&format=json&page=' + pageCtr + '&extras=url_n';
+            var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+photos+with+santa+2013&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
             $.ajax({
                 url: dataUrl
                 , dataType: 'jsonp'

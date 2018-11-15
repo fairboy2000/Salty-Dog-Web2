@@ -25,6 +25,7 @@
         crossorigin="anonymous">
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="styleBoot.css">
 
 </head>
@@ -93,7 +94,7 @@
                                     <a tabindex="-1" href="../Dine/icecream.html">IceCream</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../Dine/cater.html">Catering</a>
+                                    <a tabindex="-1" href="../Dine/cater.html">Private Events</a>
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="dailyspec.php">Daily Specials</a>
@@ -242,16 +243,7 @@
     
     
 
- <div class="container">
-
-<div class="row" style="display:inline-block !important">
-    <img src="images/spec.jpg" style="text-align:center !important" alt="spec" width="512" height="264">
-
-</div>
-
-</div>
-
-           <br>
+ 
 
 <div class="container">
         <div class="row">

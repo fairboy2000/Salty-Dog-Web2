@@ -8,9 +8,11 @@
     <title>Salty Dog Cafe Lunch Menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/social-logos/favicon.ico">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
     <!-- Compiled and minified CSS -->
 
 
@@ -349,7 +351,7 @@
                 function getImageData(query) {
                     $.ajax({
                         type: "GET",
-                        url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&tags="salty+dog+cafe+dogs"&text=${query}&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
+                        url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&tags="salty+dog+cafe+dog+photos+for+salty+dog+site&text=${query}&safe_search=1&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
                         success: function (data) {
                             // Call the handle Data function and pass the response
                             handleData(data);

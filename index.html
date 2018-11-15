@@ -19,7 +19,9 @@
   <script type="text/javascript" src="../js/libs/jquery-1.10.2.min.js"></script>
   <!-- framework css -->
   <!--[if gt IE 9]><!-->
+ 
   <link type="text/css" rel="stylesheet" href="cssHome/groundwork.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <!--<![endif]-->
   <!--[if lte IE 9]-->
     <link type="text/css" rel="stylesheet" href="/cssHome/home.css">
@@ -29,10 +31,14 @@
 
 
 
-/* body{
+body{
 
-  overflow-x: hidden
-} */
+font-family: 'Rubik', sans-serif;
+} 
+h6{
+
+font-family: 'Rubik', sans-serif !important;
+} 
 
 .container{
 
@@ -43,6 +49,7 @@ max-width: 1200px;
 margin: 0 auto;
 align-items: center;
 justify-content: center;
+font-family: 'Rubik', sans-serif;
 /* padding-top: 50px;
 padding-left: 50%;
 padding-right: 50px; */
@@ -85,11 +92,18 @@ width: 50% ;
 
 }   */
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
 h6 {
-font-size: 80px;
+font-size: 60px;
 }
-} 
+}  */
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    @media screen and (max-width: 1175px) {
+h6 {
+font-size: 30px;
+}
+}
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (max-width: 900px) {
