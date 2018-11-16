@@ -8,8 +8,8 @@
 
         .btn-outline-info {
             background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
+            background: rgb(4, 4, 51);
+            color: white;
         }
 
         .btn-secondary {
@@ -20,10 +20,10 @@
         }
 
         .btn-warning {
-            background: hsl(56, 94%, 66%);
+            background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
-            color: black;
-            font-size: .5em;
+            color: white;
+            
             font-size: .5em !important;
         }
         .btn-menu {
@@ -38,10 +38,10 @@
           }
 
         button {
-            background: hsl(56, 94%, 66%);
+            background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
-            color: black;
-font-size: .5em;
+            color: white;
+        font-size: .5em;
         }
         li{
         

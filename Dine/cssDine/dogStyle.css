@@ -7,7 +7,7 @@
         }
 
         .btn-outline-info {
-            background: rgb(4, 4, 51);
+            background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
         }
@@ -16,20 +16,26 @@
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-            font-size: .5em;
+            font-size: .5em !important;
         }
 
         .btn-warning {
-            background: rgb(4, 4, 51);
+            background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-
+            font-size: .5em !important;
         }
         .btn-menu {
-            background: rgb(4, 4, 51);
+            background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-
+          
+        }
+        .btn-menu {
+            background: hsl(56, 94%, 66%);
+            border-color: hsl(56, 94%, 66%);
+            color: black;
+           
         }
 
         .carousel-inner img {
@@ -40,11 +46,12 @@
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-
+         
         }
-li{
-        list-style-type: none;
-    }
+        li{
+        
+            list-style-type: none;
+        }
         .col {
           
           
@@ -57,6 +64,13 @@ li{
             /* margin-top: 5px; */
             max-width: 1200px;
         }
+        a {
+            background: rgb(4, 4, 51);
+            border-color: hsl(56, 94%, 66%);
+            color: yellow;
+          
+           
+        }
 
         .row {
             text-align: center;
@@ -66,18 +80,20 @@ li{
 
         li {
             padding: 5px;
+           
         }
+
         html { font-size: calc(1em + 1vw) }
     
         h1 { font-size: 3em; }
       
         h2 {
           
-            font-size:2em;
+            font-size:2.4em;
         }
         h3 {
            
-            font-size: 1em;
+            font-size: 2em;
         }
 
         h4 {
@@ -105,49 +121,58 @@ li{
          
             font-size: .1em;
         } 
-
-        p {
-            text-align: left;
-            color: black !important;
+     
+        h1 {
+            color: white !important;
+           
         }
-
-        a {
-            background: rgb(4, 4, 51);
-            border-color: hsl(56, 94%, 66%);
-            color: yellow;
+      
+        h2 {
+            color: white !important;
+           
         }
-
         h3 {
             color: white !important;
+           
         }
 
         h4 {
             color: white !important;
+           
         }
 
         h5 {
-            color: white !important;
-        }
+            color: black!important;
+       
 
-      
+    line-height: 2 !important;
+
+           
+        }
 
         h6 {
            
             color: white !important;
+          
 
+        }
+        p {
+            text-align: left;
+            color: white !important;
+           
         }
 
         .dropdown-submenu {
             position: relative;
-
-            width: 100%;
+          
+           
         }
 
         .dropdown-submenu .dropdown-menu {
             top: 0;
             left: 100%;
             margin-top: -1px;
-            width: 100%;
+          
 
         }
 
@@ -156,7 +181,7 @@ li{
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: yellow;
-            width: 100%;
+           
 
         }
 
@@ -164,6 +189,10 @@ li{
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: yellow;
-            width: 100%;
+         
 
         }
+      li a {
+
+        font-size: .5em !important;
+      }

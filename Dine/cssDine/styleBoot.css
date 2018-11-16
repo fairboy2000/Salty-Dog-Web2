@@ -1,53 +1,49 @@
-     body {
-            color: white;
-            background: rgb(4, 4, 51);
-            padding: 10px 0;
-            font-family: 'Rubik', sans-serif;
-           
-        }
+body {
+    color: white;
+    background: rgb(4, 4, 51);
+    padding: 10px 0;
+    font-family: 'Rubik', sans-serif;
+   
+}
 
-        .btn-outline-info {
-            background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
-        }
 
-        .btn-secondary {
-            background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
-            font-size: .5em !important;
-        }
+.btn-outline-info {
+    background: hsl(56, 94%, 66%);
+    background: rgb(4, 4, 51);
+    color: white;
+}
 
-        .btn-warning {
-            background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
-            font-size: .5em !important;
-        }
-        .btn-menu {
-            background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
-          
-        }
-        .btn-menu {
-            background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
-           
-        }
+.btn-secondary {
+    background: hsl(56, 94%, 66%);
+    border-color: hsl(56, 94%, 66%);
+    color: black;
+    font-size: .5em !important;
+}
 
-        .carousel-inner img {
-            margin: auto;
-          }
+.btn-warning {
+    background: rgb(4, 4, 51);
+    border-color: hsl(56, 94%, 66%);
+    color: white;
+    
+    font-size: .5em !important;
+}
+.btn-menu {
+    background: hsl(56, 94%, 66%);
+    border-color: hsl(56, 94%, 66%);
+    color: black;
 
-        button {
-            background: hsl(56, 94%, 66%);
-            border-color: hsl(56, 94%, 66%);
-            color: black;
-         
-        }
+}
+
+.carousel-inner img {
+    margin: auto;
+  }
+
+button {
+    background: rgb(4, 4, 51);
+    border-color: hsl(56, 94%, 66%);
+    color: white;
+font-size: .5em;
+}
         li{
         
             list-style-type: none;
