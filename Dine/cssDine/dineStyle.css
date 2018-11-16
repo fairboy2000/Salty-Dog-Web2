@@ -16,14 +16,15 @@
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-
+            font-size: .5em !important;
         }
 
         .btn-warning {
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-
+            font-size: .5em;
+            font-size: .5em !important;
         }
         .btn-menu {
             background: hsl(56, 94%, 66%);
@@ -40,7 +41,7 @@
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
             color: black;
-
+font-size: .5em;
         }
         li{
         
@@ -73,46 +74,50 @@
         li {
             padding: 5px;
         }
-    
-        h1 {
-           
-            font-size: 3.1vw;
-        }
-      
-        h2 {
-          
-            font-size: 2.8vw;
-        }
-        h3 {
-           
-            font-size: 2.3vw;
+
+        html 
+        { 
+            font-size: calc(1em + 1vw) 
+        
         }
 
+
+        h2 {
+           
+            font-size: 3.5vw;
+        }
+      
+        h3 {
+          
+            font-size: 3vw;
+        }
         h4 {
            
-            font-size: 1.9vw;
+            font-size: 2.5vw;
         }
 
         h5 {
+           
+            font-size: 2vw;
+        }
+
+        h6 {
          
-            font-size: 1.0vw;
+            font-size: 1.5vw;
            
         }
 
      
 
-        h6 {
+        p {
            
          
-            font-size: 0.7vw;
+            font-size: 1.1vw;
 
         }
    
 
-        p {
-         
-            font-size: .5vw;
-        }
+       
      
         h1 {
             color: white !important;
@@ -183,3 +188,7 @@
             width: 100%;
 
         }
+        li a {
+
+            font-size: .5em !important;
+          }
