@@ -13,9 +13,9 @@
         }
 
         .btn-secondary {
-            background: hsl(56, 94%, 66%);
+            background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
-            color: black;
+            color: white;
             font-size: .5em !important;
         }
 
@@ -67,7 +67,7 @@
         a {
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
-            color: yellow;
+            color: white !important;
           
            
         }
