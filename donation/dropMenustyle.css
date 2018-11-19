@@ -6,12 +6,18 @@
 
      
         .btn-outline-info {
-            background: hsl(56, 94%, 66%);
+            border-color: hsl(56, 94%, 66%);
             background: rgb(4, 4, 51);
             color: white;
         }
 
         .btn-secondary {
+            background: rgb(4, 4, 51);
+            border-color: hsl(56, 94%, 66%);
+            color: white;
+           
+        }
+        .btn-primary {
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: white;

@@ -3,9 +3,13 @@
             background: rgb(4, 4, 51);
             padding: 10px 0;
         }
+.btn{
+    font-size: .5em !important;
 
+}
+     
         .btn-outline-info {
-            background: hsl(56, 94%, 66%);
+            border-color: hsl(56, 94%, 66%);
             background: rgb(4, 4, 51);
             color: white;
         }
@@ -14,14 +18,14 @@
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: white;
+            font-size: .5em;
            
         }
         .btn-primary {
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: white;
-            margin: 5px;
-           
+            font-size: .5em;
         }
 
         .btn-warning {
@@ -32,11 +36,19 @@
          
         }
         .btn-menu {
-            background: hsl(56, 94%, 66%);
+            background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
-            color: black;
+            color: white;
 
         }
+
+       li .dropdown-submenu {
+            position: relative;
+            font-size: .5em !important;
+            width: 100%;
+        }
+      
+      
 
         .dropdown-submenu {
             position: relative;
@@ -69,13 +81,8 @@
 
         }
 
-      
-              
-    
 
-      
-
-       
+          
 
         a {
             background: rgb(4, 4, 51);
