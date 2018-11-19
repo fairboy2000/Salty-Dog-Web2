@@ -15,7 +15,7 @@
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: white;
-           
+           font-size: .5em;
         }
 
         .btn-warning {
