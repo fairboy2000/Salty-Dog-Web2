@@ -2,28 +2,29 @@ html { font-size: calc(1em + 1vw) }
      
         h1 {
            
-            font-size: 4.0vw;
+            font-size: 3em;
         }
         
         h2 {
           
-            font-size: 3.0vw;
+            font-size: 2em;
         }
         h3 {
            
-            font-size: 2.5vw;
+            font-size: 1.5em;
         }
         
         h4 {
            
-            font-size: 1.9vw;
+            font-size: 1em;
         }
         
         h5 {
          
-            font-size: 1.3vw;
+            font-size: .8em;
            
         }
+
         
         .carousel-inner img {
             margin: auto;
@@ -32,20 +33,20 @@ html { font-size: calc(1em + 1vw) }
         h6 {
            
          
-            font-size: 1.1vw;
+            font-size: 1.1em;
         
         }
         
         
         p {
          
-            font-size: .9vw;
+            font-size: .9em;
         }
        
 
         label{
 
-            font-size: 30px !important;
+            font-size: .9em !important;
             
         }
         .form-group{

@@ -17,6 +17,12 @@
             color: white;
            
         }
+        .btn-primary {
+            background: rgb(4, 4, 51);
+            border-color: hsl(56, 94%, 66%);
+            color: white;
+           
+        }
 
         .btn-warning {
             background: rgb(4, 4, 51);

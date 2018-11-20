@@ -247,6 +247,9 @@
  
 
 <div class="container">
+<div class="row border-bottom border-white border-3"></div><br>
+        <div class="row border-bottom border-white border-3"></div>
+        <br>
         <div class="row">
             <div class="col">
             <img src="images/CAFE.png" alt="spec" width="30%" height="auto">
