@@ -1,27 +1,119 @@
 html { font-size: calc(1em + 1vw) }
      
         h1 {
-           
-            font-size: 4.0vw;
+            color: white !important;
+            font-size: 3.0em;
         }
+        .block-top {
+            
+            background: white;
+            padding: 1rem;
+           
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+        .block {
+            overflow: hidden;
+            background: white;
+            padding: 1rem;
+            max-width: 40rem;
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+          .block img {
+            width: 70%;
+            height: auto;
+            float: left;
+            margin: 0 1rem 0 0;
+          }
+          .block p {
+            font-weight: 500;
+            margin: 0 0 0.5rem 0;
+            color: rgb(4, 4, 51);
+          }
+          
+        .block-left {
+            overflow: hidden;
+            background: white;
+            padding: 1rem;
+            max-width: 40rem;
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+          .block-left img {
+            width: 70%;
+            height: auto;
+            float: left;
+            margin: 0 1rem 0 0;
+          }
+          .block-left p {
+            font-weight: 500;
+            margin: 0 0 0.5rem 0;
+            color: rgb(4, 4, 51);
+          }
+          
+
+          .block-right {
+            overflow: hidden;
+            background: white;
+            padding: 1rem;
+            max-width: 40rem;
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+          .block-right img {
+            width: 70%;
+            height: auto;
+            float: right;
+            margin: 0 1rem 0 0;
+          }
+          .block-right p {
+            font-weight: 500;
+            margin: 0 0 0.5rem 0;
+            color: rgb(4, 4, 51);
+          }
+           .block-right ul li {
+
+            text-align: left;
+          } 
+
+          .block-right ul li img{
+
+            float: left;
+          } 
+          .block-center  {
+            width: 40%;
+            height: auto;
+            float: right;
+            margin: 0 1rem 0 0;
+          }
+          body {
+           
+            color: rgb(4, 4, 51) !important;
+         
+         
+       
+            margin: 0;
+            padding: 1rem;
+          }
         
         h2 {
-          
-            font-size: 3.0vw;
+            color: white !important;
+            font-size: 2.0em;
         }
         h3 {
            
-            font-size: 2.5vw;
+            font-size: 1.5em;
         }
         
         h4 {
            
-            font-size: 1.9vw;
+            font-size: .9em;
         }
         
         h5 {
          
-            font-size: 1.3vw;
+            font-size: .7em;
            
         }
         
@@ -39,7 +131,8 @@ html { font-size: calc(1em + 1vw) }
         
         p {
          
-            font-size: .9vw;
+            font-size: .6em;
+            color: rgb(4, 4, 51)  !important;
         }
        
 
@@ -83,7 +176,7 @@ html { font-size: calc(1em + 1vw) }
 
         p {
             text-align: left;
-            color: white!important;
+            color: rgb(4, 4, 51);
         }
 
      .card-body{
@@ -92,7 +185,7 @@ html { font-size: calc(1em + 1vw) }
      }
 
         h3 {
-            color: white !important;
+            color: rgb(4, 4, 51) !important;
             text-align: left;
         }
 
@@ -110,7 +203,7 @@ html { font-size: calc(1em + 1vw) }
 
         h6 {
            
-            color: white !important;
+            color: rgb(4, 4, 51) !important;
            
         }
         label{
