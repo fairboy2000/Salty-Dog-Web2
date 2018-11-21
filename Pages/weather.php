@@ -375,13 +375,13 @@ if(document.images)window.onload=refresh;
 <img src="http://64.203.225.15:8018/images/tides.jpg?date=<?php echo $date; ?>" alt="tides" style="border: 2px" width="70%"
                 height="auto" />
 <br><br>
-<p style="color:green !important">Green Clock = Tide Falling with Low Tide at Bottom of Clock</p>
+<p style="color:green !important;text-align: center">Green Clock = Tide Falling with Low Tide at Bottom of Clock</p>
 <br>
-<p style="color:blue!important">Blue Clock = Tide Rising with High Tide at Top of Clock</p>
+<p style="color:blue!important;text-align: center">Blue Clock = Tide Rising with High Tide at Top of Clock</p>
 <br>
-<p style="color:red !important">Red Clock = Negative Low</p>
+<p style="color:red !important;text-align: center">Red Clock = Negative Low</p>
 <br>
-<p style="color:black !important" >Current Eastern Standard Time in Center of Clock  
+<p style="color:black!important;text-align: center">Current Eastern Standard Time in Center of Clock  
 <br>Current Tide Height on Face of Clock</p>
 
 

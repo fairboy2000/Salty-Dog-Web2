@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TremulaJS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<!-- framework css -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<!--<![endif]-->
+	<link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/dropMenustyle.css">
+	<link type="text/css" rel="stylesheet" href="css/styleBoot.css">
+	<link rel="stylesheet" href="dist/Tremula.min.css">
+	<link rel="stylesheet" href="gh-pages-demo/demo.css">
+	<style type="text/css">
+
+	</style>
+
+	<script src="libs/jquery-min.js"></script>
+	<script src="libs/hammer.js"></script>
+	<script src="libs/jsBezier-0.6.js"></script>
+	<script src="libs/raf_shim.js"></script>
+
+	<script src="libs/jquery.ba-throttle-debounce.min.js"></script>
+
+	<script src="gh-pages-demo/tremulaAdapters.js"></script>
+	<script src="gh-pages-demo/tremulaConfig.js"></script>
+	<script src="gh-pages-demo/tremulaControls.js"></script>
+	<script src="gh-pages-demo/tremulaProjections.js"></script>
+	<script src="dist/Tremula.min.js"></script>
+
+	<script type="text/javascript">
+
+
+
+		$().ready(function () {
+			console.log('tremulajs demo gh-pages')
+			setTimeout(function () {
+				var tremula = tremulaInit();
+				//tremula.Grid.updateConfig({itemConstraint:200,itemMargins:[20,20]});
+				attachDemoControls(tremula);
+				window.tremula = tremula;//does not need to be on the window -- implemented here for convienience.
+
+				$('body').removeClass('doReflect');
+				//toggleDebug();
+
+			}, 1000);
+		});
+
+
+		function tremulaInit() {
+			console.log('starting tremula');
+
+			$tremulaContainer = $('.tremulaContainer');
+
+
+			var tremula = new Tremula();
+			var config = tremulaConfigs.default.call(tremula);
+
+			tremula.init($tremulaContainer, config, this);
+
+			var doScrollEvents = function (o) {
+				if (debugLoop) debugLoop(o);
+				if (o.scrollProgress > .7) {
+					if (!tremula.cache.endOfScrollFlag) {
+						tremula.cache.endOfScrollFlag = true;
+						console.log('END OF SCROLL!')
+					}
+				}
+			}//doScrollEvents()
+
+			tremula.setOnChangePub(doScrollEvents);
+
+			return tremula;
+		}
+
+
+
+	</script>
+
+
+
+</head>
+
+<body class="doReflect">
+	<script>
+		$(document).ready(function () {
+			$('.dropdown-submenu a.test').on("click", function (e) {
+				$(this).next('ul').toggle();
+				e.stopPropagation();
+				e.preventDefault();
+			});
+		});
+	</script>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg ">
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+				 aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-bars"></i> Menu
+				</a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<li>
+						<a class="dropdown-item" href="../index.html">Home</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../Pages/stores.html" target="blank">Shop</a>
+					</li>
+
+					<li class="dropdown-submenu">
+						<a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Dine
+							<span class="caret"></span>
+						</a>
+
+						<ul class="dropdown-menu">
+							<li>
+								<a tabindex="-1" href="../Dine/dine.html">Salty Dog Dining</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/cafe.html">Salty Dog Cafe</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/landsend.html">Land's End</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/wreck.html">Wreck</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/kiwi.html">Kiwi's Island Cookout</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/pizza.html">Pizza</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/icecream.html">IceCream</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../Dine/cater.html">Private Events</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../daily-special/dailyspec.php">Daily Specials</a>
+							</li>
+						</ul>
+					</li>
+
+
+					<li>
+						<a class="dropdown-item" href="../cruise/cruise.html" target="blank">Cruise</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../Pages/events.html">Events</a>
+					</li>
+
+					<li>
+						<a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../Pages/radio.html">Radio</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../Pages/kids.html">Kids</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../feedback/feedback.html">Feedback Us</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../Pages/findus.html">Find Us</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
+					</li>
+
+					<li class="dropdown-submenu">
+						<a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a tabindex="-1" href="photos.html">Pet Photos</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="photosevents.html">Special Events photos</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="photossanta.html">Photos with Santa</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="photosjake.html">Photos with Jake</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
+							</li>
+						</ul>
+
+					</li>
+
+
+
+					<li class="dropdown-submenu">
+						<a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Webcams
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a tabindex="-1" href="../WebCams/webcams.html">See all our Webcams</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/bluewatercam.html">Bluewater Cam</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/boatcam.html">BoatCam</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/boatcamaft.html">BoatCam Aft</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/boatcambow.html">BoatCam Bow</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/calibogue.php">Calibogue Cam</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/courtyardcam.html">Courtyard Cam</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/overheadcam.html">Overhead Cam</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/South Beach Cam.html">South Beach Cam</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/tangercam.html">Tanger Outlet Cam</a>
+							</li>
+							<li>
+								<a tabindex="-1" href="../WebCams/tshirtcam.html">T-Shirt Cam</a>
+							</li>
+						</ul>
+					</li>
+
+
+					<li>
+						<a class="dropdown-item" href="../Pages/weather.php">Weather</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
+					</li>
+				</div>
+
+			</div>
+
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="../tides/tides.html" target="_blank">
+
+						<img src="../images/social-logos/TIDESBUTTON.png">
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="../Pages/social.html" target="_blank">
+						<img src="../images/social-logos/Facebook_Rounded.png">
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="../Pages/social.html" target="_blank">
+						<img src="../images/social-logos/Instagram_RoundedEdges.png">
+					</a>
+				</li>
+			</ul>
+
+		</nav>
+	</div>
+
+	</div>
+
+	<div class="container">
+		<img src="../images/HeaderBanners/PICS PETS.png" style="width:100%; height:auto">
+
+	</div>
+
+	<div class="container">
+
+		<div class="block">
+
+			<nav class="navbar navbar-expand-sm ">
+				<div class="dropdown">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						 Photos
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a tabindex="-1" href="photos.html">Pet Photos</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="photosevents.html">Special Events photos</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
+						</li>
+						<li class="dropdown-submenu">
+							<a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Santa
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+
+								<li>
+									<a tabindex="-1" href="photossanta.html">Photos with Santa 2018</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2017.html">Photos with Santa 2017</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2016.html">Photos with Santa 2016</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2015.html">Photos with Santa 2015</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2014.html">Photos with Santa 2014</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2013.html">Photos with Santa 2013</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Jake
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+
+								<li>
+									<a tabindex="-1" href="photosjake.html">Photos with Jake 2018</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2017.html">Photos with Jake 2017</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2016.html">Photos with Jake 2016</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2015.html">Photos with Jake 2015</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2014.html">Photos with Jake 2014</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2013.html">Photos with Jake 2013</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Photos Display
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li class="streamHorizontal">Stream Horizontal</li>
+						<li class="pinterest">Stream Vertical</li>
+						<li class="btnL2">Turntable</li>
+						<li class="mountain">Mountain</li>
+						<li class="btnL3">Dragon</li>
+
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Photos Style
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li class="size1">sm size</li>
+						<li class="size2">med size</li>
+						<li class="size3">lg size</li>
+						<li class="btn1">1 Axis</li>
+						<li class="btn2">2 Axes</li>
+						<li class="btn3">3 Axes</li>
+						<li class="autoSize">autoSize</li>
+
+					</div>
+				</div>
+			</nav>
+
+
+
+			<!-- <div class="controls" >
+		
+				<div class="buttons">
+		
+					<ul class="group main presets">
+						<li class="streamHorizontal">streamHorizontal</li>
+						<li class="pinterest">pinterest</li>
+						<li class="btnL2">turntable</li>
+						<li class="mountain">mountain</li>
+						<li class="btnL3">enterTheDragon</li>
+						<li class="xy">xyPlain (toggle)</li>
+					</ul>
+		
+					<ul class="group main">
+						<li class="more">Experimental stuff...</li>
+					</ul>
+		
+					<ul class="group">
+						<li class="autoSize">autoSize</li>
+						<li class="autoCount">autoCount</li>
+						<li class="autoDisable">autoDisable</li>
+					</ul>
+		
+					<ul class="group">
+						<li class="btn1">1 Axis</li>
+						<li class="btn2">2 Axes</li>
+						<li class="btn3">3 Axes</li>
+					</ul>
+		
+					<ul class="group">
+						<li class="size1">sm size</li>
+						<li class="size2">med size</li>
+						<li class="size3">lg size</li>
+					</ul>
+		
+		
+		
+		 -->
+
+
+
+			<p>We love seeing your smiling faces! Send us your pictures rockin' your favorite Salty Dog gear. Whether
+				it's your furry friend
+				looking extra cute in a Salty Dog bandana or your family sporting Salty Dog while traveling the globe -
+				send it our way: photos@saltydog.com.
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="tremulaContainer main"></div>
+
+	</div>
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+
+	showControlData = function (o) {
+		if (!this.$debug) this.$debug = $('.debug');
+		this.$debug.html(
+			'<ul>'
+			// + '<li>jsHeapSizeLimit: ' 							+ performance.memory.jsHeapSizeLimit 											+ '<span>total available memory</span></li>'
+			// + '<li>totalJSHeapSize: ' 							+ performance.memory.totalJSHeapSize 											+ '<span>total used memory</span></li>'
+			// + '<li>usedJSHeapSize: ' 							+ performance.memory.usedJSHeapSize 											+ '<span>current  used memory</span></li>'
+			+ '<li>scrollAxis: ' + o.sa + ' [sx]--> ' + o.sx + '<span>Direction of scroll</span></li>'
+			+ '<li>this.frameRate: ' + o.frameRate + '<span>frameRate</span></li>'
+			+ '<li>this.physicsLoopRAF: ' + o.physicsLoopRAF + '<span>RAF FRAME ID</span></li>'
+			+ '<li>isTouching: ' + o.isTouching + '<span></span></li>'
+			+ '<li>absScrollPos: ' + o.absScrollPos + '<span>The scroll position of the content head in relation to the visible leading border.</span></li>'
+			+ '<li>scrollPos: ' + o.scrollPos + '<span></span></li>'
+			+ '<li>scrollProgress: ' + o.scrollProgress + '<span></span></li>'
+			+ '<li>marginScrollWarp: ' + o.marginScrollWarp + '<span></span></li>'
+			+ '<li>isInHeadMargin: ' + o.isInHeadMargin + '<span></span></li>'
+			+ '<li>isInTailMargin: ' + o.isInTailMargin + '<span></span></li>'
+			+ '<li>scrollAxisOffset: ' + o.scrollAxisOffset + '<span>The margin added before and after the content -- this creates a blank offset area on either side of the content -- IOW: this offsets the content position.</span></li>'
+			+ '<li>scrollMargin: ' + o.scrollMargin + '<span>The scrollable area added before and after the content. NOTE: this does not offset the content.</span></li>'
+			+ '<li>firstItemPos: ' + o.firstItemPos + '<span>The head edge position of the first item.</span></li>'
+			+ '<li>bounceMargin: ' + o.bounceMargin + '<span></span></li>'
+			+ '<li>trailingEdgeScrollPos: ' + o.trailingEdgeScrollPos + '<span></span></li>'
+			+ '<li>absTrailingEdgeScrollPos: ' + o.absTrailingEdgeScrollPos + '<span>The value of absScrollPos when content is scrolled completely to the tail position (exclude rubber band effect).</span></li>'
+			+ '<li>currentGridContentDims: ' + o.currentGridContentDims + '<span>?</span></li>'
+			+ '<li>boxAxisLengths: ' + o.boxAxisLengths + '<span>A mysterious number which starts as the contentDims but gets transformed in ways that are no longer clear.</span></li>'
+			+ '<li>contentDims: ' + o.contentDims + '<span>Content bounding box dims.</span></li>'
+			+ '<li>gridDims: ' + o.gridDims + '<span></span></li>'
+			+ '<li>hasShortGridDimsSi: ' + o.hasShortGridDimsSi + '<span></span></li>'
+			+ '<li>hasMediumGridDimsSi: ' + o.hasMediumGridDimsSi + '<span></span></li>'
+			+ '</ul>'
+		);
+	}
+
+
+	debugLoop = null;
+
+	toggleDebug = function toggleDebug() {
+		if (debugLoop) {
+			debugLoop = null;
+			$('.debug').removeClass('show');
+		} else {
+			debugLoop = showControlData;
+			$('.debug').addClass('show');
+			showControlData({});
+		}
+
+	}
+
+
+
+
+
+</script>

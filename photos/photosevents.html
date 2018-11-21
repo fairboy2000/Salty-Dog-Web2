@@ -86,7 +86,7 @@
         /* Note: any gridBox border added must be compensated for by adding negative margin */
 
         .gridBox {
-            border: #fff 10px solid;
+            border: #fff 3px solid;
             margin: -10px 0 0 -10px;
         }
 
@@ -97,7 +97,7 @@
         /* .tremulaContainer must have actual dimentionality (set H&W) */
 
         .tremulaContainer {
-            height: 60%;
+            height: 90%;
 
             width: 100%;
 
@@ -142,6 +142,8 @@
             width: 100%;
             height: 100%;
         }
+
+ 
     </style>
 </head>
 
@@ -486,7 +488,7 @@
                     itemConstraint: 150,//px
 
                     //Margin in px added to each side of each content item
-                    itemMargins: [10, 10],//x (left & right), y (top & bottom) in px
+                    itemMargins: [5, 5],//x (left & right), y (top & bottom) in px
 
                     //Display offset of static axis (static axis is the non-scrolling dimention)
                     staticAxisOffset: 0,//px
@@ -497,7 +499,7 @@
                     //Sets the scroll axis 'x'|'y'.
                     //NOTE: projections generally only work with one scroll axis
                     //when changeing this value, make sure to use a compatible projection
-                    scrollAxis: 'x',//'x'|'y'
+                    scrollAxis: 'y',//'x'|'y'
 
                     //surfaceMap is the projection/3d-effect which will be used to display grid content
                     //following is a list of built-in projections with their corresponding scroll direction
@@ -510,7 +512,7 @@
                     // (x) turntable
                     // (x) enterTheDragon
                     //----------------------
-                    surfaceMap: tremula.projections.streamHorizontal,
+                    surfaceMap: tremula.projections.pinterest,
 
                     //how many rows (or colums) to display.  note: this is zero based -- so a value of 0 means there will be one row/column
                     staticAxisCount: 1,//zero based 
