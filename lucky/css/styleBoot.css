@@ -45,7 +45,7 @@ html { font-size: calc(1em + 1vw) }
 
         label{
 
-            font-size: 30px !important;
+            font-size: .9em!important;
             
         }
         .form-group{
