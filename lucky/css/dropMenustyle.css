@@ -25,6 +25,13 @@
             
          
         }
+        .btn-primary {
+            background: rgb(4, 4, 51);
+            border-color: hsl(56, 94%, 66%);
+            color: white;
+            
+         
+        }
         .btn-menu {
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
@@ -63,7 +70,36 @@
 
         }
 
-       
+        ul.nav {
+            width:100%;
+            margin:0 auto;
+            padding:0;
+            list-style:none;
+        
+            text-align:center;
+           
+        }
+        .nav li { 
+            display:inline-block;
+            width:33%;
+            margin:0;
+            padding:0;
+        }
+        .nav a {
+            text-align:center;
+            padding:12px 0 13px 0;
+            margin:0;
+          
+            display:block;
+        }
+    
+        
+        ul.nav li:first-child a{
+            border:none;
+        }
+        ul.nav li:last-child a {
+            border:none;
+        }
 
         a {
             background: rgb(4, 4, 51);

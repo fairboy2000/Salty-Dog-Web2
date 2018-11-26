@@ -21,12 +21,12 @@ html { font-size: calc(1em + 1vw) }
             margin: 0 0 1rem 0;
             color: rgb(4, 4, 51);
           }
-          .block nav {
+          /* .block nav {
             width: 55%;
             height: auto;
             float: left;
             margin: 0 1rem 0 0;
-          }
+          } */
           .block p {
             font-weight: 500;
             margin: 0 0 0.5rem 1rem;
