@@ -66,10 +66,9 @@ tremulaConfig = {
 			
 			//itemPreloading      : true, //experimental
 
-		})
-	}
+		}
+	
 
-}
 
 
 
@@ -106,7 +105,9 @@ var doScrollEvents = function(internalState){
 			console.log('END OF SCROLL!')
 		}
 	}
-}//doScrollEvents()
+}
+
+doScrollEvents()
 
 
 var doEndOfScroll(t){
