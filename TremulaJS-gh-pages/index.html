@@ -40,6 +40,8 @@
 	<script src="gh-pages-demo/tremulaProjections.js"></script>
 	<script src="dist/Tremula.min.js"></script>
 
+
+
 	<script type="text/javascript">
 
 
@@ -110,7 +112,7 @@ var config = {
 	//the grid that will be used to project content
 	//NOTE: Generally, this will stay the same and various surface map projections
 	//will be used to create various 3d positioning effects
-	defaultLayout: tremula.layouts.xyPlain,
+	defaultLayout: tremula.layouts.pinterest,
 
 	//it does not look like this actually got implemented so, don't worry about it ;)
 	itemPreloading: true,
@@ -221,23 +223,7 @@ $.ajax({
 	.fail(function (d, config, err) { console.log('API FAIL. ' + err) })
 }
 
-// DATA ADAPTER EXAMPLE
-//=====================
-// flickrDataAdapter() is for use with the flickr API
-// https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=sky%2C+night%2C+day&format=json&page=1
 
-/* SIZE SUFFIX FOR FLICKR IMAGE URLS ===> must be set in above method also
-s	small square 75x75
-q	large square 150x150
-t	thumbnail, 100 on longest side
-m	small, 240 on longest side
-n	small, 320 on longest side
--	medium, 500 on longest side
-z	medium 640, 640 on longest side
-c	medium 800, 800 on longest side†
-b	large, 1024 on longest side*
-o	original image, either a jpg, gif or png, depending on source format
-*/
 
 function flickrDataAdapter(data, env) {
 this.data = data;
@@ -248,58 +234,45 @@ this.auxClassList = "flickrRS";//stamp each mapped item with map ID
 this.template = this.data.template || ('<img draggable="false" class="moneyShot" onload="imageLoaded(this)" src=""/>');
 }
 
-// updateConfig() enables updating of configuration parameters after an instance is running.
-// adding an optional true parameter will force a tremula grid redraw with the new parameter in effect
-// ----------------------------
-// EXAMPLE: tremula.Grid.updateConfig({itemConstraint:100},true);
-// ----------------------------
 
-// Use toggleScrollAxis() to set the scrollAxis, 
-// see: surfaceMap projection compatibility list above to ensure the projection is compatible with the scrollAxis value
-// ----------------------------
-// EXAMPLE: tremula.Grid.toggleScrollAxis('y'); 
-// ----------------------------
-$(function() {
-    	$('img').on('click', function() {
-			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
-			$('#enlargeImageModal').modal('show');
-		});
-});
-function applyBoxClick() {
-$('.tremulaContainer').on('tremulaItemSelect', function (gestureEvt, domEvt) {
-	console.log(gestureEvt, domEvt)
-	var
-		$e = $(domEvt.target);
-	t = $e.closest('.gridBox')[0];
-	if (t) {
-		var data = $.data(t).model.model.data;
-		console.log("t" + data)
-	}
-	if (data) alert("Salty Dog Around the World");
-	console.log("p" + data)
-})
-}
+ function applyBoxClick() {
+            $('.tremulaContainer').on('tremulaItemSelect', function (gestureEvt, domEvt) {
+                console.log(gestureEvt, domEvt)
+                var
+                    $e = $(domEvt.target);
+                t = $e.closest('.gridBox')[0];
+                if (t) {
+                    var data = $.data(t).model.model.data;
+                    console.log("t" + data)
+                }
+                if (data) alert("Salty Dog Around the World");
+               
+                console.log("p" + data)
+            })
+        }
 
 
-function closeAlertBox() {
-alertBox = document.getElementById("alertBox");
-alertClose = document.getElementById("alertClose");
+        function closeAlertBox() {
+            alertBox = document.getElementById("alertBox");
+            alertClose = document.getElementById("alertClose");
 
-alertBox.parentNode.removeChild(alertBox);
-alertClose.parentNode.removeChild(alertClose);
-}
+            alertBox.parentNode.removeChild(alertBox);
+            alertClose.parentNode.removeChild(alertClose);
+        }
 
-window.alert = function (msg) {
-var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
-alertBox = document.createElement("div");
-document.body.appendChild(alertBox);
-alertBox.id = id;
-alertBox.innerHTML = msg;
-alertClose = document.createElement("div");
-alertClose.id = closeId;
-document.body.appendChild(alertClose);
-alertClose.onclick = closeAlertBox;
-};
+        window.alert = function (msg) {
+            var id = "alertBox", alertBox, closeId = "alertClose", alertClose;
+            alertBox = document.createElement("div");
+            document.body.appendChild(alertBox);
+            alertBox.id = id;
+            alertBox.innerHTML = msg;
+            alertClose = document.createElement("div");
+            alertClose.id = closeId;
+            document.body.appendChild(alertClose);
+            alertClose.onclick = closeAlertBox;
+        };
+
+
 
 
 
