@@ -34,7 +34,7 @@
 
 	<script src="libs/jquery.ba-throttle-debounce.min.js"></script>
 
-	<script src="gh-pages-demo/tremulaAdapters.js"></script>
+	<script src="gh-pages-demo/tremulaAdapters.js"></script> 
 	<script src="gh-pages-demo/tremulaConfig.js"></script>
 	<script src="gh-pages-demo/tremulaControls.js"></script>
 	<script src="gh-pages-demo/tremulaProjections.js"></script>
@@ -203,8 +203,9 @@ b	large, 1024 on longest side*
 o	original image, either a jpg, gif or png, depending on source format
 */
 var pageCtr = 1;
+var tags = "salty+dog+cafe+people+from+all+over"
 function loadFlickr() {
-var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+people+from+all+over&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
+var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=' + tags + '&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
 $.ajax({
 	url: dataUrl
 	, dataType: 'jsonp'
@@ -258,7 +259,12 @@ this.template = this.data.template || ('<img draggable="false" class="moneyShot"
 // ----------------------------
 // EXAMPLE: tremula.Grid.toggleScrollAxis('y'); 
 // ----------------------------
-
+$(function() {
+    	$('img').on('click', function() {
+			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+			$('#enlargeImageModal').modal('show');
+		});
+});
 function applyBoxClick() {
 $('.tremulaContainer').on('tremulaItemSelect', function (gestureEvt, domEvt) {
 	console.log(gestureEvt, domEvt)

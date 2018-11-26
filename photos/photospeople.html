@@ -661,6 +661,13 @@
             this.template = this.data.template || ('<img draggable="false" class="moneyShot" onload="imageLoaded(this)" src=""/>');
         }
 
+        $(function() {
+    	$('img').on('click', function() {
+			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+			$('#enlargeImageModal').modal('show');
+		});
+});
+
         // updateConfig() enables updating of configuration parameters after an instance is running.
         // adding an optional true parameter will force a tremula grid redraw with the new parameter in effect
         // ----------------------------

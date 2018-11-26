@@ -382,27 +382,24 @@ function attachDemoControls(tremula){
 		}).fail(function(){console.log('getJSON problem.')});
 	}
 	
-	function loadFlickr(url_,cb){
-		var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+dog+photos+for+salty+dog+site&safe&format=json&page=1&extras=url_z';
-		$.ajax({
-			url:dataUrl
-			,dataType: 'jsonp'
-			,jsonp: 'jsoncallback' 
-		})
-		.done(function(res){
-			console.log(res);
-			var rs = res.photos.photo.filter(function(o,i){return o.height_z > o.width_z * .5});//filter out any with a really wide aspect ratio.
-
-			if(refreshData)
-				tremula.refreshData(rs,flickrSearch);//flicker
-				if(cb)cb();
-			else
-				tremula.appendData(rs,flickrSearch);//flicker
-				if(cb)cb();
-		})
-		.fail( function(d,config,err){ console.log('API FAIL. '+err) })
-	}
-
+	var pageCtr = 1;
+var tags = "salty+dog+cafe+people+from+all+over"
+function loadFlickr() {
+var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=' + tags + '&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
+$.ajax({
+	url: dataUrl
+	, dataType: 'jsonp'
+	, jsonp: 'jsoncallback'
+})
+	.done(function (res) {
+		console.log('API success', res);
+		if (res.stat == 'fail') alert('Dang. Looks like Flickr has lost its pancakes... ' + res.message);
+		var rs = res.photos.photo.filter(function (o, i) { return o.height_n > o.width_n * .5 });//filter out any with a really wide aspect ratio.
+		tremula.appendData(rs, flickrDataAdapter);//flicker
+		tremula.cache.endOfScrollFlag = false;
+	})
+	.fail(function (d, config, err) { console.log('API FAIL. ' + err) })
+} 
 	
 	function loadTestData(dataUrl,cb){
 		$.getJSON(dataUrl)
@@ -438,7 +435,12 @@ function attachDemoControls(tremula){
 		.fail( function(d,config,err){ console.log('API FAIL. '+err) })
 	}
 
-
+	$(function() {
+    	$('img').on('click', function() {
+			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+			$('#enlargeImageModal').modal('show');
+		});
+});
 
 
 
@@ -453,51 +455,51 @@ function attachDemoControls(tremula){
 	// toggleDebug();
 
 
-	window.loadHorizontalStepped = function loadHorizontalStepped(){
-		tremula.Grid.removeAll();
-		tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:200,itemMargins:[20,20],easeToCompensation:0,surfaceMap:horizontalStepped});
-		window.resizeFn = resizeSteppedScrolling;
-		window.resizeFn(tremula)
-		loadArtDotCom(null,postLoadSeq)
-	}
+	// window.loadHorizontalStepped = function loadHorizontalStepped(){
+	// 	tremula.Grid.removeAll();
+	// 	tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:200,itemMargins:[20,20],easeToCompensation:0,surfaceMap:horizontalStepped});
+	// 	window.resizeFn = resizeSteppedScrolling;
+	// 	window.resizeFn(tremula)
+	// 	loadArtDotCom(null,postLoadSeq)
+	// }
 
 
-	window.loadHorizontalPop = function loadHorizontalPop(){
-		tremula.Grid.removeAll();
-		tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:200,itemMargins:[20,20],easeToCompensation:0,surfaceMap:horizontalPop});
-		window.resizeFn = resizeSteppedScrolling;
-		window.resizeFn(tremula)
-		loadArtDotCom(null,postLoadSeq)
-	}
+	// window.loadHorizontalPop = function loadHorizontalPop(){
+	// 	tremula.Grid.removeAll();
+	// 	tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:200,itemMargins:[20,20],easeToCompensation:0,surfaceMap:horizontalPop});
+	// 	window.resizeFn = resizeSteppedScrolling;
+	// 	window.resizeFn(tremula)
+	// 	loadArtDotCom(null,postLoadSeq)
+	// }
 
 
-	window.loadMountainPop = function(){
-		tremula.Grid.removeAll();
-		tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:150,itemMargins:[20,20],easeToCompensation:-15,surfaceMap:mountainPop});
-		window.resizeFn = resizeSteppedScrolling;
-		window.resizeFn(tremula)
-		loadArtDotCom(null,postLoadSeq)
-	}
+	// window.loadMountainPop = function(){
+	// 	tremula.Grid.removeAll();
+	// 	tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:150,itemMargins:[20,20],easeToCompensation:-15,surfaceMap:mountainPop});
+	// 	window.resizeFn = resizeSteppedScrolling;
+	// 	window.resizeFn(tremula)
+	// 	loadArtDotCom(null,postLoadSeq)
+	// }
 
 
-	window.loadCarouselWithPop = function(){
-		tremula.Grid.removeAll();
-		tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:200,itemMargins:[50,0],easeToCompensation:15,surfaceMap:carouselWithPop});
-		window.resizeFn = resizeSteppedScrolling;
-		window.resizeFn(tremula)
-		loadArtDotCom(null,postLoadSeq)
-	}
+	// window.loadCarouselWithPop = function(){
+	// 	tremula.Grid.removeAll();
+	// 	tremula.Grid.updateConfig({steppedScrolling:true,axes:0,itemConstraint:200,itemMargins:[50,0],easeToCompensation:15,surfaceMap:carouselWithPop});
+	// 	window.resizeFn = resizeSteppedScrolling;
+	// 	window.resizeFn(tremula)
+	// 	loadArtDotCom(null,postLoadSeq)
+	// }
 
 
 
-	window.loadTwelveToSix= function(){
-		tremula.Grid.removeAll();
-		tremula.Grid.toggleScrollAxis('y');
-		tremula.Grid.updateConfig({steppedScrolling:false,axes:0,itemConstraint:100,itemMargins:[10,10],easeToCompensation:50,surfaceMap:twelveToSix});
-		window.resizeFn = resizeSteppedScrolling;
-		window.resizeFn(tremula)
-		loadArtDotCom(null,postLoadSeq)
-	}
+	// window.loadTwelveToSix= function(){
+	// 	tremula.Grid.removeAll();
+	// 	tremula.Grid.toggleScrollAxis('y');
+	// 	tremula.Grid.updateConfig({steppedScrolling:false,axes:0,itemConstraint:100,itemMargins:[10,10],easeToCompensation:50,surfaceMap:twelveToSix});
+	// 	window.resizeFn = resizeSteppedScrolling;
+	// 	window.resizeFn(tremula)
+	// 	loadArtDotCom(null,postLoadSeq)
+	// }
 
 	// loadTwelveToSix()
 	// loadMountainPop()
