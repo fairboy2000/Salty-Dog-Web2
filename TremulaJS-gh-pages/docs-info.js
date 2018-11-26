@@ -66,10 +66,10 @@ tremulaConfig = {
 			
 			//itemPreloading      : true, //experimental
 
-		})
-	}
+		}
+	
 
-}
+
 
 
 
