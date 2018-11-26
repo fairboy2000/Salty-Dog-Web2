@@ -72,7 +72,6 @@ tremulaConfig = {
 
 
 
-
 function tremulaInit($tremulaContainer){
 	
 	//this creates a hook to a new Tremula instance
@@ -106,7 +105,9 @@ var doScrollEvents = function(internalState){
 			console.log('END OF SCROLL!')
 		}
 	}
-}//doScrollEvents()
+}
+
+doScrollEvents()
 
 
 var doEndOfScroll(t){

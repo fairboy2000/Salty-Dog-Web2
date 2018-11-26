@@ -24,18 +24,26 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/dropMenustyle.css">
     <link type="text/css" rel="stylesheet" href="css/styleBoot.css">
+    <link rel="stylesheet" href="dist/Tremula.min.css">
+	<link rel="stylesheet" href="gh-pages-demo/demo.css">
+	<style type="text/css">
 
+	</style>
 
+	<script src="libs/jquery-min.js"></script>
+	<script src="libs/hammer.js"></script>
+	<script src="libs/jsBezier-0.6.js"></script>
+	<script src="libs/raf_shim.js"></script>
 
-    <link rel="stylesheet" href="https://garris.github.io/TremulaJS/dist/Tremula.css">
+	<script src="libs/jquery.ba-throttle-debounce.min.js"></script>
 
+	<script src="gh-pages-demo/tremulaAdapters.js"></script>
+	<script src="gh-pages-demo/tremulaConfig.js"></script>
+	<script src="gh-pages-demo/tremulaControls.js"></script>
+	<script src="gh-pages-demo/tremulaProjections.js"></script>
+	<script src="dist/Tremula.min.js"></script>
 
-
-    <script src="https://garris.github.io/TremulaJS/libs/jquery-min.js"></script>
-    <script src="https://garris.github.io/TremulaJS/libs/hammer.js"></script>
-    <script src="https://garris.github.io/TremulaJS/libs/jsBezier-0.6.js"></script>
-
-    <script src="https://garris.github.io/TremulaJS/dist/Tremula.js"></script>
+	<script type="text/javascript"></script>
     <style>
         * {
             -webkit-touch-callout: none;
@@ -354,87 +362,120 @@
 
 
     <div class="container">
-        <img src="../images/HeaderBanners/PICS PEOPLE.png" style="width:100%; height:auto">
+        <img src="../images/HeaderBanners/PICS PETS.png" style="width:100%; height:auto">
 
     </div>
 
     <div class="container">
 
         <div class="block">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-bars"></i> Photos
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a tabindex="-1" href="photos.html">Pet Photos</a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" href="photosevents.html">Special Events photos</a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Santa
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
 
-                                <li>
-                                    <a tabindex="-1" href="photossanta.html">Photos with Santa 2018</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photossanta2017.html">Photos with Santa 2017</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photossanta2016.html">Photos with Santa 2016</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photossanta2015.html">Photos with Santa 2015</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photossanta2014.html">Photos with Santa 2014</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photossanta2013.html">Photos with Santa 2013</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Jake
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
+            <nav class="navbar navbar-expand-sm ">
+				<div class="dropdown">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						 Photos
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a tabindex="-1" href="photos.html">Pet Photos</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="petphotossearch.html">Search Pet Photos</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="photosevents.html">Special Events photos</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="photospeople.html">Salty Dog Folks</a>
+						</li>
+						<li class="dropdown-submenu">
+							<a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Santa
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
 
-                                <li>
-                                    <a tabindex="-1" href="photosjake.html">Photos with Jake 2018</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photosjake2017.html">Photos with Jake 2017</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photosjake2016.html">Photos with Jake 2016</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photosjake2015.html">Photos with Jake 2015</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photosjake2014.html">Photos with Jake 2014</a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="photosjake2013.html">Photos with Jake 2013</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+								<li>
+									<a tabindex="-1" href="photossanta.html">Photos with Santa 2018</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2017.html">Photos with Santa 2017</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2016.html">Photos with Santa 2016</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2015.html">Photos with Santa 2015</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2014.html">Photos with Santa 2014</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photossanta2013.html">Photos with Santa 2013</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a class="test btn  dropdown-toggle" tabindex="-1" href="#" href="#">Photos with Jake
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+
+								<li>
+									<a tabindex="-1" href="photosjake.html">Photos with Jake 2018</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2017.html">Photos with Jake 2017</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2016.html">Photos with Jake 2016</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2015.html">Photos with Jake 2015</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2014.html">Photos with Jake 2014</a>
+								</li>
+								<li>
+									<a tabindex="-1" href="photosjake2013.html">Photos with Jake 2013</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Photos Display
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li class="streamHorizontal">Stream Horizontal</li>
+						<li class="pinterest">Stream Vertical</li>
+						<li class="btnL2">Turntable</li>
+						<li class="mountain">Mountain</li>
+						<li class="btnL3">Dragon</li>
+
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Photos Style
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li class="size1">sm size</li>
+						<li class="size2">med size</li>
+						<li class="size3">lg size</li>
+						<li class="btn1">1 Axis</li>
+						<li class="btn2">2 Axes</li>
+						<li class="btn3">3 Axes</li>
+						<li class="autoSize">autoSize</li>
+
+					</div>
+				</div>
+			</nav>
+
+
 
 
 
@@ -442,27 +483,33 @@
                 it's your furry friend
                 looking extra cute in a Salty Dog bandana or your family sporting Salty Dog while traveling the globe -
                 send it our way: photos@saltydog.com.
-
             </p>
         </div>
-
-    </div>
-   
-
-
-
     </div>
     <div class="container">
         <div class="pageLayoutContainer">
 
             <div class="tremulaContainer"></div>
 
-
-
-
         </div>
     </div>
     <script>
+$().ready(function () {
+			console.log('tremulajs demo gh-pages')
+			setTimeout(function () {
+				var tremula = tremulaInit();
+				//tremula.Grid.updateConfig({itemConstraint:200,itemMargins:[20,20]});
+				attachDemoControls(tremula);
+				window.tremula = tremula;//does not need to be on the window -- implemented here for convienience.
+
+				$('body').removeClass('doReflect');
+				//toggleDebug();
+
+			}, 1000);
+		});
+
+
+
         $(document).ready(function () {
             setTimeout(function () {
                 window.tremula = createTremula();
@@ -618,7 +665,7 @@
         */
         var pageCtr = 1;
         function loadFlickr() {
-            var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+people+from+all+over&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
+            var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=salty+dog+cafe+dog+photos+for+salty+dog+site&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
             $.ajax({
                 url: dataUrl
                 , dataType: 'jsonp'
@@ -661,13 +708,6 @@
             this.template = this.data.template || ('<img draggable="false" class="moneyShot" onload="imageLoaded(this)" src=""/>');
         }
 
-        $(function() {
-    	$('img').on('click', function() {
-			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
-			$('#enlargeImageModal').modal('show');
-		});
-});
-
         // updateConfig() enables updating of configuration parameters after an instance is running.
         // adding an optional true parameter will force a tremula grid redraw with the new parameter in effect
         // ----------------------------
@@ -688,14 +728,11 @@
                 t = $e.closest('.gridBox')[0];
                 if (t) {
                     var data = $.data(t).model.model.data;
-                    console.log("t" + data)
+                    console.log(data);
                 }
-                if (data) alert("Salty Dog Around the World");
-               
-                console.log("p" + data)
+                if (data) alert(JSON.stringify(data.title));
             })
         }
-
 
         function closeAlertBox() {
             alertBox = document.getElementById("alertBox");
