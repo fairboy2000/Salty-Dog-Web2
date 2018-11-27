@@ -47,8 +47,13 @@
                 $(this).next('ul').toggle();
                 e.stopPropagation();
                 e.preventDefault();
+                $('.carousel').carousel({
+  interval: 2000
+})
             });
         });
+
+ 
     </script>
     <div class="container">
         <nav class="navbar navbar-expand-lg ">
@@ -458,7 +463,7 @@
    
     <div class="row justify-content-center">
         <div class="col justify-content-center">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" >
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-25" src="../images/kids/KidsMenu_BOOK_2018pg1.jpg" alt="First slide">
