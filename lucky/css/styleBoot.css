@@ -75,6 +75,7 @@ html { font-size: calc(1em + 1vw) }
             font-weight: 500;
             margin: 0 0 0.5rem 0;
             color: rgb(4, 4, 51);
+            text-align: right;
           }
           
 
@@ -83,11 +84,11 @@ html { font-size: calc(1em + 1vw) }
             background: white;
             padding: 1rem;
             max-width: 40rem;
-            margin: 0 0 1rem 0;
+            margin: 0 0 0 1rem ;
             color: rgb(4, 4, 51);
           }
           .block-right img {
-            width: 70%;
+         
             height: auto;
             float: right;
             margin: 0 1rem 0 0;
@@ -123,7 +124,7 @@ html { font-size: calc(1em + 1vw) }
         
         p {
          
-            font-size: .9vw;
+            font-size: .4em;
         }
        
 

@@ -2,7 +2,7 @@ html { font-size: calc(1em + 1vw) }
      
         h1 {
            
-            font-size: 4.0vw;
+            font-size:1.2em;
         }
         
         h2 {
@@ -16,7 +16,7 @@ html { font-size: calc(1em + 1vw) }
         
         h4 {
            
-            font-size: 1.9vw;
+            font-size: .9em;
         }
         
         h5 {
@@ -41,16 +41,38 @@ html { font-size: calc(1em + 1vw) }
          
             font-size: .9vw;
         }
-       
 
+        .form-group   label textarea{
+
+            font-size: .9em !important;
+            
+        }
+        .form-group   label{
+
+            font-size: .9em !important;
+            
+        }
+
+        label{
+
+            font-size: .9em !important;
+            text-align: left !important;
+            
+        }
+        .form-group{
+            font-size: .9em !important;
+            padding-bottom: 30px;
+        }
 
 
      form{
+        font-size: .9em !important;
         border:   1px solid yellow"
      }
 
     
         .col {
+            text-align: left;
           
             padding-top: 5px;
 
@@ -104,13 +126,8 @@ html { font-size: calc(1em + 1vw) }
             color: white !important;
            
         }
-   
-    input[type=text], select, textarea{
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        resize: vertical;
-      }
+        label{
+            text-align: left!important;
+        }
+
      
