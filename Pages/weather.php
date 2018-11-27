@@ -263,7 +263,8 @@
           padding-top: 20px;
           text-align: center;
           background-color: rgb(200, 233, 238);
-          max-width: 1190px;
+          max-width: 90%;
+          margin-left:5%;
       }
   </style>
 
@@ -273,7 +274,8 @@
     <div class="container">
 
 <div class="my-container">
-    <div class="row">
+<div class="row" style="width:90%; margin-left: 5%">
+                
         <div class="col">
             <div class="grid-item">
                 <a href="https://www.weatherforyou.com/reports/index.php?forecast=zandh&amp;place=hilton%20head%20island&amp;state=sc&amp;zipcode=29928">
@@ -304,7 +306,8 @@
 
 
  <div class="my-container">
-
+ <div class="row" style="width:90%; margin-left: 5%">
+                
 <a href="http://98.101.223.10:8078/axis-cgi/mjpg/video.cgi">
 
 
@@ -393,7 +396,7 @@ if(document.images)window.onload=refresh;
         </div>
 
     </div>
-
+</div>
 
 
     <script type="text/javascript">

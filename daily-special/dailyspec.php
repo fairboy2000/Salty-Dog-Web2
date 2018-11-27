@@ -242,11 +242,16 @@
     </div>
 
     
-    
 
- 
+    <div class="container" >
+           
 
-<div class="container">
+
+
+
+           <br>
+   
+           <div class="container"  style="width:90%; margin-left: 6%">
 <div class="row border-bottom border-white border-3"></div><br>
         <div class="row border-bottom border-white border-3"></div>
         <br>
@@ -358,6 +363,7 @@
         <div class="row border-bottom border-white border-3"></div><br>
         <div class="row border-bottom border-white border-3"></div>
         <br>
+    </div>
     </div>
     <!-- google analytics  -->
 
