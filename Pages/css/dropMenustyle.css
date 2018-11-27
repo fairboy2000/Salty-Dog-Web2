@@ -63,7 +63,9 @@
 
         }
 
-       
+     a button   .btn .btn-warning{
+            font-size: .5em !important;
+        }
 
         a {
             background: rgb(4, 4, 51);
