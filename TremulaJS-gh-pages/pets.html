@@ -205,7 +205,7 @@ b	large, 1024 on longest side*
 o	original image, either a jpg, gif or png, depending on source format
 */
 var pageCtr = 1;
-var tags = "salty+dog+cafe+people+from+all+over"
+var tags = "salty+dog+cafe+dog+photos+for+salty+dog+site"
 function loadFlickr() {
 var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=' + tags + '&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
 $.ajax({
@@ -494,9 +494,12 @@ this.template = this.data.template || ('<img draggable="false" class="moneyShot"
 
 		<div class="block">
 
-			<nav class="navbar navbar-expand-sm ">
+			<nav class="navbar navbar-expand-sm " style="
+			width: 100%; display:block !important">
+					<div id="tremulaButtons">
 				<div class="dropdown">
-					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+					<a class="btn btn-secondary dropdown-toggle" style=" float:left;
+					width: 33.3%;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
 					 aria-haspopup="true" aria-expanded="false">
 						 Photos
 					</a>
@@ -567,8 +570,10 @@ this.template = this.data.template || ('<img draggable="false" class="moneyShot"
 						</li>
 					</ul>
 				</div>
+				
 				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					<button class="btn btn-secondary dropdown-toggle" style=" float:left;
+					width: 33.3%;" type="button" id="dropdownTremulaButton" data-toggle="dropdown"
 					 aria-haspopup="true" aria-expanded="false">
 						Photos Display
 					</button>
@@ -582,7 +587,8 @@ this.template = this.data.template || ('<img draggable="false" class="moneyShot"
 					</div>
 				</div>
 				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					<button class="btn btn-secondary dropdown-toggle" style=" float:left;
+					width: 33.3%;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
 					 aria-haspopup="true" aria-expanded="false">
 						Photos Style
 					</button>
@@ -597,6 +603,7 @@ this.template = this.data.template || ('<img draggable="false" class="moneyShot"
 
 					</div>
 				</div>
+			</div>
 			</nav>
 
 

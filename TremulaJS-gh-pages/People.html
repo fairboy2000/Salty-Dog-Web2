@@ -205,7 +205,7 @@ b	large, 1024 on longest side*
 o	original image, either a jpg, gif or png, depending on source format
 */
 var pageCtr = 1;
-var tags = "salty+dog+cafe+special+events+photos"
+var tags = "salty+dog+cafe+people+from+all+over"
 function loadFlickr() {
 var dataUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c149b994c54c114bd7836b61539eec2e&tags=' + tags + '&safe_search=1&format=json&page=' + pageCtr + '&extras=url_n';
 $.ajax({
@@ -486,15 +486,14 @@ this.template = this.data.template || ('<img draggable="false" class="moneyShot"
 	</div>
 
 	<div class="container">
-		<img src="../images/HeaderBanners/PICS EVENTS.png" style="width:100%; height:auto">
+		<img src="../images/HeaderBanners/PICS PEOPLE.png" style="width:100%; height:auto">
 
 	</div>
 
 	<div class="container">
 
 		<div class="block">
-                <h2>Special Events Photos
-                    </h2>
+
 			<nav class="navbar navbar-expand-sm " style="
 			width: 100%; display:block !important">
 					<div id="tremulaButtons">
@@ -594,19 +593,28 @@ this.template = this.data.template || ('<img draggable="false" class="moneyShot"
 						Photos Style
 					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<li class="size1">Small</li>
-						<li class="size2">Medium</li>
-						<li class="size3">Large</li>
-						<li class="btn1">1 Column/Row</li>
-						<li class="btn2">2 Columns/Rows</li>
-						<li class="btn3">3 Columns/Rows</li>
-						<li class="autoSize">Auto Adjust Size to Monitor</li>
+						<li class="size1">sm size</li>
+						<li class="size2">med size</li>
+						<li class="size3">lg size</li>
+						<li class="btn1">1 Axis</li>
+						<li class="btn2">2 Axes</li>
+						<li class="btn3">3 Axes</li>
+						<li class="autoSize">autoSize</li>
 
 					</div>
 				</div>
 			</div>
 			</nav>
 
+
+
+
+
+			<p>We love seeing your smiling faces! Send us your pictures rockin' your favorite Salty Dog gear. Whether
+				it's your furry friend
+				looking extra cute in a Salty Dog bandana or your family sporting Salty Dog while traveling the globe -
+				send it our way: photos@saltydog.com.
+			</p>
 		</div>
 	</div>
 
