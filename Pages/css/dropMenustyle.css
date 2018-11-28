@@ -25,6 +25,14 @@
             
          
         }
+
+        .btn-success {
+            background: rgb(4, 4, 51);
+            border-color: rgb(4, 4, 51);
+            color: white;
+            
+         
+        }
         .btn-menu {
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
@@ -65,12 +73,19 @@
 
      a button   .btn .btn-warning{
             font-size: .5em !important;
+            border: none !important;
         }
 
         a {
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: white !important;
+
+        }
+
+        #live-buttons button a {
+            font-size: .8em !important;
+
         }
 
         li{
