@@ -33,6 +33,14 @@
             
          
         }
+
+        .btn-danger {
+            background: white;
+            border-color: rgb(4, 4, 51);
+            color: rgb(4, 4, 51);
+            
+         
+        }
         .btn-menu {
             background: hsl(56, 94%, 66%);
             border-color: hsl(56, 94%, 66%);
