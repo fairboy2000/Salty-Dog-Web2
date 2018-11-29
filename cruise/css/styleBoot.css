@@ -1,5 +1,7 @@
 html { font-size: calc(1em + 1vw) }
-
+body{
+    font-family: 'Rubik', sans-serif;
+}
 
 .block-top {
             

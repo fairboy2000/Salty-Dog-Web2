@@ -34,7 +34,13 @@
 
 
 <body>
-<script>
+
+
+
+
+
+
+    <script>
         $(document).ready(function () {
             $('.dropdown-submenu a.test').on("click", function (e) {
                 $(this).next('ul').toggle();
@@ -56,7 +62,7 @@
                             <a class="dropdown-item" href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="stores.html" target="blank">Shop</a>
+                            <a class="dropdown-item" href="../Pages/stores.html" target="blank">Shop</a>
                         </li>
 
                         <li class="dropdown-submenu">
@@ -68,7 +74,7 @@
                                     <a tabindex="-1" href="../Dine/dine.html">Salty Dog Dining</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../Dine/sdc.html">Salty Dog Cafe</a>
+                                    <a tabindex="-1" href="../Dine/cafe.html">Salty Dog Cafe</a>
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../Dine/bluffdog.html">Salty Dog Cafe Bluffton</a>
@@ -92,8 +98,8 @@
                                     <a tabindex="-1" href="../Dine/cater.html">Private Events</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../daily-special/dailyspec.php">Daily Specials</a>
-                                </li>
+                                        <a tabindex="-1" href="../daily-special/dailyspec.php">Daily Specials</a>
+                                    </li>
 
                         </li>
 
@@ -102,30 +108,30 @@
                             <a class="dropdown-item" href="../cruise/cruise.html" target="blank">Cruise</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="http://www.sbinn.com/" target="blank">Stay</a>
+                            <a class="dropdown-item" href="../cruise/inn.html" target="blank">Stay</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="events.html">Events</a>
+                            <a class="dropdown-item" href="../Pages/events.html">Events</a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
+                            <a class="dropdown-item" href="../Pages/live.html" target="blank">Live</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="radio.html">Radio</a>
+                            <a class="dropdown-item" href="../Pages/radio.html">Radio</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="kids.html">Kids</a>
+                            <a class="dropdown-item" href="../Pages/kids.html">Kids</a>
                         </li>
                         <li>
-                        <a class="dropdown-item" href="../feedback/feedback.html">Feedback Us</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="findus.html">Find Us</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
-                    </li>
+                            <a class="dropdown-item" href="../feedback/feedback.html">Feedback Us</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../Pages/findus.html">Find Us</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
+                        </li>
                         <li>
                             <a class="dropdown-item" href="../lucky/win.html">Lucky Receipts</a>
                         </li>
@@ -150,10 +156,10 @@
                                 <li>
                                     <a tabindex="-1" href="../photos/photosjake.html">Photos with Jake</a>
                                 </li>
-                                <li>
-                                    <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks</a>
-                                </li>
 
+                                <li>
+                                        <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks</a>
+                                    </li>
                         </li>
 
                         </ul>
@@ -164,43 +170,43 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/webcams.html">See all our Webcams</a>
+                                    <a tabindex="-1" href="webcams.html">See all our Webcams</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/bluewatercam.html">Bluewater Cam</a>
+                                    <a tabindex="-1" href="bluewatercam.html">Bluewater Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/boatcam.html">BoatCam</a>
+                                    <a tabindex="-1" href="boatcam.html">BoatCam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/boatcamaft.html">BoatCam Aft</a>
+                                    <a tabindex="-1" href="boatcamaft.html">BoatCam Aft</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/boatcambow.html">BoatCam Bow</a>
+                                    <a tabindex="-1" href="boatcambow.html">BoatCam Bow</a>
                                 </li>  <li>
                                         <a tabindex="-1" href="calibogue.php">Calibogue Cam</a>
                                     </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/courtyardcam.html">Courtyard Cam</a>
+                                    <a tabindex="-1" href="courtyardcam.html">Courtyard Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/overheadcam.html">Overhead Cam</a>
+                                    <a tabindex="-1" href="overheadcam.html">Overhead Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/South Beach Cam.html">South Beach Cam</a>
+                                    <a tabindex="-1" href="South Beach Cam.html">South Beach Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/tangercam.html">Tanger Outlet Cam</a>
+                                    <a tabindex="-1" href="tangercam.html">Tanger Outlet Cam</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../WebCams/tshirtcam.html">T-Shirt Cam</a>
+                                    <a tabindex="-1" href="tshirtcam.html">T-Shirt Cam</a>
                                 </li>
 
                         </li>
 
                         </ul>
                         <li>
-                            <a class="dropdown-item" href="weather.php">Weather</a>
+                            <a class="dropdown-item" href="../Pages/weather.php">Weather</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../Legend/legend.html">The Legend</a>
@@ -208,7 +214,12 @@
                     </div>
                 </ul>
             </div>
-    
+            <!-- <ul class="navbar-nav ml-auto">
+            <a href="index.html" target="_blank">
+
+                    <img src="../images/social-logos/SDCLOGOBUTTON.jpg" class="rounded" style="width:30%; height:auto">
+                </a>
+            </ul> -->
             <ul class="navbar-nav ml-auto"style="flex-direction: row !important">
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
@@ -227,6 +238,12 @@
                     </a>
                 </li>
             </ul>
+    </div>
+  
+
+    <div class="container">
+        <img src="../images/HeaderBanners/CAM BW.png" style="width:100%; height:auto">
+
     </div>
   
     <style>

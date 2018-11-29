@@ -101,18 +101,22 @@
             border:none;
         }
 
-        a {
-            background: rgb(4, 4, 51);
-            border-color: hsl(56, 94%, 66%);
-            color: white !important;
-        }
-
-        li{
-            font-size: .7em !important;
-        }
-        .btn{
-            font-size: .7em !important;
-        }
-        ul{ list-style-type: none; }
+        button{
+            font-size: .9em !important;
+           }
+    
+            a {
+                background: rgb(4, 4, 51);
+                border-color: hsl(56, 94%, 66%);
+                color: white !important;
+                font-size: .5em !important;
+            }
+    
+            li{
+                font-size: 1em !important;
+            }
+            
+            
+            ul{ list-style-type: none; }
 
        

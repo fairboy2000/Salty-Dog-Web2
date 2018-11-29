@@ -75,13 +75,14 @@
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: white !important;
+            font-size: .7em !important;
         }
 
         li{
-            font-size: .7em !important;
+            font-size: .9em !important;
         }
-        .btn{
-            font-size: .7em !important;
+       button{
+            font-size: .9em !important;
         }
         ul{ list-style-type: none; }
 

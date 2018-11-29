@@ -64,11 +64,20 @@
         }
 
        
-
+ 
+    
+            a {
+                background: rgb(4, 4, 51);
+                border-color: hsl(56, 94%, 66%);
+                color: white !important;
+               ;
+            }
+    
         a {
             background: rgb(4, 4, 51);
             border-color: hsl(56, 94%, 66%);
             color: white !important;
+            font-size: .7em !important;
         }
 
         li{
