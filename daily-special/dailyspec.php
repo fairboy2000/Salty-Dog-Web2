@@ -115,7 +115,7 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="http://tv.saltydog.com/" target="blank">Live</a>
+                            <a class="dropdown-item" href="../Pages/live.html"  target="blank">Live</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../Pages/radio.html">Radio</a>
