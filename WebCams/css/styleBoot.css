@@ -82,7 +82,7 @@ html { font-size: calc(1em + 1vw) }
         }
 
         p {
-            text-align: left;
+            text-align: center;
             color: white!important;
         }
 
@@ -93,7 +93,7 @@ html { font-size: calc(1em + 1vw) }
 
         h3 {
             color: white !important;
-            text-align: left;
+            text-align: center;
         }
 
         h4 {
