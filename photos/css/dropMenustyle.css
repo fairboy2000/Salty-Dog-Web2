@@ -9,9 +9,16 @@ body {
     border-color: hsl(56, 94%, 66%);
     background: rgb(4, 4, 51);
     color: white;
+  
 }
 
 .btn-secondary {
+    background: rgb(4, 4, 51);
+    border-color: hsl(56, 94%, 66%);
+    color: white;
+   
+}
+.btn-primary {
     background: rgb(4, 4, 51);
     border-color: hsl(56, 94%, 66%);
     color: white;
@@ -25,13 +32,6 @@ body {
     
  
 }
-.btn-primary {
-    background: rgb(4, 4, 51);
-    border-color: hsl(56, 94%, 66%);
-    color: white;
-    
- 
-}
 .btn-menu {
     background: hsl(56, 94%, 66%);
     border-color: hsl(56, 94%, 66%);
@@ -39,11 +39,10 @@ body {
 
 }
 
-
 .dropdown-submenu {
     position: relative;
 
-    width: 50%;
+    width: 100%;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -71,46 +70,21 @@ body {
 
 }
 
-
-
-.block.nav ul{
-    width:100%;
-  
-    margin:0 auto;
-    padding:0;
-    list-style:none;
-
-    text-align:center;
-   
+button{
+font-size: 1.5em !important;
 }
-.block .nav li { 
-    display:inline-block;
-    width:30%;
-    margin:0;
-    padding:0;
-}
-.block .nav a {
-    text-align:center;
-    padding:12px 0 13px 0;
-    margin:0;
-  
-    display:block;
-}
-
-
-
 
 a {
     background: rgb(4, 4, 51);
     border-color: hsl(56, 94%, 66%);
     color: white !important;
+    font-size: .5em !important;
 }
 
 li{
-    font-size: .7em !important;
+    font-size: 1em !important;
 }
-.btn{
-    font-size: .7em !important;
-}
+
+
 ul{ list-style-type: none; }
 
