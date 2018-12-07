@@ -7,7 +7,7 @@
      
       this.container = container;
 
-      this.showPhoto(this.currentIndex);
+      this.showPhoto(this.currentIndex)
    }
 
    Gallery.prototype.showPhoto = function(index) {
@@ -47,23 +47,28 @@
       for (var i = 0; i < this.photos.length; i++) {
          image = document.createElement('img');
          image.src = Flickr.buildThumbnailUrl(this.photos[i]);
+         console.log(image.src);
          image.className = 'thumbnail';
          image.alt = this.photos[i].title;
-         console.log(image.alt);
-         console.log(this.photos[i].title);
+         console.log(image.alt);       
+         
          image.title = this.photos[i].title;
+        
+        
 
          link = document.createElement('a');
          link.href = image.src;
          link.addEventListener('click', clickHandler(i, this));
          link.appendChild(image);
 
+       
+
          listItem = document.createElement('li');
          listItem.appendChild(link);
 
-         container.appendChild(listItem);
+         container.appendChild(listItem).append(image.title);;
       }
    };
-
+   
    window.Gallery = Gallery;
 })(document, window);

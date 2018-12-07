@@ -27,6 +27,7 @@
       }
 
       return object;
+      console.log(object);
    }
 
    window.Utility = {
