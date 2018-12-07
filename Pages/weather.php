@@ -300,6 +300,11 @@
                 <a href="http://saltydog.com/weather/sbeach/downld02.txt"><button type="button" class="btn btn-dark">TWO DAY DATA</button></a>
             </div>
         </div>
+        <div class="col">
+                    <div class="grid-item">
+                        <a href="tideChart.html"><button type="button"class="btn btn-dark">TIDE CHART - Updated Monthly</button></a>
+                    </div>
+                </div>
     </div>
 
 </div>

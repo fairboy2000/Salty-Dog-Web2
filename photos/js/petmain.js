@@ -75,12 +75,12 @@
       createPager(
          document.getElementsByClassName('js-thumbnails__pager')[0], {
             query: lastSearch,
-            currentPage: data.photosets.page,
-            pagesNumber: data.photosets.pages
+            currentPage: data.photos.page,
+            pagesNumber: data.photos.pages
          }
       );
 
-      gallery = new Gallery(data.photosets.photo, document.getElementsByClassName('js-gallery__image')[0]);
+      gallery = new Gallery(data.photos.photo, document.getElementsByClassName('js-gallery__image')[0]);
       gallery.createThumbnailsGallery(document.getElementsByClassName('js-thumbnails__list')[0]);
    }
 
