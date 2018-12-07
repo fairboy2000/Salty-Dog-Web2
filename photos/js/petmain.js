@@ -2,7 +2,7 @@
    'use strict';
 
    var gallery;
-   var lastSearch = 'salty dog cafe dog photos for salty dog site';
+   var lastSearch = "salty dog cafe dogs";
 
    function searchPhotos(text, page) {
       if (text.length === 0) {
@@ -75,12 +75,12 @@
       createPager(
          document.getElementsByClassName('js-thumbnails__pager')[0], {
             query: lastSearch,
-            currentPage: data.photos.page,
-            pagesNumber: data.photos.pages
+            currentPage: data.photosets.page,
+            pagesNumber: data.photosets.pages
          }
       );
 
-      gallery = new Gallery(data.photos.photo, document.getElementsByClassName('js-gallery__image')[0]);
+      gallery = new Gallery(data.photosets.photo, document.getElementsByClassName('js-gallery__image')[0]);
       gallery.createThumbnailsGallery(document.getElementsByClassName('js-thumbnails__list')[0]);
    }
 
