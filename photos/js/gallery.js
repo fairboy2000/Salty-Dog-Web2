@@ -66,7 +66,7 @@
          listItem = document.createElement('li');
          listItem.appendChild(link);
 
-         container.appendChild(listItem).append(image.title);;
+         container.appendChild(listItem).append(image.title);
       }
    };
    
