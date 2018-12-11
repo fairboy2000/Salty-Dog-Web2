@@ -22,7 +22,7 @@ if(IsInjected($visitor_email))
 }
 
 $email_from = "info@saltydog.com";//<== update the email address
-$email_subject = "New  lycky 8 Form submission";
+$email_subject = "New  lucky 8 Form submission";
 $email_body = "You have received a new lucky 8 submission from : $name.\n".
     "Here is their email addres:  \n $visitor_email. \n".
     
