@@ -19,7 +19,7 @@ function Validator(frmname)
   this.formobj=document.forms[frmname];
 	if(!this.formobj)
 	{
-	  alert("Error: couldnot get Form object "+frmname);
+	  alert("Error: could not get Form object "+frmname);
 		return;
 	}
 	if(this.formobj.onsubmit)
@@ -136,7 +136,7 @@ function add_validation(itemname,descriptor,errstr)
 	}	
   if(!itemobj)
 	{
-		alert("Error: Couldnot get the input object named: "+itemname);
+		alert("Error: Could not get the input object named: "+itemname);
 		return;
 	}
 	if(!itemobj.validationset)
