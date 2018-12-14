@@ -8,10 +8,20 @@
 
 .island
 {
-   display: block;
+   display: block; 
    max-width: 1024px;
    margin: 0 auto;
+   
+    align-items:baseline;
+  
 }
+
+.island thumbnails
+
+ {
+    display:flex;    
+    align-items:baseline;
+  }
 
 body
 {
