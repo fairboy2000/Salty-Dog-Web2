@@ -145,7 +145,7 @@
                                     <a tabindex="-1" href="../photos/photos.html">Pet Photos</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="../photos/petphotossearch.html">Search Pet Photos</a>
+                                    <a tabindex="-1" href="../photos/petmemorial.html">Pet Memorial Photos</a>
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../photos/photosevents.html">Special Events photos</a>
@@ -273,10 +273,7 @@
   </style>
 
 
-    <div class="container">
-        <img src="../images/HeaderBanners/WEATHER.png" style="width:100%; height:auto">
-
-    </div>
+  
 
     <div class="container">
 
