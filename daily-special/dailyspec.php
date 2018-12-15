@@ -26,7 +26,7 @@
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/dropMenustyle.css">
+    <link type="text/css" rel="stylesheet" href="../css/dropMenustyle.css">
     <link type="text/css" rel="stylesheet" href="css/styleBoot.css">
 
 </head>
@@ -262,15 +262,15 @@
             <div class="col">
                 <br>
                 <ul>
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Chef is <?php echo $_POST["chefCafe"]; ?>!<br></h3>
+                    <li style="background-color: white;" >
+                        <h3 style="color:black !important">Today's Chef is <?php echo $_POST["chefCafe"]; ?>!<br></h3>
                     </li>
 
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Daily Special is <?php echo $_POST["specialCafe"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Daily Special is <?php echo $_POST["specialCafe"]; ?>.</h3>
                     </li>
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Kid's Daily Special is <?php echo $_POST["cafeKids"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style="color:black !important">Today's Kid's Daily Special is <?php echo $_POST["cafeKids"]; ?>.</h3>
                     </li>
                 </ul>
 
@@ -289,15 +289,15 @@
             </div>
             <div class="col">
                 <ul>
-                <li>
-                        <h3 style="background-color: white; color:black !important">Today's Chef is <?php echo $_POST["chefLet"]; ?>!<br></h3>
+                <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Chef is <?php echo $_POST["chefLet"]; ?>!<br></h3>
                     </li>
 
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Daily Special is <?php echo $_POST["specialLet"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Daily Special is <?php echo $_POST["specialLet"]; ?>.</h3>
                     </li>
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Kid's Daily Special is <?php echo $_POST["letKids"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Kid's Daily Special is <?php echo $_POST["letKids"]; ?>.</h3>
                     </li>
                 </ul>
 
@@ -318,15 +318,15 @@
             </div>
             <div class="col">
                 <ul>
-                <li>
-                        <h3 style="background-color: white; color:black !important">Today's Chef is <?php echo $_POST["chefBluff"]; ?>!<br></h3>
+                <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Chef is <?php echo $_POST["chefBluff"]; ?>!<br></h3>
                     </li>
 
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Daily Special is <?php echo $_POST["specialBluff"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Daily Special is <?php echo $_POST["specialBluff"]; ?>.</h3>
                     </li>
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Kid's Daily Special is <?php echo $_POST["BluffKids"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Kid's Daily Special is <?php echo $_POST["BluffKids"]; ?>.</h3>
                     </li>
                 </ul>
 
@@ -344,15 +344,15 @@
             </div>
             <div class="col">
                 <ul>
-                <li>
-                        <h3 style="background-color: white; color:black !important">Today's Chef is <?php echo $_POST["chefWreck"]; ?>!<br></h3>
+                <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Chef is <?php echo $_POST["chefWreck"]; ?>!<br></h3>
                     </li>
 
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Daily Special is <?php echo $_POST["specialWreck"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Daily Special is <?php echo $_POST["specialWreck"]; ?>.</h3>
                     </li>
-                    <li>
-                        <h3 style="background-color: white; color:black !important">Today's Kid's Daily Special is <?php echo $_POST["wreckKids"]; ?>.</h3>
+                    <li style="background-color: white;" >
+                        <h3 style=" color:black !important">Today's Kid's Daily Special is <?php echo $_POST["wreckKids"]; ?>.</h3>
                     </li>
                 </ul>
             </div>
