@@ -258,7 +258,7 @@ class FormHandler
 
 	private function compose_mail($post)
 	{
-		$content = "Form submission: \n\n";
+		$content = "Lucky Receipt submission: \n\n";
 		foreach($post as $name=>$value)
 		{
 			$content .= ucwords($name).":\n";

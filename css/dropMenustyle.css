@@ -33,7 +33,7 @@ body {
             border-color: hsl(56, 94%, 66%);
             color: white;
             white-space: normal !important;
-           
+            font-size: .7em !important;
            
         }
     
@@ -74,7 +74,7 @@ body {
             /* background: rgb(4, 4, 51); */
             border-color: hsl(56, 94%, 66%);
             color: white !important;
-            font-size: .5em !important;
+            font-size: .7em !important;
         }
 
        li{ white-space: normal !important;}
