@@ -42,11 +42,11 @@ class FormHandler
 		$this->mailer = new PHPMailer;
 		$this->mail_template='';
 
-		$this->mailer->Subject = "Pe Photo Upload ";
+		$this->mailer->Subject = "People Photo Upload ";
 
 		$host = isset($_SERVER['SERVER_NAME'])?$_SERVER['SERVER_NAME']:'localhost';
         $from_email ='forms@'.$host;
-   		$this->mailer->setFrom($from_email,'Pet Photo Upload',false);  
+   		$this->mailer->setFrom($from_email,'People Photo Upload',false);  
 
    		$this->captcha = false;   
 
@@ -258,7 +258,7 @@ class FormHandler
 
 	private function compose_mail($post)
 	{
-		$content = "Form submission: \n\n";
+		$content = "People Photo submission: \n\n";
 		foreach($post as $name=>$value)
 		{
 			$content .= ucwords($name).":\n";
