@@ -26,6 +26,7 @@
     <!--<![endif]-->
     <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    
     <link type="text/css" rel="stylesheet" href="../css/dropMenustyle.css">
     <link type="text/css" rel="stylesheet" href="css/styleBoot.css">
 
@@ -36,6 +37,52 @@
 <body>
 
 
+     
+<style>
+      
+
+      .grid-item {
+
+          padding: 5px;
+          color: white;
+          text-align: center;
+      }
+
+ 
+
+      .gif-container img {
+          background-color: rgb(200, 233, 238);
+
+
+      }
+
+      .my-container {
+          padding-top: 20px;
+          text-align: center;
+          background-color: rgb(200, 233, 238);
+          max-width: 90%;
+          margin-left:5%;
+      }
+
+            .row {
+          padding-top: 20px;
+          text-align: center;
+          background-color: rgb(200, 233, 238);
+          max-width: 90%;
+          margin-left:5%;
+      }
+      .btn{
+            font-size: .5em !important;
+            /* white-space: normal !important; */
+        }
+        .btn-dark{
+            font-size: .5em !important;
+            /* white-space: normal !important; */
+        }
+  </style>
+
+
+ 
 
 
 
@@ -240,78 +287,54 @@
         <img src="../images/HeaderBanners/WEATHER.png" style="width:100%; height:auto">
 
     </div>
- 
-    <style>
-      
-
-      .grid-item {
-
-          padding: 5px;
-          color: white;
-          text-align: center;
-      }
-
- 
-
-      .gif-container img {
-          background-color: rgb(200, 233, 238);
-
-
-      }
-
-      .my-container {
-          padding-top: 20px;
-          text-align: center;
-          background-color: rgb(200, 233, 238);
-          max-width: 90%;
-          margin-left:5%;
-      }
-  </style>
 
 
 
 
     <div class="container">
 
-<div class="my-container">
-<div class="row" style="width:90%; margin-left: 5%">
+      <div class="my-container">
+        <div class="row">
                 
-        <div class="col">
+            <div class="col">
             <div class="grid-item">
                 <a href="https://www.weatherforyou.com/reports/index.php?forecast=zandh&amp;place=hilton%20head%20island&amp;state=sc&amp;zipcode=29928">
-                <button type="button" class="btn btn-dark">FORECAST</button></a>
+                <button type="button" class="btn btn-dark">FORECAST</button></a>  
+             </div>
+             </div>
 
 
-                
-            </div>
-        </div>
-        <div class="col">
+             <div class="col">
             <div class="grid-item">
                 <a href="https://radar.weather.gov/Conus/southeast_loop.php"> <button type="button" class="btn btn-dark">RADAR</button></a>
             </div>
-        </div>
-        <div class="col">
+             </div>
+
+            <div class="col">
             <div class="grid-item">
                 <a href="https://www.wunderground.com/MAR/AM/352.html"><button type="button" class="btn btn-dark">MARINE</button></a>
             </div>
-        </div>
-        <div class="col">
+             </div>
+
+              <div class="col">
             <div class="grid-item">
                 <a href="http://saltydog.com/weather/sbeach/downld02.txt"><button type="button" class="btn btn-dark">TWO DAY DATA</button></a>
             </div>
-        </div>
-        <div class="col">
+             </div>
+
+                <div class="col">
                     <div class="grid-item">
                         <a href="tideChart.html"><button type="button"class="btn btn-dark">TIDE CHART - Updated Monthly</button></a>
                     </div>
                 </div>
-    </div>
 
-</div>
+          </div>
+
+      </div>
 
 
- <div class="my-container">
- <div class="row" style="width:90%; margin-left: 5%">
+             <div class="my-container">
+                <div class="row" >
                 
 <a href="http://98.101.223.10:8078/axis-cgi/mjpg/video.cgi">
 
@@ -334,67 +357,147 @@ if(document.images)window.onload=refresh;
 
 
 
-
+                <div class="grid-item">
 
             <h4 style="color:black !important">Live Webcam From South Beach Marina in Sea Pines Hilton Head Island</h4>
 
+             </div>
 
-<br>
-<br>
-
-
-
+        </div>
+        </div>
+        <div class="my-container">
+<div class="row">
 
 <?php $date = date("Y-m-d-H-i-s"); ?>
 
+<div class="col">
+<div class="grid-item">
 <img id="image1" src="http://saltydog.com/weather/sbeach/WindSpeed.gif?date=<?php echo $date; ?>" alt="" />
-&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</div>
+
+<div class="col">
+<div class="grid-item">
 <img id="image2" src="http://saltydog.com/weather/sbeach/WindDirection.gif?date=<?php echo $date; ?>" alt=""  />
-&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</div>
+
+<div class="col">
+<div class="grid-item">
 <img id="image3" src="http://saltydog.com/weather/sbeach/10MinAvgWindSpeed.gif?date=<?php echo $date; ?>" alt=""  /> 
-<br><br>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+
+
+<!-- <div class="col">  
+<div class="grid-item">
 <img id="image4" src="http://saltydog.com/weather/sbeach/HighWindDirHistory.gif?date=<?php echo $date; ?>" alt=""  />
-&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</div> -->
+
+<!-- <div class="col">
+ <div class="grid-item">
 <img id="image5" src="http://saltydog.com/weather/sbeach/HiWindSpeedHistory.gif?date=<?php echo $date; ?>" alt=""  />
-<br><br>
+</div>
+</div> -->
+
+
+
+
+<!-- <div class="col">
+<div class="grid-item">
 <img id="image6" src="http://saltydog.com/weather/sbeach/OutsideHumidity.gif?date=<?php echo $date; ?>" alt=""  />
-&nbsp;&nbsp;
+</div>
+</div> -->
+
+<div class="col">
+<div class="grid-item">
 <img id="image7" src="http://saltydog.com/weather/sbeach/OutsideTemp.gif?date=<?php echo $date; ?>" alt=""  />
+</div>
+</div>
 
-&nbsp;&nbsp;
+<div class="col">
+<div class="grid-item">
 <img id="image11" src="http://saltydog.com/weather/sbeach/Barometer.gif?date=<?php echo $date; ?>" alt=""  />
-&nbsp;&nbsp;
+</div>
+</div>
+
+<!-- <div class="col">
+<div class="grid-item">
 <img id="image8" src="http://saltydog.com/weather/sbeach/HeatIndex.gif?date=<?php echo $date; ?>" alt=""  />
-<br><br>
-<img id="image8" src="http://saltydog.com/weather/sbeach/Rain.gif?date=<?php echo $date; ?>" alt="" />
-&nbsp;&nbsp;
+</div>
+</div> -->
+
+<div class="col">
+<div class="grid-item">
+<img id="image9" src="http://saltydog.com/weather/sbeach/Rain.gif?date=<?php echo $date; ?>" alt="" />
+</div>
+</div>
+
+<div class="col">
+<div class="grid-item">
 <img id="image10" src="http://saltydog.com/weather/sbeach/MonthlyRain.gif?date=<?php echo $date; ?>" alt=""  />
-&nbsp;&nbsp;
+</div>
+</div>
+
+<div class="col">
+<div class="grid-item">
 <img id="image11" src="http://saltydog.com/weather/sbeach/YearlyRain.gif?date=<?php echo $date; ?>" alt=""  />
-<br><br>
-&nbsp;&nbsp;
+</div>
+</div>
+
+<div class="col">
+<div class="grid-item">
 <img id="image12" src="http://saltydog.com/weather/sbeach/Temperature2.gif?date=<?php echo $date; ?>" alt="" />
-<br>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+
+
+<div class="col">  
+<div class="grid-item">
 <p style="color:black !important; text-align: center">suface water temp</p>
+</div>
+</div>
+</div>
 
-<br><br>
+<div class="row">
 
-
-<img src="http://64.203.225.15:8018/images/tides.jpg?date=<?php echo $date; ?>" alt="tides" style="border: 2px" width="70%"
+<img src="http://64.203.225.15:8018/images/tides.jpg?date=<?php echo $date; ?>" alt="tides" style="border: 2px" width="90%"
                 height="auto" />
-<br><br>
+</div>             
+
+
+<div class="row">
+
 <p style="color:green !important;text-align: center">Green Clock = Tide Falling with Low Tide at Bottom of Clock</p>
-<br>
+</div>
+
+<div class="row">
 <p style="color:blue!important;text-align: center">Blue Clock = Tide Rising with High Tide at Top of Clock</p>
-<br>
+</div>
+
+<div class="row">
 <p style="color:red !important;text-align: center">Red Clock = Negative Low</p>
-<br>
-<p style="color:black!important;text-align: center">Current Eastern Standard Time in Center of Clock  
-<br>Current Tide Height on Face of Clock</p>
+</div>
 
+<div class="row">
+<p style="color:black!important;text-align: center">Current Eastern Standard Time in Center of Clock  </p>
+</div>
 
-         <br>
-            <br>
+<div class="row">
+
+<p>Current Tide Height on Face of Clock</p>
+
+</div>
+       
 
 
 
@@ -414,11 +517,6 @@ if(document.images)window.onload=refresh;
     </script>
 </body>
 </html>
-
-
-
-
-
 
 
 
