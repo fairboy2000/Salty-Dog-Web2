@@ -37,8 +37,11 @@
       function clickHandler(index, gallery) {
          return function (event) {
             event.preventDefault();
-
+          
+           
+        
             gallery.showPhoto(index);
+            $(window).scrollTop(0);
          };
       }
 

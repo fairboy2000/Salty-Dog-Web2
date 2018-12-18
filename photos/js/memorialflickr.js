@@ -4,7 +4,7 @@
    var apiKey = 'c149b994c54c114bd7836b61539eec2e';
 
    var apiURL = 'https://api.flickr.com/services/rest/';
-  var tags = "salty+dog+pet+memorial+photos"
+  var tags = "salty+dog+cafe+pet+memorial+photos"
 
    function searchText(parameters) {
       var requestParameters = Utility.extend(parameters, {

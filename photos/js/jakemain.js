@@ -12,7 +12,7 @@
 
       Flickr.searchText({
          text: text,
-         per_page: 25,
+         per_page: 55,
          jsoncallback: 'Website.Homepage.showPhotos',
          page: page
       });
