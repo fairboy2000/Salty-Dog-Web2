@@ -205,7 +205,7 @@
                                 </li>
 
   <li>
-                                    <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks</a>
+                                    <a tabindex="-1" href="../photos/photospeople.html">Salty Dog Folks Photos</a>
                                 </li>
                         </li>
 
