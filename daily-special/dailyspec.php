@@ -50,10 +50,10 @@
         });
     </script>
   <div class="container">
-        <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg ">
             <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-bars"></i> Menu
                 </a>
                 <ul>
@@ -98,7 +98,7 @@
                                     <a tabindex="-1" href="../Dine/cater.html"target="blank">Private Events</a>
                                 </li>
                                 <li>
-                                    <a tabindex="-1" href="dailyspec.php"target="blank">Daily Specials</a>
+                                    <a tabindex="-1" href="../daily-special/dailyspec.php"target="blank">Daily Specials</a>
                                 </li>
                             </ul>
                         </li>
@@ -115,7 +115,7 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="../Pages/live.html"  target="blank">Live</a>
+                            <a class="dropdown-item" href="../Pages/live.html" target="blank">Live</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="../Pages/radio.html"target="blank">Radio</a>
@@ -155,7 +155,8 @@
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../photos/photosjake.html"target="blank">Photos with Jake</a>
-                                </li>  <li>
+                                </li>
+                                <li>
                                     <a tabindex="-1" href="../photos/photospeople.html"target="blank">Salty Dog Folks Photos</a>
                                 </li>
                             </ul>
@@ -183,7 +184,8 @@
                                 </li>
                                 <li>
                                     <a tabindex="-1" href="../WebCams/boatcambow.html"target="blank">BoatCam Bow</a>
-                                </li>   <li>
+                                </li>
+                                <li>
                                     <a tabindex="-1" href="../WebCams/calibogue.php"target="blank">Calibogue Cam</a>
                                 </li>
                                 <li>
@@ -215,25 +217,25 @@
                 </ul>
             </div>
 
-            <ul class="navbar-nav ml-auto"  style="flex-direction: row !important">
+            <ul class="navbar-nav ml-auto" style="flex-direction: row !important">
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
 
-                        <img src="images/TIDESBUTTON.png">
+                        <img src="../images/social-logos/TIDESBUTTON.png">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="images/Facebook_Rounded.png">
+                        <img src="../images/social-logos/Facebook_Rounded.png">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="images/Instagram_RoundedEdges.png">
+                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
                     </a>
                 </li>
             </ul>
-    </nav>
+        </nav>
     </div>
 
 
