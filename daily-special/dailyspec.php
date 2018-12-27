@@ -217,21 +217,21 @@
                 </ul>
             </div>
 
-            <ul class="navbar-nav ml-auto" style="flex-direction: row !important">
+                 <ul class="navbar-nav ml-auto" style="flex-direction: row !important">
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
 
-                        <img src="../images/social-logos/TIDESBUTTON.png">
+                        <img src="../images/social-logos/TIDESBUTTON.png"alt="Tides Magaxine logo">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Facebook_Rounded.png">
+                        <img src="../images/social-logos/Facebook_Rounded.png"alt="Facebook Logo">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                        <img src="../images/social-logos/Instagram_RoundedEdges.png"alt="Instagram Logo">
                     </a>
                 </li>
             </ul>
@@ -260,7 +260,7 @@
         <br>
         <div class="row">
             <div class="col">
-            <img src="images/CAFE.png" alt="spec" width="30%" height="auto">
+            <img src="images/CAFE.png" alt="Cafe logo" width="30%" height="auto">
             </div>
             <div class="col">
                 <br>
@@ -288,7 +288,7 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="images/LET.png" alt="spec" width="30%" height="auto">
+                <img src="images/LET.png" alt="Land's end Tavenr logo" width="30%" height="auto">
             </div>
             <div class="col">
                 <ul>
@@ -317,7 +317,7 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="images/BLUFFDOG.png" alt="spec" width="30%" height="auto">
+                <img src="images/BLUFFDOG.png" alt="Bluffton Cafe logo" width="30%" height="auto">
             </div>
             <div class="col">
                 <ul>
@@ -343,7 +343,7 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="images/WRECK.png" alt="spec" width="30%" height="auto">
+                <img src="images/WRECK.png" alt="The Wreck logo" width="30%" height="auto">
             </div>
             <div class="col">
                 <ul>

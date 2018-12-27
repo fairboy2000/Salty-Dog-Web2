@@ -264,21 +264,21 @@
                 </ul>
             </div>
 
-            <ul class="navbar-nav ml-auto" style="flex-direction: row !important">
+              <ul class="navbar-nav ml-auto" style="flex-direction: row !important">
                 <li class="nav-item">
                     <a href="../tides/tides.html" target="_blank">
 
-                        <img src="../images/social-logos/TIDESBUTTON.png">
+                        <img src="../images/social-logos/TIDESBUTTON.png"alt="Tides Magaxine logo">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Facebook_Rounded.png">
+                        <img src="../images/social-logos/Facebook_Rounded.png"alt="Facebook Logo">
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Pages/social.html" target="_blank">
-                        <img src="../images/social-logos/Instagram_RoundedEdges.png">
+                        <img src="../images/social-logos/Instagram_RoundedEdges.png"alt="Instagram Logo">
                     </a>
                 </li>
             </ul>
