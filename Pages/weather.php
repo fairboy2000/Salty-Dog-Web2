@@ -287,7 +287,7 @@
   
 
     <div class="container">
-        <img src="../images/HeaderBanners/WEATHER.png" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and  written on it.">
+        <img src="../images/HeaderBanners/WEATHER.png" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and weather written on it.">
 
     </div>
 

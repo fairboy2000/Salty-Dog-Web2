@@ -240,7 +240,7 @@
   
 
     <div class="container">
-        <img src="../images/HeaderBanners/CAM BW.png" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and  written on it.">
+        <img src="../images/HeaderBanners/CAM BW.png" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and Webcams // Calibogue written on it.">
 
     </div>
   
