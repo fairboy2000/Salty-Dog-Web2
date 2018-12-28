@@ -260,7 +260,7 @@
         <br>
         <div class="row">
             <div class="col">
-            <img src="images/CAFE.png" alt="Cafe logo" width="30%" height="auto">
+            <img src="images/CAFE.png" alt="Salt dog Cafe logo" width="30%" height="auto">
             </div>
             <div class="col">
                 <br>
@@ -288,7 +288,7 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="images/LET.png" alt="Land's end Tavenr logo" width="30%" height="auto">
+                <img src="images/LET.png" alt="Land's end Tavern logo" width="30%" height="auto">
             </div>
             <div class="col">
                 <ul>
