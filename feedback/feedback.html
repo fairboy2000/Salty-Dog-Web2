@@ -284,13 +284,34 @@
 
 
                     </div>
-                    <div class="form-group">
-                        <label for='name'>Name of Restaurant: </label>
-                        <input type="text" name="restaurant" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Restaurant Name">
-                    </div>
-
-                    <div class="form-group">
+                    <div class="dropdown">
+                           
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Restaurant 
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Salty Dog Cafe</a>
+                          <a class="dropdown-item" href="#">Salty Dog Cafe Bluffton</a>
+                          <a class="dropdown-item" href="#">The Wreck of the Salty Dog</a>
+                          <a class="dropdown-item" href="#">Land's End Tavern</a>
+                          <a class="dropdown-item" href="#">Kiwi's Island Cookout</a>
+                          <a class="dropdown-item" href="#">Jake's Pizza</a>
+                          <a class="dropdown-item" href="#">Salty Dog Ice Cream</a>
+                        </div>
+                      </div> 
+<script>$().dropdown('update')</script>
+                    
+                      <div class="dropdown">
+                            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown trigger
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dLabel">
+                              ...
+                            </div>
+                          </div>
+                    
+                    
+                      <div class="form-group">
                         <label for='name'>Date and time of visit: </label>
                         <input type="datetime-local" name="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Date">

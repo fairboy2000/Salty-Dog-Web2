@@ -375,19 +375,19 @@ if(document.images)window.onload=refresh;
 
 <div class="col">
 <div class="grid-item">
-<img id="image1" src="http://saltydog.com/weather/sbeach/WindSpeed.gif?date=<?php echo $date; ?>" alt="" />
+<img id="image1" src="http://saltydog.com/weather/sbeach/WindSpeed.gif?date=<?php echo $date; ?>" alt="Wind Speed" />
 </div>
 </div>
 
 <div class="col">
 <div class="grid-item">
-<img id="image2" src="http://saltydog.com/weather/sbeach/WindDirection.gif?date=<?php echo $date; ?>" alt=""  />
+<img id="image2" src="http://saltydog.com/weather/sbeach/WindDirection.gif?date=<?php echo $date; ?>" alt="Wind direction"  />
 </div>
 </div>
 
 <div class="col">
 <div class="grid-item">
-<img id="image3" src="http://saltydog.com/weather/sbeach/10MinAvgWindSpeed.gif?date=<?php echo $date; ?>" alt=""  /> 
+<img id="image3" src="http://saltydog.com/weather/sbeach/10MinAvgWindSpeed.gif?date=<?php echo $date; ?>" alt="Average wind Speed"  /> 
 </div>
 </div>
 
@@ -419,13 +419,13 @@ if(document.images)window.onload=refresh;
 
 <div class="col">
 <div class="grid-item">
-<img id="image7" src="http://saltydog.com/weather/sbeach/OutsideTemp.gif?date=<?php echo $date; ?>" alt=""  />
+<img id="image7" src="http://saltydog.com/weather/sbeach/OutsideTemp.gif?date=<?php echo $date; ?>" alt="Outside Temp."  />
 </div>
 </div>
 
 <div class="col">
 <div class="grid-item">
-<img id="image11" src="http://saltydog.com/weather/sbeach/Barometer.gif?date=<?php echo $date; ?>" alt=""  />
+<img id="image11" src="http://saltydog.com/weather/sbeach/Barometer.gif?date=<?php echo $date; ?>" alt="Barometer."  />
 </div>
 </div>
 
@@ -437,25 +437,25 @@ if(document.images)window.onload=refresh;
 
 <div class="col">
 <div class="grid-item">
-<img id="image9" src="http://saltydog.com/weather/sbeach/Rain.gif?date=<?php echo $date; ?>" alt="" />
+<img id="image9" src="http://saltydog.com/weather/sbeach/Rain.gif?date=<?php echo $date; ?>" alt="Rain Daily amount." />
 </div>
 </div>
 
 <div class="col">
 <div class="grid-item">
-<img id="image10" src="http://saltydog.com/weather/sbeach/MonthlyRain.gif?date=<?php echo $date; ?>" alt=""  />
+<img id="image10" src="http://saltydog.com/weather/sbeach/MonthlyRain.gif?date=<?php echo $date; ?>" alt="Rain per Month."  />
 </div>
 </div>
 
 <div class="col">
 <div class="grid-item">
-<img id="image11" src="http://saltydog.com/weather/sbeach/YearlyRain.gif?date=<?php echo $date; ?>" alt=""  />
+<img id="image11" src="http://saltydog.com/weather/sbeach/YearlyRain.gif?date=<?php echo $date; ?>" alt="Rain per year."  />
 </div>
 </div>
 
 <div class="col">
 <div class="grid-item">
-<img id="image12" src="http://saltydog.com/weather/sbeach/Temperature2.gif?date=<?php echo $date; ?>" alt="" />
+<img id="image12" src="http://saltydog.com/weather/sbeach/Temperature2.gif?date=<?php echo $date; ?>" alt="Surface Water temp." />
 </div>
 </div>
 
