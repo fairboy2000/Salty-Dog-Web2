@@ -271,7 +271,7 @@
 
                     </div>
                     <div class="form-group">
-                        <label for='name'>Phone Number: </label>
+                        <label for='phone'>Phone Number: </label>
                         <input type="number" name="phone" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Phone">
 
@@ -285,8 +285,8 @@
 
                     </div>
                     <div class="form-group">
-                        <form action="/action_page.php">
-                            <select name="restaurants" style="display: block; 
+                      
+                            <select name="restaurant" style="display: block; 
                              width: 100%; border-radius: 10px;
                             height: calc(2.25rem + 2px);">
                                     <option value="">Restaurant</option>
@@ -299,7 +299,7 @@
                               <option value="Ice Cream">Salty Dog Ice Cream</option>
                             </select>
                      
-                          </form>
+                       
                     </div>
                     
                     
@@ -372,7 +372,7 @@
                     var frmvalidator = new Validator("myemailform");
                     frmvalidator.addValidation("name", "req", "Please provide your name");
                     frmvalidator.addValidation("email", "req", "Please provide your email");
-                    frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+                
                 </script>
 
 

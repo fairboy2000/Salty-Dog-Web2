@@ -38,7 +38,7 @@ $email_subject = "New  Feedback Form submission";
 $email_body = "You have received a new message from : $name.\n".
 "Their phone number is:  $phone.\n".
 "Their email is: $visitor_email.\n".
-"The date they viseted was:  \n $date. \n".
+"The date they visited was:  \n $date. \n".
 "The restaurant they visited was:  $restaurant. \n".
 " How many minutes did you wait before being served?  Answer:  $wait. \n".
 "What was your Server's Name  Answer:  $server. \n".
