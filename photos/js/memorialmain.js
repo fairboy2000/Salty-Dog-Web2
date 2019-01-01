@@ -2,7 +2,7 @@
    'use strict';
 
    var gallery;
-   var lastSearch = "Salty dog cafe pet memorial photos";
+   var lastSearch = "salty dog cafe pet memorial photos";
 
    function searchPhotos(text, page) {
       if (text.length === 0) {
