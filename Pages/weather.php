@@ -396,32 +396,32 @@ if(document.images)window.onload=refresh;
 <div class="row">
 
 
-<!-- <div class="col">  
+ <div class="col">  
 <div class="grid-item">
 <img id="image4" src="http://saltydog.com/weather/sbeach/HighWindDirHistory.gif?date=<?php echo $date; ?>" alt=""  />
 </div>
-</div> -->
+</div> 
 
-<!-- <div class="col">
+<div class="col">
  <div class="grid-item">
 <img id="image5" src="http://saltydog.com/weather/sbeach/HiWindSpeedHistory.gif?date=<?php echo $date; ?>" alt=""  />
 </div>
-</div> -->
+</div> 
 
+</div>
 
-
-
+<div class="row">
 <!-- <div class="col">
 <div class="grid-item">
 <img id="image6" src="http://saltydog.com/weather/sbeach/OutsideHumidity.gif?date=<?php echo $date; ?>" alt=""  />
 </div>
 </div> -->
 
-<div class="col">
+<!-- <div class="col">
 <div class="grid-item">
 <img id="image7" src="http://saltydog.com/weather/sbeach/OutsideTemp.gif?date=<?php echo $date; ?>" alt="Outside Temp."  />
 </div>
-</div>
+</div> -->
 
 <div class="col">
 <div class="grid-item">
@@ -452,7 +452,9 @@ if(document.images)window.onload=refresh;
 <img id="image11" src="http://saltydog.com/weather/sbeach/YearlyRain.gif?date=<?php echo $date; ?>" alt="Rain per year."  />
 </div>
 </div>
+</div>
 
+<div class="row">
 <div class="col">
 <div class="grid-item">
 <img id="image12" src="http://saltydog.com/weather/sbeach/Temperature2.gif?date=<?php echo $date; ?>" alt="Surface Water temp." />
@@ -461,7 +463,7 @@ if(document.images)window.onload=refresh;
 
 </div>
 
-<div class="row">
+
 
 
 <div class="col">  
@@ -472,41 +474,54 @@ if(document.images)window.onload=refresh;
 </div>
 
 <div class="row">
-
-<img src="http://64.203.225.15:8018/images/tides.jpg?date=<?php echo $date; ?>" alt="tides" style="border: 2px" width="90%"
+<div class="col">
+<div class="grid-item">
+<img src="http://64.203.225.15:8018/images/tides.jpg?date=<?php echo $date; ?>" alt="tides" style="border: 2px" width="80%"
                 height="auto" />
 </div>             
-
+</div>
+</div>
 
 <div class="row">
-
+<div class="col">
+<div class="grid-item">
 <p style="color:green !important;text-align: center">Green Clock = Tide Falling with Low Tide at Bottom of Clock</p>
 </div>
-
+</div>
+</div>
 <div class="row">
+<div class="col">
+<div class="grid-item">
 <p style="color:blue!important;text-align: center">Blue Clock = Tide Rising with High Tide at Top of Clock</p>
 </div>
-
+</div>
+</div>
 <div class="row">
+<div class="col">
+<div class="grid-item">
 <p style="color:red !important;text-align: center">Red Clock = Negative Low</p>
 </div>
-
+</div>
+</div>
 <div class="row">
+<div class="col">
+<div class="grid-item">
 <p style="color:black!important;text-align: center">Current Eastern Standard Time in Center of Clock  </p>
 </div>
-
+</div>
+</div>
 <div class="row">
-
-<p>Current Tide Height on Face of Clock</p>
+<div class="col">
+<div class="grid-item">
+<p style="color:black!important;text-align: center">Current Tide Height on Face of Clock</p>
 
 </div>
-       
+</div>
+</div>    
 
 
 
-        </div>
-
-    </div>
+    
 </div>
 
 
