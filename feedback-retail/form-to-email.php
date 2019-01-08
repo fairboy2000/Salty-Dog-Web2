@@ -8,6 +8,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $visitor_email = $_POST['email'];
 $date = $_POST['date'];
+$store = $_POST['store'];
 $employee = $_POST['employee'];
 $greet = $_POST['greet'];
 $sales = $_POST['sales'];
