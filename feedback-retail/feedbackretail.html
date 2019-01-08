@@ -253,11 +253,9 @@
 
         <div class="row" style="border:3px solid yellow; width:90%; padding-bottom: 5px; margin-left: 5%; text-align: left !important; font-size: 1em">
             <div class="col-10" >
-                <h4 style="text-align: center; margin-left: 7%;margin-top: 7%;">Thank you for your recent visit to South Beach Marina Village. During your stay you may have dined at one of
-                    our restaurants. We are conducting this short survey and hope that you will share your dining experience
-                    with us.
-                    <br> Note: The questions on this survey are optional.
-                    <br>Be sure to provide contact information in any event that requires a personal response from our management
+                <h4 style="text-align: center; margin-left: 7%;margin-top: 7%;">
+                    <br>The questions on this survey are optional, but
+                    be sure to provide contact information in any event that requires a personal response from our management
                     team. </h4>
                 <!-- Start code for the form-->
 
@@ -284,23 +282,24 @@
 
 
                     </div>
-                     <div class="form-group">
-                      
-                            <select name="restaurant" style="display: block; 
-                             width: 100%; border-radius: 10px;
-                            height: calc(2.25rem + 2px);">
-                                    <option value="">Restaurant</option>
-                              <option value="Cafe">Salty Dog Cafe</option>
-                              <option value="Bluffton">Salty Dog Cafe Bluffton</option>
-                              <option value="Wreck">The Wreck of the Salty Dog</option>
-                              <option value="LET">Land's End Tavern</option>
-                              <option value="Kiwi">Kiwi's Island Cookout</option>
-                              <option value="Pizza">Jake's Pizza</option>
-                              <option value="Ice Cream">Salty Dog Ice Cream</option>
-                            </select>
-                     
-                       
-                    </div> 
+                    <div class="form-group">
+                        <label for='email'>Which store did you visit?</label>
+                        <select name="restaurant" style="display: block; 
+                         width: 100%; border-radius: 10px;
+                        height: calc(2.25rem + 2px);">
+                                <option value="">Store</option>
+                          <option value="arrow">Salty Dog T-Shirt Factory - Arrow Rd</option>
+                          <option value="south beach">Salty Dog T-Shirt Factory - South Beach</option>
+                          <option value="tanger">Salty Dog T-Shirt Factory - Taqnger 2</option>
+                          <option value="key west">Salty Dog T-Shirt Factory - Key West</option>
+                          <option value="cargo">Jake's Cargo</option>
+                         
+                        </select>
+                 
+                   
+                </div> 
+              
+                
                     
                     
                       <div class="form-group">
@@ -310,57 +309,57 @@
 
                     </div>
                     <div class="form-group">
-                        <label for='message'>What was your server's name</label>
-                        <textarea name="server" placeholder="Server" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for='message'>Which employee or employees helped you?</label>
+                        <textarea name="employee" placeholder="Employee" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for='message'>How many minutes did you wait before being served?</label>
-                        <textarea name="wait" placeholder="Wait time" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for='message'>Were you greeted by a clerk?</label>
+                        <textarea name="greet" placeholder="Greeting" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                            <label for='message'>Were you visited by a manager during your visit?</label>
-                            <textarea name="manager" placeholder="Manager" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for='message'>Were you told about any sales going on in the store upon entering?</label>
+                        <textarea name="sales" placeholder="Sales" class="form-control" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                            <label for='message'>Did the employee answer any questions you had?</label>
+                            <textarea name="question" placeholder="Questions" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
+                   
 
-                    <h5>For the remainder of the questions please feel free to elaborate or give us any specifics you feel we should know about. </h5>
+                    <!-- <h5>For the remainder of the questions please feel free to elaborate or give us any specifics you feel we should know about. </h5> -->
                     <div class="col-sm-12">
                             <div style='border-bottom:3px solid yellow;'></div>
                         </div>
                     <br>
                     <div class="form-group">
-                        <label for='message'>Was the Hostess helpful and polite? </label>
-                        <textarea name="hostess" placeholder="Hostess" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for='message'>Was the employee helpful and polite? </label>
+                        <textarea name="helpful" placeholder="Helpful" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
           
                     <div class="form-group">
-                        <label for='message'>Would you recommend our restaurant? </label>
-                        <textarea name="recommend" placeholder="Recommend" class="form-control" id="exampleFormControlTextarea1"
+                        <label for='message'>If you made a purchase, were you told about the Lucky Receipt Contest? </label>
+                        <textarea name="contest" placeholder="Contest" class="form-control" id="exampleFormControlTextarea1"
                             rows="3"></textarea>
                     </div>
+                    
                     <div class="form-group">
-                        <label for='message'>Was your food served promptly?</label>
-                        <textarea name="prompt" placeholder="Promptly" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for='message'>If the store was out of a product, did the employee make an attempt to find it at another retail location?</label>
+                        <textarea name="find" placeholder="Find Product" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                
+                  
                     <div class="form-group">
-                        <label for='message'>Was your food served hot and fresh?</label>
-                        <textarea name="hot" placeholder="Hot and Fresh" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for='message'>Overall would you say your experience was enjoyable?</label>
+                        <label for='message'>What did you like about shopping in the store?</label>
                         <textarea name="enjoy" placeholder="Enjoyable Experience" class="form-control" id="exampleFormControlTextarea1"
                             rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for='message'>Start to finish, would you say the service was excellent?</label>
-                        <textarea name="start" placeholder="Excellent Service" class="form-control" id="exampleFormControlTextarea1"
+                        <label for='message'>Any suggestions for products or for making your shopping experience better in the store?</label>
+                        <textarea name="sugestions" placeholder="Suggestions" class="form-control" id="exampleFormControlTextarea1"
                             rows="3"></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for='message'>Any other comments or suggestions?</label>
-                        <textarea name="comments" placeholder="Comments or Suggestions" class="form-control" id="exampleFormControlTextarea1"
-                            rows="3"></textarea>
-                    </div>
+          
 
                     <button type="submit" name='submit' value="submit" class="btn btn-secondary">Submit</button>
                 </form>
