@@ -53,14 +53,7 @@ html { font-size: calc(1em + 1vw) }
         font-size: .9em;
         text-align: left;
        }
-        .form-group{
-            padding-bottom: 30px;
-        }
-
-
-     form{
-        border:   1px solid yellow"
-     }
+   
 
     
         .col {
@@ -73,7 +66,7 @@ html { font-size: calc(1em + 1vw) }
         .container {
             text-align: center;
             /* margin-top: 5px; */
-            max-width: 1200px;
+            
         }
 
         .row {

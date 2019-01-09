@@ -72,14 +72,9 @@ body{
             font-size: 1em !important;
             
         }
-        .form-group{
-            padding-bottom: 30px;
-        }
+   
 
 
-     form{
-        border:   1px solid yellow"
-     }
 
     
         .col {
@@ -156,11 +151,11 @@ body{
         }
         .form-group{
             font-size: .9em !important;
-            padding-bottom: 30px;
+            
         }
 
 
      form{
         font-size: .9em !important;
-        border:   1px solid yellow"
+       
      }
