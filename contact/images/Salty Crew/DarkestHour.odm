@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<OverDriveMedia id="6182d5f3-b608-4f8d-96a0-40330f6e6319-425" ODMVersion="3.0.0.0" OMCVersion="3.0.0.0">
+	<License>
+		<AcquisitionUrl>https://ofs.contentreserve.com/MP3LicenseAcquisitionService.svc/740d9298-99c4-40e6-bf9a-a9d300bb6305</AcquisitionUrl>
+	</License><![CDATA[<Metadata>
+	<ContentType>MP3 Audio Book</ContentType>
+	<Title>The Darkest Hour</Title>
+	<SubTitle>Kelly Group International Series, Book 1</SubTitle>
+	<SortTitle>Darkest Hour</SortTitle>
+	<Publisher>Recorded Books, LLC</Publisher>
+	<Series>Kelly Group International</Series>
+	<ThumbnailUrl>https://images.contentreserve.com/ImageType-200/1694-1/{6182D5F3-B608-4F8D-96A0-40330F6E6319}Img200.jpg</ThumbnailUrl>
+	<CoverUrl>https://images.contentreserve.com/ImageType-100/1694-1/{6182D5F3-B608-4F8D-96A0-40330F6E6319}Img100.jpg</CoverUrl>
+	<Creators>
+		<Creator role="Author" file-as="Banks, Maya">Maya Banks</Creator>
+		<Creator role="Narrator" file-as="Berkeley, Harry">Harry Berkeley</Creator>
+	</Creators>
+	<Subjects>
+		<Subject id="26">Fiction</Subject>
+		<Subject id="77">Romance</Subject>
+		<Subject id="86">Suspense</Subject>
+	</Subjects>
+	<Languages>
+		<Language code="en">English</Language>
+	</Languages>
+<Description>&lt;p&gt;It's been a year since ex-Navy SEAL Ethan Kelly saw his wife Rachel alive. Now he's received an anonymous phone call claiming Rachel is alive. To find her, Ethan will have to doge bullets, cross a jungle, and risk falling captive to a deadly drug cartel that threatens his own demise.
+</Description>
+</Metadata>]]><DrmInfo>   <PlayOnPC>1</PlayOnPC>   <PlayOnPCCount>-1</PlayOnPCCount>   <BurnToCD>1</BurnToCD>   <BurnToCDCount>-1</BurnToCDCount>   <PlayOnPM>1</PlayOnPM>   <TransferToSDMI>1</TransferToSDMI>   <TransferToNonSDMI>1</TransferToNonSDMI>   <TransferCount>-1</TransferCount>   <CollaborativePlay>0</CollaborativePlay>   <PublicPerformance>0</PublicPerformance>   <TranscodeToAAC>1</TranscodeToAAC>  <ExpirationDate>2019-01-14T22:20:43Z</ExpirationDate><Hash>awAOpH8JU4qH2Qwj+y5KR4JVGN0=</Hash><Hash2>dg8AGAVJmtvwUd7sKcdsILO6XbA=</Hash2></DrmInfo><Formats><Format name="Medium Quality"><Quality level="Medium" /><Protocols><Protocol method="download" baseurl="https://mp3audio-gk.cdn.overdrive.com/MP3AudioStore1" /></Protocols><Parts count="9"><Part number="1" filesize="36577658" name="Part 1" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part01.mp3" duration="76:08" /><Part number="2" filesize="32631915" name="Part 2" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part02.mp3" duration="67:55" /><Part number="3" filesize="35009057" name="Part 3" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part03.mp3" duration="72:52" /><Part number="4" filesize="34843337" name="Part 4" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part04.mp3" duration="72:31" /><Part number="5" filesize="30508055" name="Part 5" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part05.mp3" duration="63:29" /><Part number="6" filesize="37121005" name="Part 6" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part06.mp3" duration="77:16" /><Part number="7" filesize="36130860" name="Part 7" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part07.mp3" duration="75:12" /><Part number="8" filesize="35580826" name="Part 8" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part08.mp3" duration="74:04" /><Part number="9" filesize="32437982" name="Part 9" filename="1694-1\618\2D5\F3\{6182D5F3-B608-4F8D-96A0-40330F6E6319}Fmt425-Part09.mp3" duration="67:31" /></Parts></Format></Formats><Source id="LosAngeles"><Name>Los Angeles Public Library</Name><WebsiteUrl>http://e-media.lapl.org</WebsiteUrl><BannerUrl>http://e-media.lapl.org/ODMBanner.gif</BannerUrl><AccentColor>#eeeeee</AccentColor></Source><TransactionID>078-702391-02211</TransactionID><EarlyReturnURL>https://notifications-ofs.contentreserve.com/EarlyReturn/LosAngeles/078-702391-02211/6182d5f3-b608-4f8d-96a0-40330f6e6319-425?h=I%2fnXGII4bi7vbLXOu6zgeL7vt36SEsHhZbGr3da7w4g%3d</EarlyReturnURL><DownloadSuccessURL>https://notifications-ofs.contentreserve.com/DownloadSuccess/LosAngeles/078-702391-02211/6182d5f3-b608-4f8d-96a0-40330f6e6319-425?h=I%2fnXGII4bi7vbLXOu6zgeL7vt36SEsHhZbGr3da7w4g%3d</DownloadSuccessURL></OverDriveMedia>

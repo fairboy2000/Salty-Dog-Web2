@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<OverDriveMedia id="468c7472-5d61-4cdb-baf4-22ab57273d21-425" ODMVersion="3.0.0.0" OMCVersion="3.0.0.0">
+	<License>
+		<AcquisitionUrl>https://ofs.contentreserve.com/MP3LicenseAcquisitionService.svc/fe904997-9f55-4b47-898e-a9d300bb534c</AcquisitionUrl>
+	</License><![CDATA[<Metadata>
+	<ContentType>MP3 Audio Book</ContentType>
+	<Title>Echoes at Dawn</Title>
+	<SubTitle>Kelly Group International Series, Book 5</SubTitle>
+	<SortTitle>Echoes at Dawn</SortTitle>
+	<Publisher>Recorded Books,LLC</Publisher>
+	<Series>Kelly Group International</Series>
+	<ThumbnailUrl>https://images.contentreserve.com/ImageType-200/1694-1/{468C7472-5D61-4CDB-BAF4-22AB57273D21}Img200.jpg</ThumbnailUrl>
+	<CoverUrl>https://images.contentreserve.com/ImageType-100/1694-1/{468C7472-5D61-4CDB-BAF4-22AB57273D21}Img100.jpg</CoverUrl>
+	<Creators>
+		<Creator role="Author" file-as="Banks, Maya">Maya Banks</Creator>
+		<Creator role="Narrator" file-as="Berkeley, Harry">Harry Berkeley</Creator>
+	</Creators>
+	<Subjects>
+		<Subject id="26">Fiction</Subject>
+		<Subject id="77">Romance</Subject>
+		<Subject id="86">Suspense</Subject>
+	</Subjects>
+	<Languages>
+		<Language code="en">English</Language>
+	</Languages>
+<Description>&lt;p&gt;Grace Peterson is desperate, in hiding, and on the run after escaping a shadowy group determined to exploit her extraordinary ability to heal others. Her only lifeline--an unerring telepathic ability she shares with her sister--has been severed, leaving her alone and vulnerable. And time is running out...Enlisted to bring Grace home is Rio, relentless member of the KGI. He's unprepared for his reaction to this wounded, damaged woman, and he's fiercely determined to protect her from those who nearly destroyed her. In Rio, she finds a safe haven, and for the first time...hope. But the mission is far from over. The danger Grace has eluded is fast closing in. And now it's pitching two lovers toward an unfamiliar horizon, with no place left to hide.</Description>
+</Metadata>]]><DrmInfo>   <PlayOnPC>1</PlayOnPC>   <PlayOnPCCount>-1</PlayOnPCCount>   <BurnToCD>1</BurnToCD>   <BurnToCDCount>-1</BurnToCDCount>   <PlayOnPM>1</PlayOnPM>   <TransferToSDMI>1</TransferToSDMI>   <TransferToNonSDMI>1</TransferToNonSDMI>   <TransferCount>-1</TransferCount>   <CollaborativePlay>0</CollaborativePlay>   <PublicPerformance>0</PublicPerformance>   <TranscodeToAAC>1</TranscodeToAAC>  <ExpirationDate>2019-01-14T22:21:56Z</ExpirationDate><Hash>E89VpeUqyWhuYmvKL9L7dOL85Qs=</Hash><Hash2>sGaurv5TTmiY/MojG00hz0/2+UY=</Hash2></DrmInfo><Formats><Format name="Medium Quality"><Quality level="Medium" /><Protocols><Protocol method="download" baseurl="https://mp3audio-gk.cdn.overdrive.com/MP3AudioStore1" /></Protocols><Parts count="9"><Part number="1" filesize="32642896" name="Part 1" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part01.mp3" duration="67:56" /><Part number="2" filesize="29727004" name="Part 2" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part02.mp3" duration="61:52" /><Part number="3" filesize="34782012" name="Part 3" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part03.mp3" duration="72:24" /><Part number="4" filesize="29061613" name="Part 4" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part04.mp3" duration="60:29" /><Part number="5" filesize="35023801" name="Part 5" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part05.mp3" duration="72:54" /><Part number="6" filesize="32834113" name="Part 6" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part06.mp3" duration="68:20" /><Part number="7" filesize="32636627" name="Part 7" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part07.mp3" duration="67:56" /><Part number="8" filesize="27428438" name="Part 8" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part08.mp3" duration="57:05" /><Part number="9" filesize="33745055" name="Part 9" filename="1694-1\468\C74\72\{468C7472-5D61-4CDB-BAF4-22AB57273D21}Fmt425-Part09.mp3" duration="70:14" /></Parts></Format></Formats><Source id="LosAngeles"><Name>Los Angeles Public Library</Name><WebsiteUrl>http://e-media.lapl.org</WebsiteUrl><BannerUrl>http://e-media.lapl.org/ODMBanner.gif</BannerUrl><AccentColor>#eeeeee</AccentColor></Source><TransactionID>078-702391-02214</TransactionID><EarlyReturnURL>https://notifications-ofs.contentreserve.com/EarlyReturn/LosAngeles/078-702391-02214/468c7472-5d61-4cdb-baf4-22ab57273d21-425?h=TBPDcUKduuQkjFvsGO6Tr3wb7%2bjiUn1eZO0ArjE38hU%3d</EarlyReturnURL><DownloadSuccessURL>https://notifications-ofs.contentreserve.com/DownloadSuccess/LosAngeles/078-702391-02214/468c7472-5d61-4cdb-baf4-22ab57273d21-425?h=TBPDcUKduuQkjFvsGO6Tr3wb7%2bjiUn1eZO0ArjE38hU%3d</DownloadSuccessURL></OverDriveMedia>

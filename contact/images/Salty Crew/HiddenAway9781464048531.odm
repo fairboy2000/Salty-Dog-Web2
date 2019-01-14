@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<OverDriveMedia id="abc65d95-0f3d-4e27-a542-a77061f6cdb1-425" ODMVersion="3.0.0.0" OMCVersion="3.0.0.0">
+	<License>
+		<AcquisitionUrl>https://ofs.contentreserve.com/MP3LicenseAcquisitionService.svc/9ef5c27a-5c7d-48fb-b9b3-a9d300bb4d3c</AcquisitionUrl>
+	</License><![CDATA[<Metadata>
+	<ContentType>MP3 Audio Book</ContentType>
+	<Title>Hidden Away</Title>
+	<SubTitle>Kelly Group International Series, Book 3</SubTitle>
+	<SortTitle>Hidden Away</SortTitle>
+	<Publisher>Recorded Books,LLC</Publisher>
+	<Series>Kelly Group International</Series>
+	<ThumbnailUrl>https://images.contentreserve.com/ImageType-200/1694-1/{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Img200.jpg</ThumbnailUrl>
+	<CoverUrl>https://images.contentreserve.com/ImageType-100/1694-1/{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Img100.jpg</CoverUrl>
+	<Creators>
+		<Creator role="Author" file-as="Banks, Maya">Maya Banks</Creator>
+		<Creator role="Narrator" file-as="Berkeley, Harry">Harry Berkeley</Creator>
+	</Creators>
+	<Subjects>
+		<Subject id="26">Fiction</Subject>
+		<Subject id="77">Romance</Subject>
+		<Subject id="86">Suspense</Subject>
+	</Subjects>
+	<Languages>
+		<Language code="en">English</Language>
+	</Languages>
+<Description>&lt;p&gt;&lt;i&gt;New York Times&lt;/i&gt; best-selling author Maya Banks received a RITA nomination for &lt;i&gt;Hidden Away&lt;/i&gt;, the third novel in her captivating series starring the Kelly brothers.&lt;p&gt;After Sarah Daniels witnesses Marcus Lattimer commit murder, she's paralyzed by fear. Garrett Kelly agrees to keep her safe, mostly to get a shot at Lattimer, whom KGI has been after for years. Garrett never planned on falling for Sarah&#8212;but when she disappears, nothing will stop him from bringing her home safe.</Description>
+</Metadata>]]><DrmInfo>   <PlayOnPC>1</PlayOnPC>   <PlayOnPCCount>-1</PlayOnPCCount>   <BurnToCD>1</BurnToCD>   <BurnToCDCount>-1</BurnToCDCount>   <PlayOnPM>1</PlayOnPM>   <TransferToSDMI>1</TransferToSDMI>   <TransferToNonSDMI>1</TransferToNonSDMI>   <TransferCount>-1</TransferCount>   <CollaborativePlay>0</CollaborativePlay>   <PublicPerformance>0</PublicPerformance>   <TranscodeToAAC>1</TranscodeToAAC>  <ExpirationDate>2019-01-19T05:56:38Z</ExpirationDate><Hash>EqjLGv78zgevB16JVXAsjl42t6M=</Hash><Hash2>Qp6MwnM0Xe/0VCihBmaMWCRKQOA=</Hash2></DrmInfo><Formats><Format name="Medium Quality"><Quality level="Medium" /><Protocols><Protocol method="download" baseurl="https://mp3audio-gk.cdn.overdrive.com/MP3AudioStore1" /></Protocols><Parts count="10"><Part number="1" filesize="29128832" name="Part 1" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part01.mp3" duration="60:37" /><Part number="2" filesize="35185269" name="Part 2" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part02.mp3" duration="73:14" /><Part number="3" filesize="35365827" name="Part 3" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part03.mp3" duration="73:37" /><Part number="4" filesize="30606108" name="Part 4" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part04.mp3" duration="63:42" /><Part number="5" filesize="25694879" name="Part 5" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part05.mp3" duration="53:28" /><Part number="6" filesize="32182650" name="Part 6" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part06.mp3" duration="66:59" /><Part number="7" filesize="31710147" name="Part 7" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part07.mp3" duration="66:00" /><Part number="8" filesize="30707881" name="Part 8" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part08.mp3" duration="63:55" /><Part number="9" filesize="34179241" name="Part 9" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part09.mp3" duration="71:09" /><Part number="10" filesize="37025752" name="Part 10" filename="1694-1\ABC\65D\95\{ABC65D95-0F3D-4E27-A542-A77061F6CDB1}Fmt425-Part10.mp3" duration="77:04" /></Parts></Format></Formats><Source id="LosAngeles"><Name>Los Angeles Public Library</Name><WebsiteUrl>http://e-media.lapl.org</WebsiteUrl><BannerUrl>http://e-media.lapl.org/ODMBanner.gif</BannerUrl><AccentColor>#eeeeee</AccentColor></Source><TransactionID>078-702391-02216</TransactionID><EarlyReturnURL>https://notifications-ofs.contentreserve.com/EarlyReturn/LosAngeles/078-702391-02216/abc65d95-0f3d-4e27-a542-a77061f6cdb1-425?h=fnywwaU7UZwTHllDkoPZeVPQHOVC61CXKE10HO8gVG0%3d</EarlyReturnURL><DownloadSuccessURL>https://notifications-ofs.contentreserve.com/DownloadSuccess/LosAngeles/078-702391-02216/abc65d95-0f3d-4e27-a542-a77061f6cdb1-425?h=fnywwaU7UZwTHllDkoPZeVPQHOVC61CXKE10HO8gVG0%3d</DownloadSuccessURL></OverDriveMedia>
