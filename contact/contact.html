@@ -49,7 +49,7 @@
             });
         });
     </script>
-    <div class="container">
+    <div class="container justify-content-center">
         <nav class="navbar navbar-expand-lg ">
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -243,17 +243,12 @@
                 </li>
             </ul>
         </nav>
-    </div>
-    <div class="my-container justify-content-center" style="margin-left:7%;">
-        <div class="container">
-            <img src="../images/HeaderBanners/CONTACT.png" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and contact us written on it.">
 
-        </div>
+        <div class="my-container justify-content-center" style="margin-left: 3%; width: 90%">
+            <div class="container">
+                <img src="../images/HeaderBanners/CONTACT.png" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and contact us written on it.">
 
-
-
-
-        <div class="container justify-content-center" style="width:90%">
+            </div>
             <div class="row">
                 <div class="col">
 
@@ -293,7 +288,7 @@
                 }
 
                 input[type=submit]:hover {
-                    background-color: #45a049;
+                    /* background-color: #45a049; */
                 }
 
                 .my-container {
@@ -305,180 +300,187 @@
 
                 }
 
-                .my-container .card-body {
+                .photo-container {
+                    background-color: rgb(4, 4, 51)
+                }
+
+                .photo-container .card-body {
 
 
                     background-color: white !important
                 }
 
-                .my-container .card {
-border: 
+                .photo-container .card {
+
                     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
                     background-color: white !important;
                     margin: 2px
                 }
 
-     .my-container img {
+                .photo-container a {
 
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    background-color: white !important
+                }
 
-}
 
-                .my-container h5 {
+                .photo-container .card-img-top {
+
+                    background-color: white !important
+                }
+
+                .photo-container h5 {
 
                     color: rgb(4, 4, 51) !important;
                 }
             </style>
-            <div class="my-container justify-content-center" style="margin-left:7%;">
-                <div class="row justify-content-center" style="border:3px solid rgb(4, 4, 51);  padding-bottom: 5px; margin-left: 1%; margin-right: 1%; text-align: left !important; font-size: 1em">
-                    <div class="col-8">
-                        <h4 style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 1%; color:rgb(4, 4, 51) !important ;">
-                            SEND US A QUICK NOTE</h4>
 
-                        <!-- Start code for the form-->
-                        <form method="post" name="myemailform" action="form-to-email.php">
-                            <div id="form-font">
-                                <div class="form-group input-sm">
-                                    <label for='name'> Name: </label>
-                                    <input type="text" name="name" class="form-control form-control-sm" placeholder="">
+            <div class="row justify-content-center" style="  padding-bottom: 5px; margin-left: 1%; margin-right: 1%; text-align: left !important; font-size: 1em">
+                <div class="col-8">
+                    <h4 style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 1%; color:rgb(4, 4, 51) !important ;">
+                        SEND US A QUICK NOTE</h4>
 
-                                </div>
-
-                                <div class="form-group input-sm">
-                                    <label for='email'>Email Address:</label>
-                                    <input type="text" name="email" class="form-control form-control-sm" placeholder="">
-                                    <small class="form-text text-muted">We'll never share your email with anyone else.
-                                    </small>
-
-                                </div>
-                                <div class="form-group input-sm">
-                                    <label for='message'>Message:</label>
-
-                                    <textarea name="message" placeholder="" class="form-control form-control-sm" rows="1"></textarea>
-                                </div>
-                                <button type="submit" name='submit' value="submit" style="margin-bottom: 9px ; font-size:.5em !important;" class="btn btn-secondary">Submit</button>
+                    <!-- Start code for the form-->
+                    <form method="post" name="myemailform" action="form-to-email.php">
+                        <div id="form-font">
+                            <div class="form-group input-sm">
+                                <label for='name'> Name: </label>
+                                <input type="text" name="name" class="form-control form-control-sm" placeholder="">
 
                             </div>
-                        </form>
 
-                        <script language="JavaScript">
-                            // Code for validating the form
-                            // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-                            // for details
-                            var frmvalidator = new Validator("myemailform");
-                            frmvalidator.addValidation("name", "req", "Please provide your name");
-                            frmvalidator.addValidation("email", "req", "Please provide your email");
-                            frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
-                        </script>
+                            <div class="form-group input-sm">
+                                <label for='email'>Email Address:</label>
+                                <input type="text" name="email" class="form-control form-control-sm" placeholder="">
+                                <small class="form-text text-muted">We'll never share your email with anyone else.
+                                </small>
 
-                    </div>
+                            </div>
+                            <div class="form-group input-sm">
+                                <label for='message'>Message:</label>
+
+                                <textarea name="message" placeholder="" class="form-control form-control-sm" rows="1"></textarea>
+                            </div>
+                            <button type="submit" name='submit' value="submit" style="margin-bottom: 9px ; font-size:.5em !important;" class="btn btn-secondary">Submit</button>
+
+                        </div>
+                    </form>
+
+                    <script language="JavaScript">
+                        // Code for validating the form
+                        // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+                        // for details
+                        var frmvalidator = new Validator("myemailform");
+                        frmvalidator.addValidation("name", "req", "Please provide your name");
+                        frmvalidator.addValidation("email", "req", "Please provide your email");
+                        frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+                    </script>
                 </div>
-
-            
-
-                <div class="row justify-content-center" style="margin-top: 10px">
-                    <div class="card" style="width: 8rem;">
-                        <a href="../Dine/dine.html" target="_blank">
-                            <img class="card-img-top" src="images/dining.png" style="width:70%;" alt="Black cat on a table, drinking from a Salty Dog mug.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong> DINING</strong></h5>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="../Pages/stores.html" target="_blank">
-                            <img class="card-img-top" src="images/shopping.png" style="width:70%;" alt="Yellow lab puppy in a blue canvas salty dog shopping bag on a beach.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong> SHOPPING</strong></h5>
-                        </div>
-                    </div>
-
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="../Pages/findus.html" target="_blank">
-                            <img class="card-img-top" src="images/findus.png" style="width:70%;" alt="Small pomeranian mix, wearing a red salty dog t-shirt, in a white wicker basket, with a white blanket on a black bicycle on the beach with the surf in the backgound.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong> FIND US</strong></h5>
-                        </div>
-                    </div>
-
-
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="../cruise/inn.html" target="_blank">
-                            <img class="card-img-top" src="images/inn.png" style="width:70%;" alt="A red golden retriever wearing a pink Salty dog t-shirt sitting on a pier overlooking the marsh. 
-                            woman is sitting beside the dog, her hand on the dog's back.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong> THE INN</strong></h5>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="../cruise/cruise.html" target="_blank">
-                            <img class="card-img-top" src="images/cruisde.png" style="width:70%;" alt="2 weimaramers sitting on benches with colorful towels at the stern of a boat, water and dock in background. 
-                            woman is sitting beside the dog, her hand on the dog's back.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong> CRUISING</strong></h5>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="http://bluewaterhhi.com/" target="_blank">
-                            <img class="card-img-top" src="images/blue.png" style="width:70%;" alt="Blue tick Hound wearing salty dog bandana, cap and  red sunglasses, sitting on walkway of a dock, wter and boats in background.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong> BLUE WATER TACKLE SHOP</strong></h5>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="../employment/employment.html" target="_blank">
-                            <img class="card-img-top" src="images/employment.png" style="width:70%;" alt="Yellow lab in a green hammock on a porch, wearing a blue salty dog bandana and black sunglasses.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong>EMPLOYMENT</strong></h5>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="../donation/donation.html" target="_blank">
-                            <img class="card-img-top" src="images/charity.png" style="width:70%;" alt="Red Golden Retriever wearing a white fedora and blue tie dye salty dog bandana, flowers and wooden structure in background.">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong>DONATIONS</strong></h5>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="../Dine/noDogs.html" target="_blank">
-                            <img class="card-img-top" src="images/nodog.png" style="width:70%;" alt="Yellow Lab sitting in hallway with beige carpet looking directly into camera, torn tissue all over the floor..">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong>WHY NO DOGS?</strong></h5>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 8rem;">
-                        <a href="meetcrew.html" target="_blank">
-                            <img class="card-img-top" src="images/meetcrew.png" style="width:70%;" alt="Yellow Lab sitting in hallway with beige carpet looking directly into camera, torn tissue all over the floor..">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-text"><strong>MEET THE CREW</strong></h5>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-
-
         </div>
+
+
+        <div class="photo-container justify-content-center" style="width:90%">
+            <div class="row justify-content-center" style="margin-top: 10px">
+                <div class="card" style="width: 8rem;">
+                    <a href="../Dine/dine.html" target="_blank">
+                        <img class="card-img-top" src="images/dining.png" style="width:70%;" alt="Black cat on a table, drinking from a Salty Dog mug.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong> DINING</strong></h5>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 8rem;">
+                    <a href="../Pages/stores.html" target="_blank">
+                        <img class="card-img-top" src="images/shopping.png" style="width:70%;" alt="Yellow lab puppy in a blue canvas salty dog shopping bag on a beach.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong> SHOPPING</strong></h5>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 8rem;">
+                    <a href="../Pages/findus.html" target="_blank">
+                        <img class="card-img-top" src="images/findus.png" style="width:70%;" alt="Small pomeranian mix, wearing a red salty dog t-shirt, in a white wicker basket, with a white blanket on a black bicycle on the beach with the surf in the backgound.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong> FIND US</strong></h5>
+                    </div>
+                </div>
+
+
+
+                <div class="card" style="width: 8rem;">
+                    <a href="../cruise/inn.html" target="_blank">
+                        <img class="card-img-top" src="images/inn.png" style="width:70%;" alt="A red golden retriever wearing a pink Salty dog t-shirt sitting on a pier overlooking the marsh. 
+                            woman is sitting beside the dog, her hand on the dog's back.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong> THE INN</strong></h5>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 8rem;">
+                    <a href="../cruise/cruise.html" target="_blank">
+                        <img class="card-img-top" src="images/cruisde.png" style="width:70%;" alt="2 weimaramers sitting on benches with colorful towels at the stern of a boat, water and dock in background. 
+                            woman is sitting beside the dog, her hand on the dog's back.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong> CRUISING</strong></h5>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 8rem;">
+                    <a href="http://bluewaterhhi.com/" target="_blank">
+                        <img class="card-img-top" src="images/blue.png" style="width:70%;" alt="Blue tick Hound wearing salty dog bandana, cap and  red sunglasses, sitting on walkway of a dock, wter and boats in background.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong> BLUE WATER TACKLE SHOP</strong></h5>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 8rem;">
+                    <a href="../employment/employment.html" target="_blank">
+                        <img class="card-img-top" src="images/employment.png" style="width:70%;" alt="Yellow lab in a green hammock on a porch, wearing a blue salty dog bandana and black sunglasses.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong>EMPLOYMENT</strong></h5>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 8rem;">
+                    <a href="../donation/donation.html" target="_blank">
+                        <img class="card-img-top" src="images/charity.png" style="width:70%;" alt="Red Golden Retriever wearing a white fedora and blue tie dye salty dog bandana, flowers and wooden structure in background.">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong>DONATIONS</strong></h5>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 8rem;">
+                    <a href="../Dine/noDogs.html" target="_blank">
+                        <img class="card-img-top" src="images/nodog.png" style="width:70%;" alt="Yellow Lab sitting in hallway with beige carpet looking directly into camera, torn tissue all over the floor..">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong>WHY NO DOGS?</strong></h5>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 8rem;">
+                    <a href="meetcrew.html" target="_blank">
+                        <img class="card-img-top" src="images/meetcrew.png" style="width:70%;" alt="Yellow Lab sitting in hallway with beige carpet looking directly into camera, torn tissue all over the floor..">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-text"><strong>MEET THE CREW</strong></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
 
 
 
