@@ -85,25 +85,25 @@ html { font-size: calc(1em + 1vw) }
         }
 
      .card-body{
-        background: rgb(4, 4, 51);
+        background: white;
 
      }
      .card-title{
-        background: rgb(4, 4, 51);
+        background: white;
 
      }
 
         h3 {
-            color: white !important;
+            color: rgb(4, 4, 51) !important;
             text-align: center;
         }
 
         h4 {
-            color: white !important;
+            color: rgb(4, 4, 51) !important;
         }
 
         h5 {
-            color: white !important;
+            color: rgb(4, 4, 51) !important;
         }
 
      h2 {

@@ -4,10 +4,11 @@
 
 
 body {
-            color: white;
-            background: rgb(4, 4, 51);
+            color: rgb(4, 4, 51);
+            background-image:url("../images/jurassic-coast-1089035_1920.jpg");
             font-family: 'Rubik', sans-serif;
         }
+    
 
         html { font-size: calc(1em + 1vw) }
 
@@ -15,17 +16,17 @@ body {
             margin: auto;
           }
  
-.dropdown li:hover {background: gray;text-decoration: none;  white-space: normal !important;}
-.dropdown a:hover {background: gray; text-decoration: none; white-space: normal !important;}
-.dropdown .btn:hover {background: gray;text-decoration: none; white-space: normal !important;}
-.dropdown .btn:active {background: gray;text-decoration: none; white-space: normal !important; }
-.dropdown .btn:focus {background: gray; text-decoration: none;  white-space: normal !important;}
+.dropdown li:hover {background: hsl(56, 94%, 66%);text-decoration: none;  white-space: normal !important;}
+.dropdown a:hover {background: hsl(56, 94%, 66%); text-decoration: none; white-space: normal !important;}
+.dropdown .btn:hover {background: hsl(56, 94%, 66%);text-decoration: none; white-space: normal !important;}
+.dropdown .btn:active {background: hsl(56, 94%, 66%);text-decoration: none; white-space: normal !important; }
+.dropdown .btn:focus {background: hsl(56, 94%, 66%); text-decoration: none;  white-space: normal !important;}
 
-.dropdown-submenu li:hover {background: gray;text-decoration: none; white-space: normal !important; }
-.dropdown-submenu a:hover {background: gray; text-decoration: none; white-space: normal !important;}
-.dropdown-submenu .btn:hover {background: gray;text-decoration: none; white-space: normal !important;}
-.dropdown-submenu .btn:active {background: gray;text-decoration: none; white-space: normal !important; }
-.dropdown-submenu .btn:focus {background: gray; text-decoration: none;  white-space: normal !important;}
+.dropdown-submenu li:hover {background: hsl(56, 94%, 66%);text-decoration: none; white-space: normal !important; }
+.dropdown-submenu a:hover {background: hsl(56, 94%, 66%); text-decoration: none; white-space: normal !important;}
+.dropdown-submenu .btn:hover {background: hsl(56, 94%, 66%);text-decoration: none; white-space: normal !important;}
+.dropdown-submenu .btn:active {background: hsl(56, 94%, 66%);text-decoration: none; white-space: normal !important; }
+.dropdown-submenu .btn:focus {background: hsl(56, 94%, 66%); text-decoration: none;  white-space: normal !important;}
      
 
         .btn-secondary {
